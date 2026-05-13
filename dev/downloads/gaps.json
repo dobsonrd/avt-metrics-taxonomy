@@ -1,0 +1,684 @@
+{
+  "gap_count": 74,
+  "by_origin": {
+    "rset-accepted": 9,
+    "rset-deferred": 4,
+    "standards-nice-esf": 3,
+    "standards-fhir-uk-core": 3,
+    "standards-cqc": 3,
+    "standards-psirf": 4,
+    "standards-prsb": 3,
+    "standards-caldicott": 1,
+    "standards-test": 6,
+    "rai-principle": 20,
+    "rai-theme": 18
+  },
+  "gaps": [
+    {
+      "gap_id": "Gap-RSET-E",
+      "title": "AI-mediated editing modality integrity",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #16"
+    },
+    {
+      "gap_id": "Gap-RSET-F",
+      "title": "Letter / referral generation quality",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #21–22, Phase 1 slide deck"
+    },
+    {
+      "gap_id": "Gap-RSET-G",
+      "title": "Contextual data fusion accuracy",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #23, #37"
+    },
+    {
+      "gap_id": "Gap-RSET-H",
+      "title": "Task / action-item extraction accuracy",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #25"
+    },
+    {
+      "gap_id": "Gap-RSET-I",
+      "title": "Disability-specific speech performance",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #31"
+    },
+    {
+      "gap_id": "Gap-RSET-J",
+      "title": "Interpreter-mediated consultation performance",
+      "origin": "rset-accepted",
+      "tier": 1,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #32, NHSE IG Mar-2026"
+    },
+    {
+      "gap_id": "Gap-RSET-K",
+      "title": "Offline-mode integrity",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "RSET #38"
+    },
+    {
+      "gap_id": "Gap-RSET-L",
+      "title": "Validated wellbeing-instrument metric",
+      "origin": "rset-accepted",
+      "tier": 3,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "Phase 1 slide deck p. 14"
+    },
+    {
+      "gap_id": "Gap-RSET-M",
+      "title": "Consultation duration / overrun impact",
+      "origin": "rset-accepted",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "Phase 1 slide deck p. 14"
+    },
+    {
+      "gap_id": "Gap-RSET-A",
+      "title": "Transcript / code review-ergonomics",
+      "origin": "rset-deferred",
+      "tier": 2,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "HL.HF-3a Review-Before-Signing Rate and HL.HF-3b Time-to-Sign Distribution (sub-parts of HL.HF-3 Inadequate-Review Detection post-v3.7) already capture whether review happens and how long it takes. \"Ergonomics\" as a distinct construct is hard to operationalise without subjective instruments; not a pure measurement gap. Revisit only if HL.HF-3 sub-parts prove insufficient in practice."
+    },
+    {
+      "gap_id": "Gap-RSET-B",
+      "title": "Transcript relevance / signal-preservation",
+      "origin": "rset-deferred",
+      "tier": 3,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "Most AVT products don't expose the raw transcript to the clinician; measurement would apply to a minority of deployments. Signal-preservation is also already bracketed by TP.SN-6 Omission Rate (summary level) and TP.SN-11 MEDIC Cross-Examination. Narrow additional value."
+    },
+    {
+      "gap_id": "Gap-RSET-C",
+      "title": "Transcript edit metrics (parallel to summary)",
+      "origin": "rset-deferred",
+      "tier": 3,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "Only meaningful where the transcript is user-editable - a minority feature. HL.HF-* metrics can be applied to transcript edits by analogy if the product supports it; no new metric needed."
+    },
+    {
+      "gap_id": "Gap-RSET-D",
+      "title": "Configurability surface integrity",
+      "origin": "rset-deferred",
+      "tier": 3,
+      "severity": null,
+      "source": "RSET external review",
+      "notes": "Meta-property of product configuration surfaces (whether safety-critical features can be toggled off). Unusual measurement shape - closer to a design review than a continuous metric. Out of scope for an assurance metrics taxonomy; belongs to vendor-transparency reporting. Revisit only if configuration-related incidents surface."
+    },
+    {
+      "gap_id": null,
+      "title": "Subgroup Drift Monitoring Plan",
+      "origin": "standards-nice-esf",
+      "tier": 2,
+      "severity": null,
+      "source": "NICE ESF",
+      "notes": "Documented plan for monitoring performance drift across demographic subgroups post-deployment."
+    },
+    {
+      "gap_id": null,
+      "title": "Cost-Effectiveness Analysis Availability",
+      "origin": "standards-nice-esf",
+      "tier": 3,
+      "severity": null,
+      "source": "NICE ESF",
+      "notes": "For Tier C AVT: CEA with QALY or cost-consequences. Research-grade for most deployments."
+    },
+    {
+      "gap_id": null,
+      "title": "Budget Impact Analysis Completeness",
+      "origin": "standards-nice-esf",
+      "tier": 2,
+      "severity": null,
+      "source": "NICE ESF",
+      "notes": "Direct and indirect costs; NHS reference costs; sensitivity analysis. Extends GV.OP-7."
+    },
+    {
+      "gap_id": null,
+      "title": "Per-Resource UK Core Conformance",
+      "origin": "standards-fhir-uk-core",
+      "tier": 2,
+      "severity": null,
+      "source": "FHIR UK Core",
+      "notes": "Stratified conformance by resource type (Composition, Condition, AllergyIntolerance, etc.)."
+    },
+    {
+      "gap_id": null,
+      "title": "UK Core Extension Conformance",
+      "origin": "standards-fhir-uk-core",
+      "tier": 2,
+      "severity": null,
+      "source": "FHIR UK Core",
+      "notes": "NHS Number verification status, Ethnic Category, Birth Sex, Death Notification extensions."
+    },
+    {
+      "gap_id": null,
+      "title": "STU Version Targeting Declaration",
+      "origin": "standards-fhir-uk-core",
+      "tier": 1,
+      "severity": null,
+      "source": "FHIR UK Core",
+      "notes": "Vendor declaration of which UK Core STU version(s) supported. Procurement requirement."
+    },
+    {
+      "gap_id": null,
+      "title": "CSO AI Oversight Capacity",
+      "origin": "standards-cqc",
+      "tier": 2,
+      "severity": null,
+      "source": "CQC Assessment",
+      "notes": "Protected time / budget for CSO to oversee AI safety (not just sign-off). Operational capacity."
+    },
+    {
+      "gap_id": null,
+      "title": "AI-Specific Complaint Handling Rate",
+      "origin": "standards-cqc",
+      "tier": 2,
+      "severity": null,
+      "source": "CQC Assessment",
+      "notes": "Rate of complaints about AI-generated records and their resolution time. Also flagged under RAI Theme 5 (Contestability)."
+    },
+    {
+      "gap_id": null,
+      "title": "Record Quality Composite (Reg 17)",
+      "origin": "standards-cqc",
+      "tier": 2,
+      "severity": null,
+      "source": "CQC Assessment",
+      "notes": "Composite of content accuracy, completeness, and timeliness against Reg 17 good-governance standard."
+    },
+    {
+      "gap_id": null,
+      "title": "Systems-Based Incident Analysis Rate",
+      "origin": "standards-psirf",
+      "tier": 2,
+      "severity": null,
+      "source": "PSIRF",
+      "notes": "Proportion of AI-related safety incidents receiving SEIPS-informed systems analysis. Also flagged under RAI Theme 1 (Safety)."
+    },
+    {
+      "gap_id": null,
+      "title": "Compassionate Engagement with Affected Patients",
+      "origin": "standards-psirf",
+      "tier": 2,
+      "severity": null,
+      "source": "PSIRF",
+      "notes": "Rate at which patients/families affected by AI-related harm received early contact, named liaison, and draft report review."
+    },
+    {
+      "gap_id": null,
+      "title": "Staff Just Culture Protection",
+      "origin": "standards-psirf",
+      "tier": 3,
+      "severity": null,
+      "source": "PSIRF",
+      "notes": "Staff survey on whether they feel supported vs blamed after AI-related incidents. Organisational culture."
+    },
+    {
+      "gap_id": null,
+      "title": "Learning Implementation Tracking",
+      "origin": "standards-psirf",
+      "tier": 2,
+      "severity": null,
+      "source": "PSIRF",
+      "notes": "Did identified learning actually change practice? Closure rate on systemic actions."
+    },
+    {
+      "gap_id": null,
+      "title": "Professional Narrative Preservation",
+      "origin": "standards-prsb",
+      "tier": 2,
+      "severity": null,
+      "source": "PRSB",
+      "notes": "Ratio of free-text narrative vs structured extraction; flags over-structurisation and loss of clinical nuance."
+    },
+    {
+      "gap_id": null,
+      "title": "Communication Needs (AIS) Capture",
+      "origin": "standards-prsb",
+      "tier": 2,
+      "severity": null,
+      "source": "PRSB",
+      "notes": "Whether Accessible Information Standard flags (interpreter, BSL, etc.) are captured and preserved. Accessibility-critical."
+    },
+    {
+      "gap_id": null,
+      "title": "Legal Status Information Capture",
+      "origin": "standards-prsb",
+      "tier": 2,
+      "severity": null,
+      "source": "PRSB",
+      "notes": "Whether MHA status, DoLS, LPA, advance decisions are preserved when present. Clinical-legal critical."
+    },
+    {
+      "gap_id": null,
+      "title": "Per-Data-Item Necessity Documentation",
+      "origin": "standards-caldicott",
+      "tier": 3,
+      "severity": null,
+      "source": "Caldicott Principles",
+      "notes": "DPIA-level documentation of why each data element processed is necessary. Granular and burdensome but thorough."
+    },
+    {
+      "gap_id": null,
+      "title": "AI Translation Accuracy & Liability Attribution",
+      "origin": "standards-test",
+      "tier": 2,
+      "severity": null,
+      "source": "NHS T.E.S.T.",
+      "notes": "Accuracy of AI-generated language translation in AVT output, with explicit documentation that liability for translation errors rests with the vendor, not the clinician. T.E.S.T. names translation as a distinctive clinical safety surface; no existing metric."
+    },
+    {
+      "gap_id": null,
+      "title": "Training Data Anonymisation Provenance",
+      "origin": "standards-test",
+      "tier": 2,
+      "severity": null,
+      "source": "NHS T.E.S.T.",
+      "notes": "Documented provenance of anonymisation technique applied to AI training data (ICO-aligned). Extends GV.PD-7 Training Data Inclusion Status, which covers inclusion declaration but not anonymisation quality."
+    },
+    {
+      "gap_id": null,
+      "title": "Total Cost of Ownership / Formal Economic Evaluation",
+      "origin": "standards-test",
+      "tier": 2,
+      "severity": null,
+      "source": "NHS T.E.S.T.",
+      "notes": "Formal multi-dimensional economic evaluation including ROI, operational savings, and full TCO. Extends GV.OP-7 (per-consultation cost) and GV.OP-8 (governance burden) with a top-down economic view that T.E.S.T. weights at 25 of 420 points. Distinct from NICE-derived Cost-Effectiveness and Budget Impact candidates (§2b) — this is an NHS-procurement-framed TCO view."
+    },
+    {
+      "gap_id": null,
+      "title": "Multi-Specialty Validation Coverage",
+      "origin": "standards-test",
+      "tier": 3,
+      "severity": null,
+      "source": "NHS T.E.S.T.",
+      "notes": "Count and breadth of clinical specialties in which the AVT has been formally validated (medical, surgical, allied health). T.E.S.T. awards 10 pts for multi-specialty validation; no existing metric captures breadth of validation scope."
+    },
+    {
+      "gap_id": null,
+      "title": "Virtual-Care Modality Stratified Performance",
+      "origin": "standards-test",
+      "tier": 3,
+      "severity": null,
+      "source": "NHS T.E.S.T.",
+      "notes": "Performance stratified by consultation modality (in-person, video, telephone, ambulance triage). Existing IO.FE-1 covers deployment equity by site/setting but not by modality. T.E.S.T. singles out ambulance telephone triage as a distinct high-weight case (10 pts)."
+    },
+    {
+      "gap_id": null,
+      "title": "Sovereign AI / UK Supply Chain Disclosure",
+      "origin": "standards-test",
+      "tier": 3,
+      "severity": null,
+      "source": "NHS T.E.S.T.",
+      "notes": "Disclosure of whether the vendor and underlying model stack are UK-based (contributing to UK PLC per T.E.S.T. domain 12). Procurement transparency surface. Complements GV.VT-7 Sub-Processor Transparency with sovereignty-specific attribute."
+    },
+    {
+      "gap_id": null,
+      "title": "P1 - Limitations",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P1 - Limitations",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "Partial via GV.SG-11 / GV.SG-14"
+    },
+    {
+      "gap_id": null,
+      "title": "P2 - Lawful/ethical",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P2 - Lawful/ethical",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "See P6; partial via ES.ME-1"
+    },
+    {
+      "gap_id": null,
+      "title": "P3 - Security",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P3 - Security",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P4 - Human control",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P4 - Human control",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "Partial via GV.SG-13"
+    },
+    {
+      "gap_id": null,
+      "title": "P5 - Lifecycle",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": null,
+      "source": "DSIT AI Playbook",
+      "notes": "Promoted in v4.1: GV.PD-16 (data handling), GV.OP-14 (output continuity), GV.VT-15 (retirement notification)"
+    },
+    {
+      "gap_id": null,
+      "title": "P5 - Lifecycle",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": null,
+      "source": "DSIT AI Playbook",
+      "notes": "Promoted in v4.1 alongside decommissioning plan (GV.VT-15 covers vendor-side retirement triggers/notification)"
+    },
+    {
+      "gap_id": null,
+      "title": "P6 - Right tool",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "High",
+      "source": "DSIT AI Playbook",
+      "notes": "No existing metric"
+    },
+    {
+      "gap_id": null,
+      "title": "P6 - Right tool",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "High",
+      "source": "DSIT AI Playbook",
+      "notes": "No existing metric"
+    },
+    {
+      "gap_id": null,
+      "title": "P7 - Openness",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Low",
+      "source": "DSIT AI Playbook",
+      "notes": "ATRS referenced but not mapped"
+    },
+    {
+      "gap_id": null,
+      "title": "P7 - Openness",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P8 - Commercial",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P8 - Commercial",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "GV.VT-6 is about provisions; gap is on testing"
+    },
+    {
+      "gap_id": null,
+      "title": "P9 - Skills",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P9 - Skills",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Low",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P10 - Org assurance",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "P10 - Org assurance",
+      "origin": "rai-principle",
+      "tier": null,
+      "severity": "Medium",
+      "source": "DSIT AI Playbook",
+      "notes": "Partial via GV.SG-13"
+    },
+    {
+      "gap_id": null,
+      "title": "T1 - Safety/Security/Robustness",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "GV.SG-19 proposed (Standards §2e)"
+    },
+    {
+      "gap_id": null,
+      "title": "T1 - Safety",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "T2 - Transparency",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "TP.WB-11 proposed (Standards §2f)"
+    },
+    {
+      "gap_id": null,
+      "title": "T2 - Transparency",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "Partial via GV.VT-2"
+    },
+    {
+      "gap_id": null,
+      "title": "T2 - Transparency",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "T3 - Fairness",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "Partial via IO.FE-1"
+    },
+    {
+      "gap_id": null,
+      "title": "T3 - Fairness",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "IO.FE-4/5 partial; small-group power unresolved"
+    },
+    {
+      "gap_id": null,
+      "title": "T4 - Accountability",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "GV.CR-12 proposed (Standards §2d)"
+    },
+    {
+      "gap_id": null,
+      "title": "T4 - Accountability",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "Covered under GV.CR-12"
+    },
+    {
+      "gap_id": null,
+      "title": "T4 - Accountability",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "T5 - Contestability",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "Related to IO.PX-11 (Standards §2d)"
+    },
+    {
+      "gap_id": null,
+      "title": "T5 - Contestability",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "T5 - Contestability",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "T6 - Societal Wellbeing",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "HL.HF-12 partial"
+    },
+    {
+      "gap_id": null,
+      "title": "T6 - Societal Wellbeing",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "IO.FE-1 partial"
+    },
+    {
+      "gap_id": null,
+      "title": "T6 - Societal Wellbeing",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "High",
+      "source": "Responsible AI ethical themes",
+      "notes": "IO.PX-5, IO.PX-6 partial"
+    },
+    {
+      "gap_id": null,
+      "title": "T6 - Societal Wellbeing",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "-"
+    },
+    {
+      "gap_id": null,
+      "title": "T6 - Societal Wellbeing",
+      "origin": "rai-theme",
+      "tier": null,
+      "severity": "Medium",
+      "source": "Responsible AI ethical themes",
+      "notes": "Flagged low severity in Standards Mapping"
+    }
+  ]
+}

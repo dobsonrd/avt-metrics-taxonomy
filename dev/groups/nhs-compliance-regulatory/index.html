@@ -1,0 +1,6023 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Healthcare metrics taxonomy for assuring Ambient Voice Technology in NHS and comparable settings">
+      
+      
+      
+        <link rel="canonical" href="https://dobsonrd.github.io/avt-metrics-taxonomy/dev/groups/nhs-compliance-regulatory/">
+      
+      
+        <link rel="prev" href="../safety-governance/">
+      
+      
+        <link rel="next" href="../security-adversarial-robustness/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>NHS Compliance & Regulatory - Prototype AVT Metrics Taxonomy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gv-cr-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <strong>AI-coauthored prototype for discussion — v5.5.13.</strong> Substantial portions of this taxonomy were drafted with AI assistance and human-reviewed; <strong>specific claims, citations, and threshold numbers may still contain confabulations or factual errors</strong> despite review. Keep this front of mind, verify before use, and please flag anything that looks wrong — feedback on errors is genuinely welcome. This is shared to provoke conversation, not as a settled standard or procurement gate. See the
+  <a href="../../prototype-status/" style="color: inherit; text-decoration: underline;">prototype status</a> page for what you're invited to do (and what you shouldn't), the
+  <a href="../../changelog/" style="color: inherit; text-decoration: underline;">changelog</a> for recent changes, and the
+  <a href="../../gaps/" style="color: inherit; text-decoration: underline;">roadmap</a> for what's pending.
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prototype AVT Metrics Taxonomy" class="md-header__button md-logo" aria-label="Prototype AVT Metrics Taxonomy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prototype AVT Metrics Taxonomy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NHS Compliance & Regulatory
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dobsonrd/avt-metrics-taxonomy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how-to-use/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  How to use
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dimensions-overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Dimensions overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tier-1-quick-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick start (Tier 1)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../contents/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Browse metrics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../applicability/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Principles & frameworks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../crosscuts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Catalogue views
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gaps/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap (Gaps)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prototype-status/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prototype AVT Metrics Taxonomy" class="md-nav__button md-logo" aria-label="Prototype AVT Metrics Taxonomy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Prototype AVT Metrics Taxonomy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dobsonrd/avt-metrics-taxonomy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dimensions-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimensions overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tier-1-quick-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start (Tier 1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browse metrics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Browse metrics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP - Technical Pipeline
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TP - Technical Pipeline
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-capture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Capture & Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asr-transcription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASR / Transcription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diarisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diarisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summarisation-nlp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summarisation / NLP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clinical-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downstream-write-back/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downstream Write-back
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PI - Pipeline Interactions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PI - Pipeline Interactions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partial-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Partial-Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../end-to-end-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End-to-End Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HL - The Human Layer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HL - The Human Layer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human-factors-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Human Factors & Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IO - Impact & Outcomes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IO - Impact & Outcomes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../patient-experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patient Experience
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fairness-equity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fairness & Equity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GV - System Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GV - System Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../safety-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Safety & Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS Compliance & Regulatory
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS Compliance & Regulatory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-1 🟢 Patient Dissent Recording Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-2 🟢 Verbal Notification Compliance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-3 🟢 AI-Generated Content Labelling Compliance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-4 🟢 AVT Supplier Registry Listing Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-5 🟢 ICB Engagement Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-6 🟢 Clinical Safety Case Completeness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-7 🟢 DPIA Template Completion Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-8 🟡 DSPA Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-9 🟡 FDA PCCP-Equivalent Pre-Defined Acceptance Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-10 🟡 EU AI Act Event Logging Compliance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-11 🟢 Medical Device Classification Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-12 🟢 Board-Level AI Governance Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-13 🟡 Refusal Impact-Explanation Quality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-14 🟢 Consultation-Type Appropriateness Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-adversarial-robustness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security & Adversarial Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy-data-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy & Data Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environmental-sustainability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environmental & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../training-competency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training & Competency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vendor-transparency-contractual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendor Transparency & Contractual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ES - Evaluation Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ES - Evaluation Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta-evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principles & frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Principles & frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../families/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Families
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outcomes-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcomes Boundary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../calibration-and-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calibration & Context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers-of-defence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layers of Defence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../failure-pathways/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure Pathways
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Substrate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responsible-ai-lens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Responsible AI Lens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../crosscuts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalogue views
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Catalogue views
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By applicability
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By applicability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/avt-specific/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVT-Specific
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/avt-contextualised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVT-Contextualised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Healthcare AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By family
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By family
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/clinical-content-fidelity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Content Fidelity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/reference-based-text-similarity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference-Based Text Similarity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/clinical-transcription-accuracy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Transcription Accuracy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/post-generation-correction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-Generation Correction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/medication-safety-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medication Safety Thread
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/demographic-equity-disaggregation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demographic Equity Disaggregation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/nhse-ig-attestation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHSE IG Attestation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/prsb-semantic-completeness-write-back-fidelity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRSB Semantic Completeness & Write-back Fidelity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By layer of defence
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By layer of defence
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/prevention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prevention
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/limitation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By AI substrate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By AI substrate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/pre-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Substrate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/post-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-mediated-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Mediated Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-agnostic-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Agnostic Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By Playbook principle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By Playbook principle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P1 - Limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P2 - Lawful/ethical
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P3 - Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P4 - Human control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P5 - Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P6 - Right tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P7 - Openness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P8 - Commercial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P9 - Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P10 - Org assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By ethical theme
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By ethical theme
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T1 - Safety, Security, Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T2 - Transparency & Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T3 - Fairness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T4 - Accountability & Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T5 - Contestability & Redress
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T6 - Societal Wellbeing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By standard
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By standard
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dtac-digital-technology-assessment-criteria-v2-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DTAC v2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dspt-data-security-and-protection-toolkit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSPT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dcb0129-dcb0160/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DCB0129 / DCB0160
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-england-llm-evaluation-and-monitoring-framework-v0-2-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS LLM Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-t-e-s-t-framework-technology-evaluation-safety-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS T.E.S.T.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-england-avt-self-certified-supplier-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHSE AVT Registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/mhra-software-and-ai-as-a-medical-device-samd-aiamd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MHRA SaMD/AIaMD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nice-evidence-standards-framework-for-digital-health-technologies-ecd7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NICE ESF (ECD7)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/fhir-uk-core-interopen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FHIR UK Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap (Gaps)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prototype-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prototype status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downloads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downloads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thresholds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threshold Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metric-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metric history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-1 🟢 Patient Dissent Recording Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-2 🟢 Verbal Notification Compliance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-3 🟢 AI-Generated Content Labelling Compliance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-4 🟢 AVT Supplier Registry Listing Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-5 🟢 ICB Engagement Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-6 🟢 Clinical Safety Case Completeness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-7 🟢 DPIA Template Completion Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-8 🟡 DSPA Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-9 🟡 FDA PCCP-Equivalent Pre-Defined Acceptance Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-10 🟡 EU AI Act Event Logging Compliance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-11 🟢 Medical Device Classification Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-12 🟢 Board-Level AI Governance Mechanism
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-13 🟡 Refusal Impact-Explanation Quality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gv-cr-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GV.CR-14 🟢 Consultation-Type Appropriateness Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>NHS Compliance & Regulatory</h1>
+
+<h3 id="gv-cr-1">GV.CR-1 🟢 Patient Dissent Recording Rate<a class="headerlink" href="#gv-cr-1" title="Permanent link">&para;</a></h3>
+<p>Per-encounter rate at which patient objections or dissent to AVT use are recorded and respected. Distinct from the existing Patient Opt-Out Rate, which is aggregate and applies at the registration or consent level. Patient Dissent Recording is the per-encounter process compliance metric: when a patient objects at the point of care, is that objection documented, is AVT actually paused for that encounter, and is the objection respected in subsequent encounters without re-litigation.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-1</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Patient Experience</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>NHSE IG Attestation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Direct compliance requirement under NHSE IG guidance. Deployer-measurable from workflow records. Binary compliance - a patient dissent not recorded and respected is a regulatory and ethical failure.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Recording Rate = |dissent_events_with_recorded_and_respected_objection| / |total_dissent_events|. Target: 100%. Sub-metrics: (a) dissent documentation rate (was it recorded?); (b) dissent respect rate (was AVT paused?); (c) dissent persistence rate (was it respected in subsequent encounters?). Any sub-metric below 100% indicates compliance failure.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>Authoritative source: the EPR consultation record + AVT activation telemetry. A "dissent event" is any patient communication declining AVT use at the point of care, captured by one of:</p>
+<ul>
+<li><strong>Explicit verbal objection</strong> logged by the clinician in the consultation record (free-text or structured field; structured preferred)</li>
+<li><strong>Structured opt-out indicator</strong> set in the patient record at or before the encounter (must propagate to AVT activation - see <a href="../patient-experience/#io-px-1">IO.PX-1 Patient Opt-Out Rate</a>)</li>
+<li><strong>Patient-initiated AVT termination mid-consultation</strong> signalled to the clinician</li>
+</ul>
+<p>Implicit / inferred dissent (patient appears uncomfortable, clinician guesses) is out of scope for this metric and belongs under separate human-factors observation. "Respected" means AVT was not active at any point after the dissent event during that encounter or in subsequent encounters until the patient affirmatively reverses the dissent. Reversal MUST be documented separately; absence of new dissent ≠ reversal.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> continuous, monthly compliance reporting per practice / per clinician.</li>
+<li><strong>Population:</strong> all AVT-eligible consultations during the window. Denominator includes encounters where the patient <em>could</em> have dissented (i.e. AVT was offered or activated), not just encounters where dissent occurred.</li>
+<li><strong>Sub-metric breakdown MANDATORY:</strong> the three sub-metrics (documentation, respect, persistence) reported separately; aggregate-only reporting is not Tier 1 sufficient.</li>
+<li><strong>Per-clinician disaggregation MANDATORY:</strong> dissent compliance hides at clinician level. A practice 95 % aggregate may hide one clinician at 50 %.</li>
+<li><strong>Dissent-detection coverage check:</strong> if recorded dissent rate is &lt; 0.5 % of AVT-eligible consultations, the deployer must run a sampling check (clinician self-report or patient survey) to verify the low rate reflects actual patient acceptance rather than under-detection.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the IG-incident reportability framing follows from <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> and the single-instance dissent-not-respected escalation reflects the binary-compliance logic in the Why-this-tier section. Specific numbers (≥ 99 % monthly sub-metric compliance, &lt; 95 % escalation trigger, &lt; 0.5 % coverage-check threshold) are <strong>proposed in v3.3 as starting points</strong>, not externally validated. Indicative; require local calibration before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> EPR / AVT integration capable of recording dissent in a structured form and propagating it to subsequent encounters; consultation workflow includes a documented step at which the clinician offers AVT and records the response.</li>
+<li><strong>Continuous monitoring:</strong> documentation, respect, and persistence sub-metrics each ≥ 99 % monthly; alert on any single dissent-not-respected event.</li>
+<li><strong>Pause / escalation trigger:</strong> any dissent-not-respected event confirmed (single instance), OR sub-metric &lt; 95 % in any month. Both reportable as IG incidents.</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#gv-cr-1">Threshold Reference: GV.CR-1</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Detection of dissent events requires clinician reporting or structured capture in the EPR workflow. Silent non-compliance (clinician uses AVT despite patient objection) is invisible to passive observation. The dissent-detection coverage check in the Operational Specification provides a partial counter to this by requiring sampling-based verification when recorded dissent is implausibly low.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 This is the per-encounter teeth behind the aggregate opt-out metric. Opt-out gives the patient a blanket choice; dissent recording ensures the choice is honoured at each specific consultation where it matters. The two metrics measure different things: opt-out measures consent model acceptance; dissent recording measures procedural integrity at the point of care. Both are necessary for a coherent consent architecture.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../patient-experience/#io-px-1">IO.PX-1 Patient Opt-Out Rate</a> · <a href="#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a> · <a href="../environmental-sustainability/#gv-en-1">GV.EN-1 Energy Consumption per Clinical Note</a> · <a href="../environmental-sustainability/#gv-en-2">GV.EN-2 Carbon Emissions per Inference</a></p>
+<hr />
+<h3 id="gv-cr-2">GV.CR-2 🟢 Verbal Notification Compliance<a class="headerlink" href="#gv-cr-2" title="Permanent link">&para;</a></h3>
+<p>Proportion of AVT-using consultations where verbal notification was delivered to the patient at session start, as required by NHSE IG guidance (March 2026). Consent model in NHS primary care relies on informing patients before AVT activation, but the "informing" step is often poorly observed in busy practice. This metric measures the actual delivery of notification, not just the existence of a notification policy.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-2</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Patient Experience</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Day Zero Baseline, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>NHSE IG Attestation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a>; <a href="../../references/#cqc-mythbuster-109">CQC GP Mythbuster 109</a> context</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Direct compliance requirement. Measurable via patient survey sampling, consultation audit, or (with appropriate consent) recording sampling. Binary compliance - notification either happened or it didn't.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Compliance Rate = |consultations_with_verbal_notification_delivered| / |total_AVT_consultations|. Measurement methods in order of increasing rigour: (a) clinician self-report at end of session; (b) patient survey sampling asking whether notification was delivered; (c) audit of audio recordings (where retention allows) for notification language. Target: 100%. Values below 95% indicate systematic compliance failure requiring intervention.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>The deployer-approved patient notification script (drawn from <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> + local DPIA). A consultation counts as "notified" only if the script's required content elements were delivered to the patient before AVT activation:</p>
+<ul>
+<li><strong>What</strong> the technology is (ambient scribe / AI-assisted documentation) and what it does</li>
+<li><strong>What</strong> is captured (audio + transcript) and where it goes</li>
+<li><strong>Who</strong> has access (clinician, vendor, sub-processors)</li>
+<li><strong>How</strong> to decline (without service consequence)</li>
+</ul>
+<p>A notification missing any of the four content elements counts as non-compliant even if some notification language was used. The most rigorous measurement method available at the deployment site is the gold standard; methods (a)-(c) are ranked by reliability and the headline rate must be reported with the method declared.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> monthly, with quarterly periodic audit using the highest-rigour method available.</li>
+<li><strong>Population:</strong> all AVT consultations during the window (denominator excludes consultations where AVT was not used, including patient-opt-out cases).</li>
+<li><strong>Method declaration MANDATORY:</strong> the headline compliance rate carries the measurement method (self-report / patient survey / audio audit). Reporting "Compliance: 98 %" without method is not Tier 1 sufficient.</li>
+<li><strong>Sample size for survey or audit MANDATORY:</strong> ≥ 30 patients per clinician per quarter for survey method; ≥ 30 audio recordings per clinician per quarter where audio audit is used. Sub-30 samples are uninformative and do not satisfy the metric.</li>
+<li><strong>Content-element breakdown MANDATORY:</strong> report compliance per content element (what / what / who / how). A clinician who consistently omits "how to decline" is failing differently from one who omits "where it goes"; aggregate-only reporting hides the failure pattern.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the four content-element framing (what / what / who / how) follows from <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a>. Specific numerical thresholds (≥ 95 % self-report, ≥ 90 % audited, ≥ 85 % per-element, &lt; 75 % escalation, ≥ 30 sample-size floor) are <strong>proposed in v3.3 as starting points</strong>, not externally validated. Indicative; require local calibration before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> notification script drafted and reviewed against <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> content elements; clinician training complete; one mock-consultation audit per clinician confirms script delivery.</li>
+<li><strong>Continuous monitoring:</strong> monthly self-report compliance ≥ 95 %; quarterly survey-based or audio-based compliance ≥ 90 % overall and ≥ 85 % on every content element.</li>
+<li><strong>Pause / escalation trigger:</strong> any content element &lt; 75 % compliance in any audit cycle; or self-report &gt; 95 % paired with audited rate &lt; 75 % (this is a self-report integrity failure, separately serious).</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#gv-cr-2">Threshold Reference: GV.CR-2</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Self-report over-estimates compliance. Patient recall is imperfect. Audio audit is resource-intensive and depends on retention policies that may conflict with data minimisation. The Operational Specification's method-declaration requirement makes the self-report bias visible by forcing the audited cross-check.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The gap between policy and practice on patient notification is the compliance equivalent of the consent understanding gap. A practice can have a 100% notification policy and a 60% actual notification rate - and the 40% gap is where the consent model breaks down. Periodic audit is the only way to know which side of the gap a deployer is on. A practice that refuses to audit is implicitly choosing not to know.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-7">GV.VT-7 Sub-Processor Transparency</a> · <a href="#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a></p>
+<hr />
+<h3 id="gv-cr-3">GV.CR-3 🟢 AI-Generated Content Labelling Compliance<a class="headerlink" href="#gv-cr-3" title="Permanent link">&para;</a></h3>
+<p>Automated verification that AI-generated clinical record entries carry the mandatory SNOMED suffix identifying them as AVT output (e.g. "Audio Dictation 24771000000105" per NHSE guidance). Required for downstream systems to distinguish AI-generated content from clinician-authored content - essential for audit, safety investigation, and future training data curation.</p>
+<p><strong>Change history:</strong> v5.5.2 (Limitations gain a verification flag against the specific SNOMED concept ID — carried forward from earlier catalogue revisions but not currently re-verifiable at a stable URL; deployers should cross-check against the SNOMED CT UK Edition browser).</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-3</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Downstream Write-back</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Meta-evaluation</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor, Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>NHSE IG Attestation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Automated compliance check with trivial implementation cost. Should be a pre-deployment gate and continuous monitoring metric. Non-compliance is both a governance failure and a downstream data quality problem.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Labelling Rate = |AI_generated_entries_with_correct_suffix| / |total_AI_generated_entries|. Target: 100%. Zero-tolerance - every AI-generated entry must be labelled. Automated verification is feasible because the suffix is a fixed SNOMED concept that either appears or doesn&#39;t. Report non-compliance instances for immediate remediation.
+</code></pre></div>
+<p><strong>Code: Labelling compliance check</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">AVT_LABEL_SUFFIX</span> <span class="o">=</span> <span class="s2">&quot;24771000000105&quot;</span>  <span class="c1"># Audio Dictation SNOMED concept</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">check_labelling_compliance</span><span class="p">(</span><span class="n">epr_entries</span><span class="p">):</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="sd">    Verify every AI-generated entry carries the mandatory suffix.</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">ai_entries</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">epr_entries</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;source&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;AVT&quot;</span><span class="p">]</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">compliant</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">ai_entries</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>                 <span class="k">if</span> <span class="n">AVT_LABEL_SUFFIX</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;content&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>                 <span class="ow">or</span> <span class="n">e</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;label_code&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="n">AVT_LABEL_SUFFIX</span><span class="p">]</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">non_compliant</span> <span class="o">=</span> <span class="p">[</span><span class="n">e</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">ai_entries</span> <span class="k">if</span> <span class="n">e</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">compliant</span><span class="p">]</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        <span class="s2">&quot;rate&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">compliant</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">ai_entries</span><span class="p">)</span> <span class="k">if</span> <span class="n">ai_entries</span> <span class="k">else</span> <span class="mf">1.0</span><span class="p">,</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="s2">&quot;non_compliant_count&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">non_compliant</span><span class="p">),</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        <span class="s2">&quot;non_compliant_entries&quot;</span><span class="p">:</span> <span class="n">non_compliant</span><span class="p">,</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="s2">&quot;alert&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">non_compliant</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="s2">&quot;severity&quot;</span><span class="p">:</span> <span class="s2">&quot;CRITICAL&quot;</span> <span class="k">if</span> <span class="n">non_compliant</span> <span class="k">else</span> <span class="s2">&quot;OK&quot;</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="p">}</span>
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Assumes the vendor's write-back system supports the suffix - some EPR integrations strip metadata fields that don't map to native EPR structures. The suffix location (free-text vs metadata) affects automated detection methodology. The specific SNOMED concept ID <code>24771000000105</code> cited as "Audio Dictation" carries a v5.5.2 verification flag — the ID was carried forward from earlier catalogue revisions and the parent NHSE IG guidance hub doesn't currently expose the specific concept-ID assignment at a stable URL. Deployers implementing this metric should verify the concept ID against the <a href="https://termbrowser.nhs.uk/">SNOMED CT UK Edition browser</a> and the latest NHSE IG guidance before relying on it as the canonical AVT label suffix.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Without reliable labelling, every downstream system that consumes clinical records is operating without knowing which content is AI-generated. This matters for: safety investigation (was the error in a human-written or AI-generated entry?); training data curation (if AI-generated records are fed back into training, the labelling is necessary to detect and exclude them); audit trails (which clinicians rely on AI assistance and how frequently). Non-labelling is an infrastructure failure with cascading consequences.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-7">GV.VT-7 Sub-Processor Transparency</a> · <a href="../vendor-transparency-contractual/#gv-vt-2">GV.VT-2 Telemetry Provision Completeness</a> · <a href="../vendor-transparency-contractual/#gv-vt-3">GV.VT-3 Benchmark &amp; Evaluation Data Accessibility</a> · <a href="../vendor-transparency-contractual/#gv-vt-4">GV.VT-4 Audit Trail Completeness</a></p>
+<hr />
+<h3 id="gv-cr-4">GV.CR-4 🟢 AVT Supplier Registry Listing Verification<a class="headerlink" href="#gv-cr-4" title="Permanent link">&para;</a></h3>
+<p>Procurement and ongoing verification that the deployed AVT system is listed on the NHS England AVT Supplier Registry and remains listed throughout the deployment lifecycle. The Registry (launched January 2026) is the NHS-level mechanism for self-certified minimum standards, and registry status is expected to become a procurement precondition.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-4</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nhse-avt-registry">NHSE AVT Self-Certified Supplier Registry</a> (live since January 2026)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Procurement gate with trivial verification cost. Should be confirmed at procurement and re-verified at contract renewal and on notification of vendor compliance events.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Listing Verification: at procurement, confirm vendor is on the live Registry. Quarterly re-verification during deployment. Binary: listed or not listed. Where not listed, deployment should not proceed (pre-deployment) or should trigger formal risk review (during deployment). Also track: date of most recent vendor compliance attestation, scope of attested compliance (which AVT products are covered).
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p><a href="../../references/#nhse-avt-registry">NHSE AVT Self-Certified Supplier Registry</a> is the authoritative source — operational location at digital.nhs.uk/services/ambient-scribing (long-read context also hosted on the NHS Transformation Directorate site). <strong>Listing is binary</strong> (listed / not listed) at the registry-status level. <strong>Scope</strong> is read from the vendor's registry submission (which AVT products are covered, which use cases, which deployment contexts) and compared against the deployer's contracted scope. <strong>Attestation date</strong> is read from the vendor's signed declaration on the Hub. See also the cross-cutting <a href="../../standards-mapping/#nhs-england-avt-self-certified-supplier-registry">NHS England AVT Self-Certified Supplier Registry</a> standards-mapping section for the framework-level treatment, and the registry-driven companion metrics <a href="../security-adversarial-robustness/#gv-sc-12">GV.SC-12 Cyber Essentials Plus Certification Status</a>, <a href="../vendor-transparency-contractual/#gv-vt-13">GV.VT-13 Evidence Pack Freshness</a>, and <a href="../vendor-transparency-contractual/#gv-vt-14">GV.VT-14 Indicative Pricing Transparency</a>.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> at procurement decision; quarterly re-verification during deployment; ad-hoc re-verification on any vendor change-event per <a href="../safety-governance/#gv-sg-1">GV.SG-1 Model Version Tracking</a>.</li>
+<li><strong>Three sub-metrics MANDATORY:</strong> (a) listing status (binary); (b) scope alignment with deployer's contracted use cases (vendor's registry-submission scope is a superset of deployer's contracted scope); (c) attestation currency (vendor's signed declaration ≤ 12 months old). Aggregate-only reporting hides the failure pattern.</li>
+<li><strong>Self-certification disclosure MANDATORY:</strong> every quarterly verification record carries an explicit reminder that the registry is self-certified (NHSE preliminary checks only; no endorsement). Pair with <a href="../vendor-transparency-contractual/#gv-vt-13">GV.VT-13 Evidence Pack Freshness</a> for the substantive evidence-pack-quality assessment.</li>
+<li><strong>Multi-product handling:</strong> for vendors with multiple AVT products, the verification records the specific product covered. A vendor's overall registry listing does not transfer to a sibling product without explicit registry-submission scope coverage.</li>
+<li><strong>Delisting watch:</strong> the deployer's IG file records the registry status at each verification; any change from listed to not-listed (or vice versa) triggers an explicit governance review.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the binary registry status, the 12-month attestation currency window, and the quarterly re-verification cadence are cited from the NHS England registry mechanics. The "12-month signed declaration" threshold and the multi-product scope-alignment requirement are <strong>proposed in v3.8 as starting points</strong>, not externally validated by NHSE — registry's specific re-listing rules are still pending publication. Per the <a href="../../calibration-and-context/">Calibration &amp; Context principle</a>, require local calibration against the deployer's procurement risk appetite before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> vendor listed on live Registry; vendor's registry-submission scope covers deployer's contracted use cases; vendor's signed declaration ≤ 12 months old; companion metrics (<a href="../vendor-transparency-contractual/#gv-vt-13">GV.VT-13</a>, <a href="../vendor-transparency-contractual/#gv-vt-14">GV.VT-14</a>, <a href="../security-adversarial-robustness/#gv-sc-12">GV.SC-12</a>) all pass their pre-deployment gates.</li>
+<li><strong>Continuous monitoring:</strong> quarterly verification of all three sub-metrics; alert on attestation &gt; 9 months old (60-day grace); alert on any scope-coverage gap discovered post-procurement.</li>
+<li><strong>Pause / escalation trigger:</strong> vendor delisted (single instance — registry status loss is governance-event-grade); OR contracted use case discovered outside vendor's registry-submission scope; OR attestation &gt; 12 months and not renewed.</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#gv-cr-4">Threshold Reference: GV.CR-4</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Registry is self-certified - listing indicates vendor attestation rather than independent verification. Listing scope may not cover all deployed AVT modules from a vendor with multiple products. The Operational Specification's self-certification disclosure makes this explicit at every verification, but does not eliminate the structural asymmetry. Substantive evidence-quality assessment lives in <a href="../vendor-transparency-contractual/#gv-vt-13">GV.VT-13 Evidence Pack Freshness</a>; this metric verifies the listing fact, not the underlying evidence pack.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The Registry's value depends on NHS bodies treating listing as a procurement precondition. If deployments proceed with non-listed vendors, the Registry becomes advisory rather than normative and loses its governance function. Making Registry verification a Tier 1 metric supports the norm that listing is expected - and creates visible data on deployment-to-listing alignment that can inform Registry policy over time.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-7">GV.VT-7 Sub-Processor Transparency</a> · <a href="#gv-cr-5">GV.CR-5 ICB Engagement Documentation</a> · <a href="../vendor-transparency-contractual/#gv-vt-4">GV.VT-4 Audit Trail Completeness</a> · <a href="../vendor-transparency-contractual/#gv-vt-5">GV.VT-5 Incident Disclosure Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-8">GV.VT-8 Intermediate Output Access</a></p>
+<hr />
+<h3 id="gv-cr-5">GV.CR-5 🟢 ICB Engagement Documentation<a class="headerlink" href="#gv-cr-5" title="Permanent link">&para;</a></h3>
+<p>Documented evidence that the deployer engaged with their ICB digital team (or equivalent regional body) before AVT deployment, as required by the CIO/CCIO guidance (v2, January 2026). The ICB engagement requirement exists to prevent uncoordinated deployment across an integrated care system and to ensure regional intelligence about AVT risks and mitigations is applied consistently.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-5</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Meta-evaluation</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Regional (ICB)</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#cio-ccio-guidance-2026">CIO-CCIO-Guidance-2026</a>; NHS CIO priority notification</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Pre-deployment compliance requirement. Should be a documented gate before go-live. Failure indicates a governance process breakdown that deserves immediate correction.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Engagement documentation includes: (1) formal notification to ICB digital team dated before go-live; (2) ICB response acknowledging notification; (3) any conditions or recommendations from ICB on file. Binary compliance: all three present = compliant. Missing ICB response is a flag for follow-up, not automatic non-compliance, because ICB capacity constraints may prevent timely response.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>Authoritative source: the deployer's governance file plus ICB digital team's correspondence record. "Formal notification" = a written communication to the named ICB digital lead (not generic inbox) containing at minimum: vendor identity, product scope, deployment site list, intended go-live date, DPIA reference, and Clinical Safety Case reference. "ICB response" = any written acknowledgement, including auto-receipts where the ICB has explicitly designated them as acknowledgements; substantive review responses are tracked separately as "ICB conditions". A response received after go-live counts but is recorded with the latency.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> one-off pre-deployment gate; quarterly re-verification when material scope changes (new sites, new vendor product, new use case).</li>
+<li><strong>Population:</strong> every AVT deployment by the practice / Trust / federation. The denominator is deployments, not consultations.</li>
+<li><strong>Three sub-metrics MANDATORY:</strong> notification-sent rate, ICB-acknowledged rate, ICB-conditions-on-file rate. Aggregate-only reporting is not Tier 1 sufficient — the three failure modes (deployer didn't notify / ICB didn't acknowledge / conditions exist but not actioned) require separate visibility.</li>
+<li><strong>Latency reporting MANDATORY:</strong> time-to-notification (deployment-decision to ICB notification) and time-to-acknowledgement (notification to ICB response). Latency reveals process health independently of binary compliance.</li>
+<li><strong>Carve-out logging MANDATORY:</strong> any deployment proceeding without ICB acknowledgement (under the capacity-constraint allowance) MUST be logged with reason and review date. Repeated unanswered notifications to the same ICB within 12 months trigger escalation to the regional CCIO, not silent acceptance.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the three-sub-metric framing follows from <a href="../../references/#cio-ccio-guidance-2026">CIO-CCIO-Guidance-2026</a> and the carve-out logic in the existing Formal Definition. Specific numerical thresholds (≥ 14-day notification lead time, escalation after two unanswered notifications in 12 months, quarterly re-verification cadence) are <strong>proposed in v3.5 as starting points</strong>, not externally validated. Indicative; require local calibration before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> notification sent to named ICB digital lead ≥ 14 days before planned go-live; DPIA + Clinical Safety Case referenced; deployment-site list complete.</li>
+<li><strong>Continuous monitoring:</strong> quarterly review of acknowledgement rate and conditions-on-file rate; alert when any ICB has &gt; 1 unanswered notification on the deployer's books.</li>
+<li><strong>Pause / escalation trigger:</strong> any deployment going live without notification sent (process failure, not capacity issue); OR same ICB unanswered for ≥ 2 separate notifications within 12 months (escalate to regional CCIO).</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#gv-cr-5">Threshold Reference: GV.CR-5</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>ICB engagement quality varies - some ICBs have mature digital teams providing substantive review; others acknowledge notifications without meaningful engagement. Documentation presence does not guarantee engagement quality. The Operational Specification's separate sub-metric for ICB-conditions-on-file makes substantive engagement visible (it surfaces only when the ICB has actually reviewed), but the metric still cannot distinguish deep review from cursory acknowledgement.</p>
+<p>The escalation-to-regional-CCIO trigger in the Threshold Guidance assumes regional CCIO capacity exists to receive and act on escalations. <a href="../../references/#cio-ccio-guidance-2026">CIO-CCIO-Guidance-2026</a> does not mandate or fund that capacity, so in regions where it is absent the metric's escalation pathway is non-operational — failed acknowledgements pile up at the next layer rather than being resolved. Where this is the case, deployers should document the gap in their governance file and surface it via routes other than this metric (e.g. ICS digital risk register).</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 ICB engagement is the mechanism that prevents NHS AVT deployment from being a series of disconnected practice-level decisions with no regional coordination. It only works if it is actually happening - and practices deploying AVT without ICB engagement are a visible symptom of governance friction, ICB capacity constraints, or deployment urgency overriding process. Tracking the metric is a diagnostic tool for that friction as much as it is a compliance check.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#gv-cr-4">GV.CR-4 AVT Supplier Registry Listing Verification</a> · <a href="#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../safety-governance/#gv-sg-13">GV.SG-13 Assurance Debt Accumulation Rate</a> · <a href="../safety-governance/#gv-sg-17">GV.SG-17 Hazard Log Completeness</a> · <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a> · <a href="../vendor-transparency-contractual/#gv-vt-4">GV.VT-4 Audit Trail Completeness</a></p>
+<hr />
+<h3 id="gv-cr-6">GV.CR-6 🟢 Clinical Safety Case Completeness<a class="headerlink" href="#gv-cr-6" title="Permanent link">&para;</a></h3>
+<p>Existence, currency, and coverage of a formal DCB0129/0160 clinical safety case for the AVT deployment. Distinct from the existing Hazard Log Completeness metric, which covers log currency. Safety Case Completeness is the broader document: hazard identification, risk analysis, mitigations, residual risk acceptance, and governance arrangements. A 2025 FOI-based study (PubMed 41172285) found widespread non-compliance with DCB0129 requirements among NHS digital health deployments.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-6</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#dcb0129">DCB0129</a> / <a href="../../references/#dcb0160">DCB0160</a>; <a href="../../references/#pubmed-41172285-foi-study">PubMed-41172285-FOI-Study</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Direct regulatory requirement. Non-compliance is both a legal and a safety issue. The 2025 FOI study found widespread non-compliance, making this a known high-risk area requiring active monitoring.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Completeness assessed against DCB0129 standard sections: (1) safety management system; (2) hazard identification; (3) hazard analysis and evaluation; (4) hazard control; (5) hazard log; (6) safety case report; (7) safety incident management; (8) issue resolution. Each section binary (present and current / missing or out-of-date). Full compliance requires all sections. Currency: major update triggered by significant system change, model version change, or new hazard identification.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p><a href="../../references/#dcb0129">DCB0129</a> (Clinical Risk Management for Health IT Systems) is the authoritative section schema for vendors / manufacturers. The deployer-side equivalent <a href="../../references/#dcb0160">DCB0160</a> governs the safety case for the implementing institution and is the cross-reference for sites operating their own safety case (see also [Clinical Safety Officer reviewer requirement under DCB0129/0160]). "Present" requires a section heading plus content authored by a named Clinical Safety Officer (CSO); template-only sections (heading present, body empty or "TBC") count as missing. "Current" requires last-update date within the metric's currency window per the Operational Specification below.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> annual periodic audit; mandatory re-review on any of the four trigger events (significant system change, model version change in any component per <a href="../safety-governance/#gv-sg-1">GV.SG-1 Model Version Tracking</a>, new hazard identification, scope expansion).</li>
+<li><strong>Population:</strong> every deployment site holding a safety case (typically Trust-level for hospitals, federation-level for primary-care networks).</li>
+<li><strong>Per-section reporting MANDATORY:</strong> the eight sub-metrics (one per DCB0129 section) reported separately. Aggregate-only reporting is not sufficient — the failure pattern matters: a site missing section 5 (hazard log) has a different compliance failure from one missing section 7 (incident management).</li>
+<li><strong>Currency window MANDATORY:</strong> sections (2) hazard identification, (3) analysis, (4) control, and (5) log MUST be updated within 30 days of any trigger event (the 30-day figure is proposed in v3.5 as a starting point; DCB0129 itself does not specify a numeric window — see Threshold Guidance Provenance). Section (1) safety management system, (6) safety case report, and (8) issue resolution MUST be reviewed at least annually. Section (7) safety incident management MUST be live-current (updated on each new incident per the existing process).</li>
+<li><strong>Trigger-event log MANDATORY:</strong> every trigger event recorded with date, type, sections requiring update, and target completion date. Time-to-update reported per trigger.</li>
+<li><strong>External review:</strong> independent CSO review of the safety case at intervals not exceeding 24 months OR on any major version change of the AVT product. Internal-only review is not Tier 1 sufficient.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the eight-section schema and currency triggers carry from <a href="../../references/#dcb0129">DCB0129</a> itself. Specific numerical thresholds (30-day post-trigger window, 24-month external review cadence, 100 % per-section currency gate) are <strong>proposed in v3.5 as starting points</strong>, not externally validated. The 2025 PubMed FOI study (cited in Source) found widespread non-compliance; these thresholds reflect a procurement-grade interpretation of "current" rather than a regulator-published standard. Indicative; require local calibration against the deployer's clinical risk management framework before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> all eight <a href="../../references/#dcb0129">DCB0129</a> sections present with named CSO author; safety case report explicitly references the AVT product version, EPR target, and deployment scope.</li>
+<li><strong>Continuous monitoring:</strong> annual per-section review; alert when any of sections 2-5 falls outside the 30-day post-trigger window; alert when external review is overdue.</li>
+<li><strong>Pause / escalation trigger:</strong> any section in "missing" state (heading present, content empty or stub); OR sections 2-5 unupdated &gt; 90 days after a trigger event; OR any model-version change deployed without corresponding safety-case update (cross-link <a href="../../references/#si-2024-1368">SI 2024/1368</a> MHRA PMS substantial-change framework).</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#gv-cr-6">Threshold Reference: GV.CR-6</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Compliance with structure does not guarantee quality of content. Safety cases are often written to satisfy the standard rather than to genuinely analyse system safety - the "compliance theatre" problem. External independent review is the only reliable check; the Operational Specification's 24-month external-review cadence makes this requirement explicit but does not eliminate the gap between structural compliance and genuine safety analysis.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The 2025 FOI finding that many NHS digital health deployments lack DCB0129 compliance is a structural warning about regulatory enforcement gaps. AVT deployment is happening faster than safety case development in many places. Making Safety Case Completeness a Tier 1 metric both highlights the compliance obligation and creates visible data on how widespread the gap is - which is itself a governance intervention.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../safety-governance/#gv-sg-17">GV.SG-17 Hazard Log Completeness</a> · <a href="#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a> · <a href="../safety-governance/#gv-sg-14">GV.SG-14 Near-Miss Reporting Rate</a> · <a href="../vendor-transparency-contractual/#gv-vt-4">GV.VT-4 Audit Trail Completeness</a> · <a href="#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a></p>
+<hr />
+<h3 id="gv-cr-7">GV.CR-7 🟢 DPIA Template Completion Rate<a class="headerlink" href="#gv-cr-7" title="Permanent link">&para;</a></h3>
+<p>Proportion of AVT deployments using the NHS-provided March 2026 DPIA template with all mandatory sections completed. Data Protection Impact Assessment is required under UK GDPR Article 35 for high-risk processing, and AVT meets the high-risk threshold. The NHSE template provides standardised structure - but the template only helps if it's actually used and completed. <strong>Parent of the DPIA construct paired with <a href="../privacy-data-governance/#gv-pd-17">GV.PD-17 DPIA Justification Quality</a></strong>: this metric is the structural-completion gate; GV.PD-17 is the substantive Caldicott-Guardian-reviewed sub-part. A DPIA can be structurally complete (passing this metric) and substantively weak on Principle 1 ("justify the purpose") — both checks are needed.</p>
+<p><strong>Change history:</strong> v5.4.0 (formalised parent + sub-part relationship with <a href="../privacy-data-governance/#gv-pd-17">GV.PD-17 DPIA Justification Quality</a> — GV.CR-7 is the parent (structural completion), GV.PD-17 is the sub-part (substantive Caldicott Principle 1 review)).</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-7</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>NHSE IG Attestation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#uk-gdpr">UK GDPR</a> Article 35; <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> template</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Change history:</strong> v5.1.0 (Cadence updated to multi-value <code>Periodic audit; Event-triggered</code> — the body has always required mandatory re-review on significant processing change in addition to the annual audit cadence; the calendar audit acts as the backstop, the change event is the substantive trigger).</p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Legal requirement. Pre-deployment gate. Template completion is measurable and binary.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Completion Rate = |deployments_with_complete_DPIA_using_template| / |total_AVT_deployments|. Template mandatory sections: processing description, lawful basis, data flows, risks identified, mitigations, residual risk acceptance, DPO sign-off, review schedule. Each section binary; complete DPIA requires all sections. Review cadence: minimum annually or on significant processing change.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>The <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> DPIA template is the authoritative section schema for AVT deployments; <a href="../../references/#uk-gdpr">UK GDPR</a> Article 35 is the legal floor. "Complete" requires every mandatory section populated with substantive content, signed off by the named Data Protection Officer (DPO). Template-only sections (heading present, body empty, "TBC", or boilerplate copied from the template's example text) count as incomplete. Cross-link to <a href="#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> — DPIA risks identified MUST be reconcilable with hazards in the safety case; gaps between the two are themselves a quality signal.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> annual periodic audit; mandatory re-review on significant processing change (defined: new vendor, new data flow, new sub-processor, new use case, model component change per <a href="../safety-governance/#gv-sg-1">GV.SG-1</a>, site expansion).</li>
+<li><strong>Population:</strong> every AVT deployment (denominator: deployments, not consultations).</li>
+<li><strong>Per-section reporting MANDATORY:</strong> the eight mandatory sections (processing description, lawful basis, data flows, risks identified, mitigations, residual-risk acceptance, DPO sign-off, review schedule) reported separately. Aggregate-only reporting hides sectional failure patterns.</li>
+<li><strong>Significant-change definition MANDATORY:</strong> the deployer's local definition of "significant processing change" must be documented; ambiguity here is a common failure mode for the metric. Default rule: any change requiring sub-processor disclosure update under <a href="../vendor-transparency-contractual/#gv-vt-7">GV.VT-7</a> is significant by definition.</li>
+<li><strong>DPO sign-off MANDATORY (binary):</strong> unsigned DPIAs do not count as complete regardless of section content. Sign-off date recorded; sign-offs preceding the most recent significant change are stale.</li>
+<li><strong>Cross-reconciliation with safety case:</strong> DPIA-identified risks MUST be cross-mapped to safety-case hazards; risks named in DPIA but absent from safety case (or vice versa) are flagged in the audit output.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the eight-section schema and DPO sign-off requirement carry from <a href="../../references/#uk-gdpr">UK GDPR</a> Article 35 and the <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> template. Specific numerical thresholds (annual audit cadence, 30-day post-significant-change re-review window, 100 % per-section gate) are <strong>proposed in v3.5 as starting points</strong>, not externally validated. Indicative; require local calibration against the deployer's IG framework before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> all eight template sections complete with substantive content; DPO sign-off dated within the 30 days preceding go-live; DPIA-safety-case reconciliation documented.</li>
+<li><strong>Continuous monitoring:</strong> annual completion-rate review; alert on any DPIA where sign-off precedes the most recent significant change; alert when DPIA-safety-case reconciliation reveals unaligned risk/hazard list.</li>
+<li><strong>Pause / escalation trigger:</strong> any deployment going live without a DPO-signed DPIA (legal failure, not process); OR any DPIA stale &gt; 12 months past a significant change without re-review (regulatory exposure).</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#gv-cr-7">Threshold Reference: GV.CR-7</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Template compliance doesn't guarantee substantive risk analysis. "Completed" DPIAs that list "no residual risks identified" for a novel AVT deployment are likely inadequate regardless of template adherence. The Operational Specification's reconciliation-with-safety-case requirement creates a partial check on substantive quality (a DPIA that names no risks while the safety case names hazards is automatically flagged), but the gap between section-completion compliance and genuine analysis remains.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The NHSE template provides common structure across deployments, which has three benefits: (1) makes comparison possible across sites, (2) ensures mandatory considerations aren't missed, (3) creates an evidence base for national-level risk analysis. Template non-use isn't necessarily non-compliance with UK GDPR (bespoke DPIAs can be legitimate) but it loses the aggregation benefit. Tracking template use rate is a proxy for how consistently the governance infrastructure is being built.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../environmental-sustainability/#gv-en-1">GV.EN-1 Energy Consumption per Clinical Note</a> · <a href="../environmental-sustainability/#gv-en-2">GV.EN-2 Carbon Emissions per Inference</a> · <a href="../privacy-data-governance/#gv-pd-8">GV.PD-8 Consent Verification Accuracy</a></p>
+<hr />
+<h3 id="gv-cr-8">GV.CR-8 🟡 DSPA Status<a class="headerlink" href="#gv-cr-8" title="Permanent link">&para;</a></h3>
+<p>Existence and currency of Data Sharing/Processing Agreements with all data processors involved in AVT operation. UK GDPR Article 28 requires written agreements with processors, and cloud-hosted AVT typically involves multiple processors (primary vendor, cloud provider, model provider, annotation services). Related to the existing Sub-Processor Transparency metric but specifically focuses on the contractual agreements rather than the disclosure of sub-processors.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-8</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#uk-gdpr">UK GDPR</a> Article 28; NHS data protection guidance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Legal compliance requirement. Annual audit recommended. Slightly lower tier than DPIA because absence of DSPA is more commonly an oversight than a structural governance failure - but still a legal requirement.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>DSPA Status per processor: (a) agreement in place (binary); (b) agreement currency (signed within last 2 years or since last significant change); (c) agreement covers all processing activities actually performed by that processor; (d) UK GDPR Article 28 mandatory clauses present. Full compliance requires all four per processor. Aggregate metric: |processors_fully_compliant| / |total_processors|.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Agreement existence doesn't guarantee processor compliance with the agreement. Cross-border processors may have limited enforceability. Complex sub-processor chains make coverage verification difficult.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 DSPAs are where the legal rubber meets the road. A deployer with a DPIA but no DSPAs has documented the risks without contractually binding the processors to manage them. This is a common gap because DPIAs are visible in NHS audit processes while DSPAs are often handled by legal departments outside the IG team's line of sight.</p>
+</blockquote>
+<hr />
+<h3 id="gv-cr-9">GV.CR-9 🟡 FDA PCCP-Equivalent Pre-Defined Acceptance Criteria<a class="headerlink" href="#gv-cr-9" title="Permanent link">&para;</a></h3>
+<p>Whether the vendor has pre-specified quantitative acceptance criteria that any model update must meet before being deployed to production. FDA Predetermined Change Control Plans (finalised December 2024) require this for US-market medical device AI. Even in UK-only deployments, it matters because: (1) EU-market vendors cascade similar requirements through the EU AI Act, and (2) the existence of pre-defined acceptance criteria is a proxy for mature change control regardless of regulatory jurisdiction.</p>
+<p><strong>Change history:</strong> v5.4.0 (formalised parent + sub-part relationship with <a href="../safety-governance/#gv-sg-18">GV.SG-18 PCCP Documentation Completeness</a> — GV.CR-9 is the parent (substantive quality of acceptance criteria), GV.SG-18 is the sub-part (structural completeness of the documented PCCP); both metrics needed for full PCCP assurance).</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-9</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#fda-pccp-guidance-2024">FDA-PCCP-Guidance-2024</a>; <a href="../../references/#eu-ai-act">EU-AI-Act</a> Article 15; <a href="../../references/#nice-esf">NICE ESF (ECD7)</a> 2022 AI updates</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Procurement assessment. Should be standard due diligence for any AVT acquisition. Vendors without PCCP-equivalent frameworks are a higher governance risk.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Assessment against criteria: (1) Performance acceptance thresholds pre-specified and quantitative; (2) Regression test suite defined and maintained; (3) Fairness/equity criteria included in acceptance testing; (4) Rollback procedure specified if update fails acceptance post-deployment; (5) Documentation of acceptance decisions available for audit. Binary per criterion; full compliance = all five.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Vendors may claim PCCP equivalence without independent verification. The substantive quality of acceptance criteria matters more than their existence - a criterion like "WER not more than 20% worse" technically exists but provides no meaningful safety floor. The structural-completeness counterpart <a href="../safety-governance/#gv-sg-18">GV.SG-18 PCCP Documentation Completeness</a> tests whether the documented plan has all the structural elements (scope statement, audit-trail commitment) that this metric assumes; both are needed.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 PCCP is a structural shift in how AI medical devices are regulated - from approving specific models to approving the change control process. For AVT specifically, this is essential because continuous model improvement is expected, and ad-hoc change control makes every update a regulatory event. NHS procurement should treat PCCP-equivalent frameworks as the baseline expectation, not a differentiator, even though the formal PCCP framework applies to US-market devices.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a> · <a href="#gv-cr-10">GV.CR-10 EU AI Act Event Logging Compliance</a> · <a href="#gv-cr-4">GV.CR-4 AVT Supplier Registry Listing Verification</a> · <a href="../operational/#gv-op-7">GV.OP-7 Cost per Consultation</a> · <a href="../safety-governance/#gv-sg-1">GV.SG-1 Model Version Tracking</a> · <a href="../safety-governance/#gv-sg-2">GV.SG-2 Model Update Impact Score</a></p>
+<hr />
+<h3 id="gv-cr-10">GV.CR-10 🟡 EU AI Act Event Logging Compliance<a class="headerlink" href="#gv-cr-10" title="Permanent link">&para;</a></h3>
+<p>Compliance with EU AI Act Article 12 automatic event logging requirements for high-risk AI systems. High-risk provisions became effective August 2026. Applies to any AVT vendor with EU market exposure, and cascades into UK deployment because vendors typically apply the strictest applicable regulatory regime uniformly across their product rather than maintaining jurisdiction-specific variants.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-10</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Limitation</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#eu-ai-act">EU-AI-Act</a> Article 12 (high-risk provisions effective August 2026)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor-side regulatory requirement. Deployer should verify event logging infrastructure exists and receive logs for foreseeable-misuse investigation. Important for incident investigation capability.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Event logging must capture: (1) period of use (start, duration, stop per session); (2) reference database used; (3) input data that led to output; (4) natural persons involved in verification of output. Logging must be automatic, not opt-in. Retention period specified in vendor policy and aligned with EU AI Act minimums. Deployer verification: can the vendor provide a complete event log for any given encounter on request within a reasonable timeframe?
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Full logging creates large data volumes and storage costs. Logging of input data conflicts with data minimisation principles - resolving this requires careful policy design. Deployer verification is manual and sample-based.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Event logging is the infrastructure that supports retrospective incident investigation. Without it, when an AVT error causes harm six months after the fact, the investigation has nothing to work with - the clinician may not remember the encounter, the patient certainly won't remember the AI's behaviour, and the vendor has no logs to reconstruct what happened. The EU AI Act requirement is essentially mandating the infrastructure for forensic investigation of AI clinical systems, which is a governance improvement regardless of jurisdiction.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../safety-governance/#gv-sg-1">GV.SG-1 Model Version Tracking</a> · <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a> · <a href="#gv-cr-4">GV.CR-4 AVT Supplier Registry Listing Verification</a> · <a href="#gv-cr-5">GV.CR-5 ICB Engagement Documentation</a> · <a href="#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a></p>
+<hr />
+<h3 id="gv-cr-11">GV.CR-11 🟢 Medical Device Classification Documentation<a class="headerlink" href="#gv-cr-11" title="Permanent link">&para;</a></h3>
+<p>Whether the AVT system's MHRA SaMD classification (Class I / IIa / IIb / III) is documented with a clear justification, and whether that documentation is accessible to the deployer before go-live. NHS AVT Self-Certified Supplier Registry submissions require Class I status; deployers need to verify the classification is correctly assigned and that the underlying intended-purpose statement matches their intended use.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-11</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor; Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#mhra-samd">MHRA SaMD/AIaMD guidance</a>; FTS notice 069369-2025 Step 1.h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>FTS Step 1.h directly requires submission of MHRA classification evidence, and the FTS notice explicitly anchors the Registry on Class I status. Deployer due-diligence cannot proceed without confirmed classification — wrong classification means wrong regulatory regime applies to monitoring, change control, and post-market surveillance.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Pass per criterion: (1) Classification stated (Class I / IIa / IIb / III); (2) Intended-purpose statement provided and matches deployer use case; (3) Justification for classification grounded in MHRA SaMD framework risk-class rules; (4) UKCA / CE marking status declared where applicable; (5) Documentation dated and accessible to deployer pre-contract. Full pass = all five.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Vendor self-classification is the norm for Class I devices; MHRA does not pre-approve Class I classifications. Wrong classification (typically under-classification) is a known regulatory risk and only surfaces on inspection or incident. The metric verifies that documentation exists and is internally consistent — not that the classification is independently correct.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Treating classification documentation as a Tier 1 gate makes the regulatory regime explicit rather than implicit. Deployers who skip this step inherit whatever classification the vendor decided was convenient — which may not survive an MHRA inspection if AVT outputs are later judged to influence diagnosis or treatment beyond the Class I "drives clinical workflow" framing.</p>
+</blockquote>
+<hr />
+<h3 id="gv-cr-12">GV.CR-12 🟢 Board-Level AI Governance Mechanism<a class="headerlink" href="#gv-cr-12" title="Permanent link">&para;</a></h3>
+<p>Whether the deploying organisation has a named board-level committee or director with explicit oversight of AI clinical systems, and whether AI-related risk and assurance items appear on its agenda with documented frequency. This is a CQC well-led inspection point and a Responsible AI Playbook Principle 10 (organisational assurance) requirement; AVT specifically tests it because ambient scribes touch every clinical encounter and create a class of risk that deserves named accountability.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-12</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Governance</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Limitation</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#cqc">CQC</a> well-led KLOEs; DSIT AI Playbook Principle 10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Cross-framework leverage: CQC well-led + RAI Theme 4 (Accountability) + RAI Principle 10 + DTAC C3.1 all converge on board-level AI governance. Without a named accountability point, AI incident response, change-control approval, and equity monitoring have no escalation path. Tier 1 because the absence of board-level governance is a deployment-blocking gap visible to any well-run inspection.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Pass per criterion: (1) Named board committee or executive director with AI oversight in their formal remit; (2) Terms of reference reference AI clinical systems specifically (not just &quot;digital&quot;); (3) Quarterly minimum agenda cadence with minuted AI items; (4) Escalation path defined for AI-related incidents from operational tier to the named owner; (5) Annual review of AI portfolio risk presented at board level. Full pass = all five; partial pass triggers review.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Existence of a committee is not the same as effective governance. A committee that meets quarterly but rubber-stamps vendor reports provides no real assurance. The metric is necessary but not sufficient — it should be paired with substantive metrics (e.g. GV.SG-3 performance-degradation detection, GV.CR-11 classification documentation, IO.FE-1 deployment equity) to test whether the committee is actually exercising oversight.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The absence of board-level AI governance has been a consistent finding in NHS AI early-adopter inspections. Making this Tier 1 reflects the lesson from those inspections: the operational AI capability arrived ahead of the governance structure to oversee it. AVT, because it touches almost every clinical encounter, is the use case that forces the issue — there is no defensible "we'll add governance once we have enough deployments" argument when the deployment is enterprise-wide on day one.</p>
+</blockquote>
+<hr />
+<h3 id="gv-cr-13">GV.CR-13 🟡 Refusal Impact-Explanation Quality<a class="headerlink" href="#gv-cr-13" title="Permanent link">&para;</a></h3>
+<p>When a patient declines AVT use for their consultation, NHSE IG explicitly requires the clinician to explain <em>how</em> refusal affects care. This metric measures the quality of that explanation — distinct from [GV.CR-1 Patient Dissent Recording Rate], which measures whether the dissent itself was recorded. The current implementation uses a placeholder rubric ("structured per local IG officer review"); a piloted national rubric is a known follow-up.</p>
+<p><strong>Change history:</strong> v5.5.0 (Source row updated — <code>(section ref to be added on next pass)</code> placeholder replaced with topic-cited content reference; the parent NHSE IG guidance hub does not currently expose a stable section anchor).</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-13</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Patient Experience</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Clinician; Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>NHSE IG Attestation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a> — transparency / dissent-handling content (parent guidance hub does not currently expose a stable section anchor; topic-cited)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Tier 2 because the measurement methodology depends on a rubric that is not yet piloted at scale. NHSE IG names the requirement explicitly, so the substantive obligation is Tier 1 in spirit; the metric stays Tier 2 until a rubric is available that makes the measurement repeatable across deployers. Maturity is Proposed/Novel for the same reason — the rubric placeholder is acknowledged as an interim measure (see triage §"Outstanding follow-ups after v5.3.0").</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Sample-based audit: in a sampled set of recorded refusals, the recorded explanation is reviewed against a local rubric covering at minimum: (1) impact on documentation completeness named explicitly; (2) impact on consultation duration named explicitly; (3) any clinical-pathway implications named (e.g. delayed coding, manual letter-writing); (4) explanation given in plain language without coercion; (5) patient question response captured. Pass = ≥4 of 5 per refusal; metric reports the proportion of sampled refusals passing.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>The rubric is not yet piloted at national level; placeholder rubric is "structured per local IG officer review", which is not cross-deployer-comparable. Maturity: Proposed/Novel until a piloted rubric is published — the metric is structurally well-formed but the substantive scoring depends on local rubric quality. Future minor release should re-source against a piloted rubric and lift Maturity to Emerging.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The "explain the impact of refusal" requirement is the kind of patient-facing communication obligation that sits between clinical-process metrics and patient-experience metrics. Without a piloted rubric, the requirement is real but the measurement is uneven. Treating it as a Proposed/Novel Tier 2 metric records the obligation in the catalogue without over-claiming the measurement maturity — and creates the placeholder under which a rubric pilot can later land.</p>
+</blockquote>
+<hr />
+<h3 id="gv-cr-14">GV.CR-14 🟢 Consultation-Type Appropriateness Assessment<a class="headerlink" href="#gv-cr-14" title="Permanent link">&para;</a></h3>
+<p>Whether the deployer has a documented assessment of which consultation types AVT is appropriate for, which require carve-outs, and which are excluded — covering at minimum safeguarding, mental health, paediatrics, intimate examinations, and end-of-life conversations. The assessment must specify how the carve-out is enforced (clinician opt-out, admin-time exclusion list, or AVT-side detection) and how compliance is monitored.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>GV.CR-14</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer; Clinician</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#caldicott">Caldicott</a> Principle 1 (justify the purpose); RCGP / RCPsych sensitive-consultation guidance</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Sensitive consultations carry the highest combined privacy and safety risk in AVT. Failure to identify carve-outs in advance produces incidents where patient disclosures (abuse, suicidality, intimate-exam findings) are recorded by an ambient system the patient may not know is running. Tier 1 because the cost of getting this wrong is a serious safeguarding or duty-of-confidence breach.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Pass per criterion: (1) Documented list of consultation types triaged into &quot;AVT-suitable&quot;, &quot;AVT with carve-out&quot;, &quot;AVT-excluded&quot;; (2) Carve-out enforcement mechanism specified per category (clinician toggle, scheduling exclusion, AVT-side disable); (3) Monitoring of carve-out compliance — sampled or 100% — defined; (4) Caldicott Guardian sign-off on the categorisation; (5) Annual review reflecting incident learning. Full pass = all five.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>The metric tests that an assessment exists, not that it's correct for a specific patient cohort. A practice serving a high-deprivation population may need different carve-outs than a private practice; the metric does not currently weight by population. AVT-side detection of sensitive content is technically immature — most carve-outs in 2026 deployments rely on clinician toggle, which is bypassable.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The carve-out conversation is the part of AVT deployment most often deferred to "we'll work it out as we go". Making it a Tier 1 documented assessment forces the conversation pre-deployment, which is the only time it can be done thoughtfully. After deployment, every individual carve-out request becomes an incident to defend rather than a category to plan for.</p>
+</blockquote>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Spotted an error or disagree with a tier?</p>
+<p>This catalogue is a <a href="../../prototype-status/">prototype-for-discussion</a>, and feedback on specific metrics is exactly what shapes the next version. Open an issue and pick the template that fits:</p>
+<ul>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=01-factual-error.yml">Factual error</a> — a claim, citation, threshold, or formula in a metric body looks wrong.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=02-tier-disagreement.yml">Tier disagreement</a> — a metric is at the wrong priority tier for your context.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=03-missing-metric.yml">Missing metric / gap</a> — an assurance question that should be in the catalogue but isn't.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=04-broken-link.yml">Broken link / site bug</a> — internal link, dead citation, rendering issue.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=05-feedback.yml">Framing feedback</a> — higher-level concern about principles, dimensions, or scope.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="/avt-metrics-taxonomy/feed_rss_updated.xml" target="_blank" rel="noopener" title="RSS - CHANGELOG updates" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64m0 352a64 64 0 1 1 128 0 64 64 0 1 1-128 0m32-256c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" target="_blank" rel="noopener" title="Source on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

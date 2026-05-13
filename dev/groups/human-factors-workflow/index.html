@@ -1,0 +1,6665 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Healthcare metrics taxonomy for assuring Ambient Voice Technology in NHS and comparable settings">
+      
+      
+      
+        <link rel="canonical" href="https://dobsonrd.github.io/avt-metrics-taxonomy/dev/groups/human-factors-workflow/">
+      
+      
+        <link rel="prev" href="../end-to-end-pipeline/">
+      
+      
+        <link rel="next" href="../patient-experience/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Human Factors & Workflow - Prototype AVT Metrics Taxonomy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hl-hf-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <strong>AI-coauthored prototype for discussion — v5.5.13.</strong> Substantial portions of this taxonomy were drafted with AI assistance and human-reviewed; <strong>specific claims, citations, and threshold numbers may still contain confabulations or factual errors</strong> despite review. Keep this front of mind, verify before use, and please flag anything that looks wrong — feedback on errors is genuinely welcome. This is shared to provoke conversation, not as a settled standard or procurement gate. See the
+  <a href="../../prototype-status/" style="color: inherit; text-decoration: underline;">prototype status</a> page for what you're invited to do (and what you shouldn't), the
+  <a href="../../changelog/" style="color: inherit; text-decoration: underline;">changelog</a> for recent changes, and the
+  <a href="../../gaps/" style="color: inherit; text-decoration: underline;">roadmap</a> for what's pending.
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prototype AVT Metrics Taxonomy" class="md-header__button md-logo" aria-label="Prototype AVT Metrics Taxonomy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prototype AVT Metrics Taxonomy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Human Factors & Workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dobsonrd/avt-metrics-taxonomy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how-to-use/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  How to use
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dimensions-overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Dimensions overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tier-1-quick-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick start (Tier 1)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../contents/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Browse metrics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../applicability/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Principles & frameworks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../crosscuts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Catalogue views
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gaps/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap (Gaps)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prototype-status/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prototype AVT Metrics Taxonomy" class="md-nav__button md-logo" aria-label="Prototype AVT Metrics Taxonomy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Prototype AVT Metrics Taxonomy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dobsonrd/avt-metrics-taxonomy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dimensions-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimensions overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tier-1-quick-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start (Tier 1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browse metrics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Browse metrics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP - Technical Pipeline
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TP - Technical Pipeline
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-capture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Capture & Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asr-transcription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASR / Transcription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diarisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diarisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summarisation-nlp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summarisation / NLP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clinical-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downstream-write-back/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downstream Write-back
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PI - Pipeline Interactions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PI - Pipeline Interactions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partial-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Partial-Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../end-to-end-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End-to-End Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HL - The Human Layer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HL - The Human Layer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Human Factors & Workflow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Human Factors & Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-1 🟢 Edit Rate (% Notes Edited)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-2 🟡 Edit Type Classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-3 🟢 Inadequate-Review Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-3a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-3a 🟢 Review-Before-Signing Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-3b 🟢 Time-to-Sign Distribution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-5 🔵 Edit-Pattern Monitoring at Scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-6 🟡 Automation Bias Detection (Error Injection)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-7 🟡 Edit Location Distribution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-8 🟡 Trust Calibration Survey
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-9 🟡 Re-record / Abandonment Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-10 🔵 Cognitive Load Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-11 🔵 Inter-Clinician Edit Variance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-12 🔵 Clinical Documentation Skill Attenuation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-13 🔵 Cognitive Offloading Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-14 🔵 Trust Halo Decay Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-15 🔵 Note Review Fatigue Trajectory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sociotechnical-resilience-sub-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sociotechnical &amp; Resilience sub-cluster
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-16 🔵 Work-as-Imagined vs Work-as-Done Gap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-17 🟡 Verification Burden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-18 🔵 Resilience Capacities Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-19 🟡 AI-Off Performance Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IO - Impact & Outcomes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IO - Impact & Outcomes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../patient-experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patient Experience
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fairness-equity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fairness & Equity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GV - System Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GV - System Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../safety-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Safety & Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nhs-compliance-regulatory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS Compliance & Regulatory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-adversarial-robustness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security & Adversarial Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy-data-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy & Data Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environmental-sustainability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environmental & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../training-competency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training & Competency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vendor-transparency-contractual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendor Transparency & Contractual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_7" id="__nav_5_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ES - Evaluation Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ES - Evaluation Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta-evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principles & frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Principles & frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../families/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Families
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outcomes-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcomes Boundary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../calibration-and-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calibration & Context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers-of-defence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layers of Defence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../failure-pathways/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure Pathways
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Substrate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responsible-ai-lens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Responsible AI Lens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../crosscuts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalogue views
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Catalogue views
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By applicability
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By applicability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/avt-specific/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVT-Specific
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/avt-contextualised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVT-Contextualised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Healthcare AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By family
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By family
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/clinical-content-fidelity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Content Fidelity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/reference-based-text-similarity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference-Based Text Similarity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/clinical-transcription-accuracy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Transcription Accuracy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/post-generation-correction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-Generation Correction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/medication-safety-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medication Safety Thread
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/demographic-equity-disaggregation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demographic Equity Disaggregation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/nhse-ig-attestation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHSE IG Attestation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/prsb-semantic-completeness-write-back-fidelity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRSB Semantic Completeness & Write-back Fidelity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By layer of defence
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By layer of defence
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/prevention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prevention
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/limitation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By AI substrate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By AI substrate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/pre-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Substrate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/post-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-mediated-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Mediated Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-agnostic-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Agnostic Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By Playbook principle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By Playbook principle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P1 - Limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P2 - Lawful/ethical
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P3 - Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P4 - Human control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P5 - Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P6 - Right tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P7 - Openness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P8 - Commercial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P9 - Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P10 - Org assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By ethical theme
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By ethical theme
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T1 - Safety, Security, Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T2 - Transparency & Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T3 - Fairness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T4 - Accountability & Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T5 - Contestability & Redress
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T6 - Societal Wellbeing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By standard
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By standard
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dtac-digital-technology-assessment-criteria-v2-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DTAC v2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dspt-data-security-and-protection-toolkit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSPT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dcb0129-dcb0160/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DCB0129 / DCB0160
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-england-llm-evaluation-and-monitoring-framework-v0-2-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS LLM Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-t-e-s-t-framework-technology-evaluation-safety-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS T.E.S.T.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-england-avt-self-certified-supplier-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHSE AVT Registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/mhra-software-and-ai-as-a-medical-device-samd-aiamd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MHRA SaMD/AIaMD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nice-evidence-standards-framework-for-digital-health-technologies-ecd7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NICE ESF (ECD7)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/fhir-uk-core-interopen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FHIR UK Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap (Gaps)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prototype-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prototype status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downloads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downloads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thresholds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threshold Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metric-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metric history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-1 🟢 Edit Rate (% Notes Edited)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-2 🟡 Edit Type Classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-3 🟢 Inadequate-Review Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-3a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-3a 🟢 Review-Before-Signing Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-3b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-3b 🟢 Time-to-Sign Distribution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-5 🔵 Edit-Pattern Monitoring at Scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-6 🟡 Automation Bias Detection (Error Injection)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-7 🟡 Edit Location Distribution
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-8 🟡 Trust Calibration Survey
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-9 🟡 Re-record / Abandonment Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-10 🔵 Cognitive Load Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-11 🔵 Inter-Clinician Edit Variance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-12 🔵 Clinical Documentation Skill Attenuation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-13 🔵 Cognitive Offloading Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-14 🔵 Trust Halo Decay Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-15 🔵 Note Review Fatigue Trajectory
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sociotechnical-resilience-sub-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sociotechnical &amp; Resilience sub-cluster
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-16 🔵 Work-as-Imagined vs Work-as-Done Gap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-17 🟡 Verification Burden
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-18 🔵 Resilience Capacities Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl-hf-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HL.HF-19 🟡 AI-Off Performance Test
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Human Factors & Workflow</h1>
+
+<h3 id="hl-hf-1">HL.HF-1 🟢 Edit Rate (% Notes Edited)<a class="headerlink" href="#hl-hf-1" title="Permanent link">&para;</a></h3>
+<p>Percentage of AI notes edited before approval. At Day Zero: quality signal. Declining trajectory: primary complacency indicator.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-1</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Day Zero Baseline, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Post-Generation Correction</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a>; <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a>; <a href="../../references/#keyes-stanford-monitoring-2025">Keyes et al. (Stanford, 2025)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Primary continuous complacency indicator. Deployer-measurable from EPR workflow data. NAS Day Zero SPI. The single most important human factors metric - trajectory reveals automation bias before incidents occur.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ER(t) = |N_edited(t)| / |N_total(t)|. Complacency signal: dER/dt &lt; 0 sustained ≥4 weeks without AI accuracy improvement. Alert: ER drops &gt;15pp from baseline within 3 months.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>EPR or AVT-product telemetry capturing the post-generation, pre-signature note-state diff. An "edit" is any change to the AI-generated text between AI output and clinician signature. Out of scope: changes after signature (correction workflows are tracked under <a href="../safety-governance/#gv-sg-15">GV.SG-15 Time-to-Correct</a>, not Edit Rate). Edit detection MUST distinguish:</p>
+<ul>
+<li><strong>Substantive edits</strong> - additions, deletions, or modifications that alter clinical meaning (default count for ER)</li>
+<li><strong>Stylistic edits</strong> - formatting, punctuation, casing, whitespace (reported separately, not counted in headline ER)</li>
+</ul>
+<p>Where the diff cannot reliably classify substantive vs stylistic, count as substantive. The classification rule MUST be documented and held constant across the deployment; vendors changing the rule must declare a baseline reset (see Operational Specification).</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> weekly aggregate per clinician and per deployment site. Continuous monitoring (the Cadence above); weekly granularity is the floor for trajectory analysis.</li>
+<li><strong>Population:</strong> all AI-generated notes signed by the clinician during the window. Exclude notes where the clinician aborted the AI workflow before signature (these belong under <a href="#hl-hf-9">HL.HF-9 Re-record / Abandonment Rate</a>).</li>
+<li><strong>Baseline establishment MANDATORY:</strong> the deployment baseline is the mean weekly ER across the first 4 weeks of clinician live use, computed per clinician (not pooled). All complacency-alert calculations are referenced to this per-clinician baseline.</li>
+<li><strong>Severity stratification MANDATORY:</strong> edits classified as <strong>safety-critical</strong> (allergy, medication, dose, red-flag, diagnosis, plan), <strong>clinically meaningful</strong> (history, exam findings, risk-factor wording), or <strong>stylistic</strong>. Headline ER is over substantive (safety-critical + clinically-meaningful) edits; safety-critical edit rate reported separately as a leading indicator.</li>
+<li><strong>Per-clinician disaggregation MANDATORY:</strong> site-level ER hides individual complacency. Reporting must include per-clinician trajectories alongside aggregate.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the &gt; 15-percentage-point drop sustained ≥ 4 weeks comes from the existing Formal Definition complacency signal (carried from prior versions of the metric); the 30–80 % baseline range, the &lt; 50 %-of-baseline pause trigger, and the zero-safety-critical-edits-with-continued-stylistic-editing trigger are <strong>proposed in v3.3 as starting points</strong>, not externally validated. Edit Rate is <strong>interpretable only as a trajectory</strong> (per Limitations and Novel Thinking); absolute thresholds below are deployment-context-dependent and require local calibration before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment / Day Zero baseline expectation:</strong> substantive ER between 30 % and 80 % during the first 4 weeks. ER below 30 % in week 1 is a flag for inadequate review, not for excellent AI.</li>
+<li><strong>Continuous monitoring alert:</strong> substantive ER drops &gt; 15 percentage points from the per-clinician baseline within any 12-week rolling window, sustained ≥ 4 weeks (the existing complacency signal in the Code block).</li>
+<li><strong>Pause / review trigger:</strong> substantive ER &lt; 50 % of per-clinician baseline for 4 consecutive weeks, OR safety-critical edit rate drops to zero for ≥ 4 weeks while substantive edit rate remains &gt; 10 % (suggests clinicians are stopping their safety review while continuing minor editing). Triggers trust-calibration review and pairing with HL.HF-6 Automation Bias Detection.</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#hl-hf-1">Threshold Reference: HL.HF-1</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Code: Edit rate complacency detection</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">linregress</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">detect_complacency</span><span class="p">(</span><span class="n">weekly_rates</span><span class="p">,</span> <span class="n">baseline_weeks</span><span class="o">=</span><span class="mi">4</span><span class="p">):</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">weekly_rates</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;week&quot;</span><span class="p">,</span><span class="s2">&quot;rate&quot;</span><span class="p">])</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">baseline</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">week</span> <span class="o">&lt;=</span> <span class="n">baseline_weeks</span><span class="p">][</span><span class="s2">&quot;rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">alerts</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">baseline_weeks</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">-</span><span class="mi">3</span><span class="p">):</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="n">window</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="mi">4</span><span class="p">]</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="n">slope</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">linregress</span><span class="p">(</span><span class="n">window</span><span class="p">[</span><span class="s2">&quot;week&quot;</span><span class="p">],</span> <span class="n">window</span><span class="p">[</span><span class="s2">&quot;rate&quot;</span><span class="p">])</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>        <span class="n">current</span> <span class="o">=</span> <span class="n">window</span><span class="p">[</span><span class="s2">&quot;rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="k">if</span> <span class="n">slope</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.02</span> <span class="ow">and</span> <span class="n">p</span> <span class="o">&lt;</span> <span class="mf">0.1</span> <span class="ow">and</span> <span class="n">baseline</span> <span class="o">-</span> <span class="n">current</span> <span class="o">&gt;</span> <span class="mf">0.15</span><span class="p">:</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>            <span class="n">alerts</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>                <span class="s2">&quot;week&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">window</span><span class="p">[</span><span class="s2">&quot;week&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>                <span class="s2">&quot;current&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>                <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;COMPLACENCY_REVIEW&quot;</span><span class="p">})</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;baseline&quot;</span><span class="p">:</span> <span class="nb">round</span><span class="p">(</span><span class="n">baseline</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="s2">&quot;alerts&quot;</span><span class="p">:</span> <span class="n">alerts</span><span class="p">}</span>
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Abridge</strong>: <a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a> — edit-pattern methodology</li>
+<li><strong>NAS</strong>: <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a></li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Ambiguous alone: low rate = good AI or poor review. Requires triangulation.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Trajectory matters more than absolute value. 60% → 15% in 3 months should trigger review regardless of AI accuracy.</p>
+</blockquote>
+<p><em>See also: Edit Type Classification, Edit Location Distribution, Edit-Pattern Monitoring at Scale - all members of the Post-Generation Correction family. Edit Rate is the binary entry point; the other metrics add diagnostic depth. Interpret alongside Review-Before-Signing Rate and Time-to-Sign Distribution to distinguish improving AI from increasing complacency.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../vendor-transparency-contractual/#gv-vt-5">GV.VT-5 Incident Disclosure Compliance</a> · <a href="#hl-hf-17">HL.HF-17 Verification Burden</a> · <a href="#hl-hf-6">HL.HF-6 Automation Bias Detection (Error Injection)</a> · <a href="#hl-hf-8">HL.HF-8 Trust Calibration Survey</a> · <a href="#hl-hf-9">HL.HF-9 Re-record / Abandonment Rate</a></p>
+<hr />
+<h3 id="hl-hf-2">HL.HF-2 🟡 Edit Type Classification<a class="headerlink" href="#hl-hf-2" title="Permanent link">&para;</a></h3>
+<p>Categorising edits: additions (omission fix), deletions (hallucination fix), modifications, structural. Distribution diagnoses failure mode.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-2</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor, Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Post-Generation Correction</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a>; <a href="../../references/#deepscore">DeepScore</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>More granular than edit rate - diagnoses failure mode (additions = omission problem, deletions = hallucination problem). Requires NLP classification but adds substantial diagnostic value.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Type(e) ∈ {Addition, Deletion, Modification, Structural}. P_add &gt;&gt; P_del → omission-dominant; P_del &gt;&gt; P_add → hallucination-dominant. Track over time to assess model updates.
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Abridge</strong>: vendor-reported deployment scale (millions of encounters per month across 150+ health systems per <a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a>)</li>
+<li><strong>DeepScore</strong>: vendor-disclosed evaluation scale (~135,900 notes per <a href="../../references/#deepscore">DeepScore</a> methodology page)</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Automated classification requires NLP.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Mostly additions = omission problem; mostly deletions = hallucination problem.</p>
+</blockquote>
+<p><em>See also: Edit Rate, Edit Location Distribution, Edit-Pattern Monitoring at Scale - all members of the Post-Generation Correction family. Type classification is where the family becomes diagnostic rather than just descriptive: predominantly additions indicate an omission-dominant failure mode; predominantly deletions indicate a hallucination-dominant mode.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#hl-hf-1">HL.HF-1 Edit Rate (% Notes Edited)</a> · <a href="#hl-hf-17">HL.HF-17 Verification Burden</a> · <a href="#hl-hf-19">HL.HF-19 AI-Off Performance Test</a> · <a href="#hl-hf-6">HL.HF-6 Automation Bias Detection (Error Injection)</a> · <a href="#hl-hf-7">HL.HF-7 Edit Location Distribution</a> · <a href="#hl-hf-8">HL.HF-8 Trust Calibration Survey</a></p>
+<hr />
+<h3 id="hl-hf-3">HL.HF-3 🟢 Inadequate-Review Detection<a class="headerlink" href="#hl-hf-3" title="Permanent link">&para;</a></h3>
+<p>Parent construct covering two complementary telemetry approaches to detecting inadequate clinician review of AVT-generated content. The two sub-parts (HL.HF-3a Review-Before-Signing Rate, HL.HF-3b Time-to-Sign Distribution) are different windows on the same underlying question — <em>is the clinician genuinely reviewing the AI output before signing it?</em> — and v3.4's tightening of the time-to-sign sub-part already mandated pairing with the review-before-signing sub-part. v3.7 makes the conjunction explicit at the construct level.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-3</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a>; <a href="../../references/#keyes-stanford-monitoring-2025">Keyes et al. (Stanford, 2025)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>NAS Day Zero SPI is gated on review-quality detection; the construct is foundational human-factors assurance and is composed of two telemetry channels reported jointly. See sub-parts HL.HF-3a (binary review-event signal) and HL.HF-3b (time-to-sign distribution) for the implementation detail.</p>
+</blockquote>
+<p><strong>Construct framing</strong></p>
+<blockquote>
+<p>Inadequate review can be detected from EPR / AVT workflow telemetry in two complementary ways:</p>
+<ul>
+<li><strong>HL.HF-3a Review-Before-Signing Rate</strong> (was HL.HF-3 pre-v3.7) — binary per-note signal from edit / scroll / dwell-above-threshold events. Catches notes where review demonstrably did not happen at all.</li>
+<li><strong>HL.HF-3b Time-to-Sign Distribution</strong> (was HL.HF-4 pre-v3.7) — distribution of time from AVT note availability to clinician signature, normalised by word count. Catches notes where review happened too fast to be meaningful (rubber-stamping pattern).</li>
+</ul>
+<p>Each alone is ambiguous: a note with edit-events but signed in 2 seconds may still be a rubber-stamp; a note with no edit-events may still have been read carefully. Reported jointly, they discriminate genuine review from both no-review and rubber-stamping. The v3.4 tightening of HL.HF-3b mandates pairing with HL.HF-3a; v3.7 promotes that pairing into the parent construct.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Both sub-parts measure review <em>behaviour</em>, not review <em>quality</em>. A clinician scrolling for 30 seconds on a 200-word note has produced the right telemetry signal but may not have read it. The construct is a surrogate for review quality; pair with <a href="#hl-hf-6">HL.HF-6 Automation Bias Detection</a> (in-context error injection) and <a href="#hl-hf-19">HL.HF-19 AI-Off Performance Test</a> (counterfactual) for outcome-side checks on whether review behaviour is producing review quality. See <a href="../../calibration-and-context/">Calibration &amp; Context principle</a> — review-quality detection is materially different across specialties; rapid signing in a routine outpatient context is not the same signal as rapid signing in an A&amp;E majors workflow.</p>
+</blockquote>
+<hr />
+<h3 id="hl-hf-3a">HL.HF-3a 🟢 Review-Before-Signing Rate<a class="headerlink" href="#hl-hf-3a" title="Permanent link">&para;</a></h3>
+<p>Notes demonstrably reviewed before sign-off. Binary per-note signal from EPR / AVT telemetry: a note counts as "reviewed" if any of edit, scroll, or above-threshold dwell events occurred between AVT availability and signature. Sub-part of <a href="#hl-hf-3">HL.HF-3 Inadequate-Review Detection</a>; the construct framing for this sub-part lives at the parent.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-3a</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a>; <a href="../../references/#keyes-stanford-monitoring-2025">Keyes et al. (Stanford, 2025)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>NAS Day Zero SPI with ≥95% threshold and &lt;85% pause trigger. Deployer-measurable from EPR workflow telemetry. Directly monitors whether human oversight is functioning. <em>Was HL.HF-3 in v3.6 and earlier; promoted to sub-part of HL.HF-3 in v3.7 Phase 2.1.</em></p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>RBS = |N_reviewed| / |N_total|. N_reviewed = notes with edit events, scroll events, or dwell &gt; T_min. T_min = max(15s, 3s × word_count/100).
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>EPR + AVT product telemetry. A "review event" is any of three telemetry signals between AVT note availability (<code>t_generated</code>) and clinician signature (<code>t_approve</code>):</p>
+<ul>
+<li><strong>Edit event</strong> — any keystroke or text mutation in the note body (orthographic, semantic, or stylistic; no severity filter at this metric — severity classification is HL.HF-1's domain)</li>
+<li><strong>Scroll event</strong> — viewport movement within the note body, indicating the clinician moved past first-screen content</li>
+<li><strong>Dwell event</strong> — focused time on the note exceeding <code>T_min = max(15 s, 3 s × word_count / 100)</code> continuously</li>
+</ul>
+<p>Inter-rater target on event-classification: ICC ≥ 0.90 (mechanical telemetry signals; tighter than human-judgement metrics). Where the EPR cannot distinguish foreground from background dwell (clinician opens the note then switches tabs), the conservative interpretation is to count the elapsed time with the metric's limitation declared. Cross-link to <a href="#hl-hf-3b">HL.HF-3b Time-to-Sign Distribution</a> — pairing is mandatory; either signal alone is ambiguous.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> continuous; weekly aggregate per clinician and per practice.</li>
+<li><strong>Population:</strong> all AVT-generated notes signed by the clinician during the window. Notes signed by a different clinician (delegated workflow) excluded; flagged separately.</li>
+<li><strong>Per-clinician baseline MANDATORY:</strong> baseline RBS computed across the first 4 weeks of clinician live use; subsequent reporting referenced to per-clinician baseline (parallel to <a href="#hl-hf-1">HL.HF-1 Edit Rate</a> and <a href="#hl-hf-3b">HL.HF-3b</a>).</li>
+<li><strong>Pairing with HL.HF-3b MANDATORY:</strong> RBS is reported jointly with HL.HF-3b's TTS_norm distribution for the same clinician-window. The conjunction is the rubber-stamping signal — a note with edit events but TTS_norm &lt; 0.5 s/word passes RBS but fails HL.HF-3b. Headline construct-level reporting is the joint pair, not RBS alone.</li>
+<li><strong>T_min calibration:</strong> T_min as published is a default; per the <a href="../../calibration-and-context/">Calibration &amp; Context principle</a>, specialty mix shifts the threshold. A complex consultation summary in mental health may legitimately need longer dwell than a routine medication review; deployers should record local T_min calibration in their governance file.</li>
+<li><strong>Review-quality proxy gap:</strong> RBS is a surrogate for review <em>quality</em>, not a measure of it (see Limitations). Telemetry-detected review behaviour does not guarantee review effectiveness. The construct-level pairing with HL.HF-3b narrows but does not close the proxy gap.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the ≥ 95 % gate, &lt; 85 % pause trigger, and the T_min formula are cited from the <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a> specification. The 4-week per-clinician baseline window, the 60-day-grace re-calibration cadence, and the joint-with-HL.HF-3b rubber-stamping pause trigger are <strong>proposed in v3.8 as starting points</strong>, not externally validated. Per the <a href="../../calibration-and-context/">Calibration &amp; Context principle</a>, require local calibration against specialty mix and consultation-complexity profile before contractual use.</p>
+<ul>
+<li><strong>Pre-deployment / Day Zero gate:</strong> RBS ≥ 95 % aggregate during first-4-weeks baseline; per-clinician RBS ≥ 90 % each.</li>
+<li><strong>Continuous monitoring alert:</strong> weekly RBS &lt; 95 % aggregate; OR any single clinician's RBS drops &gt; 10 percentage points from per-clinician baseline; OR RBS passes but joint-with-HL.HF-3b shows TTS_norm P5 &lt; 0.5 s/word for the same clinician-window (rubber-stamping detected via the conjunction).</li>
+<li><strong>Pause / review trigger:</strong> RBS &lt; 85 % aggregate for two consecutive weeks (NAS pause trigger); OR per-clinician RBS &lt; 75 % for one week (individual-level severe failure); OR confirmed rubber-stamping pattern (low RBS AND low TTS_norm AND low HL.HF-1 substantive edit rate). Triggers trust-calibration review and pairing with HL.HF-6 Automation Bias Detection.</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#hl-hf-3a">Threshold Reference: HL.HF-3a</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>NAS</strong>: <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a> (≥95% threshold, &lt;85% pause trigger)</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Scrolling ≠ meaningful review. The T_min threshold values are concrete but unvalidated against actual review quality — see the parent construct's Limitations and the v3.4 classification artefact's note that this sub-part is a surrogate for review quality without a bounded proxy gap. The Operational Specification's mandatory pairing with HL.HF-3b narrows the gap (a note with edit events but rapid signature is caught by HL.HF-3b's tail analysis), but the joint signal still measures <em>behaviour</em>, not review <em>effectiveness</em>. v3.8+ work may add a quality bound via paired automation-bias error-injection (HL.HF-6) or counterfactual AI-off testing (HL.HF-19).</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 EPR should enforce architecturally: minimum dwell-time before approve activates. Pair with <a href="#hl-hf-3b">HL.HF-3b Time-to-Sign Distribution</a> — a note with edit-events but TTS_norm &lt; 0.5 s/word is rubber-stamping despite passing the binary review check.</p>
+</blockquote>
+<hr />
+<h3 id="hl-hf-3b">HL.HF-3b 🟢 Time-to-Sign Distribution<a class="headerlink" href="#hl-hf-3b" title="Permanent link">&para;</a></h3>
+<p>Distribution of duration between generation and approval. Model as distribution — the tail of very-fast approvals is safety-critical. Sub-part of <a href="#hl-hf-3">HL.HF-3 Inadequate-Review Detection</a>; the construct framing for this sub-part lives at the parent.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-3b</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>EPR workflow data; <a href="../../references/#keyes-stanford-monitoring-2025">Keyes et al. (Stanford, 2025)</a> principles</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Deployer-measurable from EPR data. The tail of very-fast approvals (&lt;5 seconds for complex notes) is the safety-critical population. Distribution analysis detects rubber-stamping patterns. <em>Was HL.HF-4 in v3.6 and earlier; promoted to sub-part of HL.HF-3 in v3.7 Phase 2.1; retains the v3.4 tightening pattern.</em></p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>TTS = t_approve - t_generated. Report: median, P5, P10, P90. Normalise: TTS_norm = TTS / word_count. Flag: TTS_norm &lt; 0.5s/word suggests rubber-stamping.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>EPR + AVT product telemetry. <code>t_generated</code> = the timestamp at which the AVT-generated note becomes visible to the clinician for review. <code>t_approve</code> = the clinician signature event on the note. The window between these two timestamps captures total review-and-edit duration; TTS does NOT include time before AVT note availability or time after signature. Where the clinician opens, leaves, and returns to the note, TTS counts only the foreground review time within the EPR session if the EPR can distinguish; otherwise the full elapsed time is used and the limitation declared.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Window:</strong> continuous; weekly distribution analysis per clinician.</li>
+<li><strong>Population:</strong> all AVT-generated notes signed during the window. Notes signed by a clinician other than the one to whom AVT was active (delegated workflows) excluded; flagged as a separate audit item.</li>
+<li><strong>Distribution reporting MANDATORY:</strong> P5, P10, median, P90 of TTS per clinician AND of TTS_norm (TTS / word_count). Single-number reporting (mean or median alone) is not Tier 1 sufficient - the safety signal lives in the lower tail.</li>
+<li><strong>Per-clinician baseline MANDATORY:</strong> baseline TTS_norm distribution computed across the first 4 weeks of clinician live use; subsequent reporting referenced to per-clinician baseline (parallel to <a href="#hl-hf-1">HL.HF-1 Edit Rate</a>).</li>
+<li><strong>Pairing with Edit Rate MANDATORY:</strong> TTS distribution reported alongside HL.HF-1 substantive edit rate for the same clinician-window. Low TTS + low substantive edit rate is the rubber-stamping signal; either alone is ambiguous.</li>
+<li><strong>Note-complexity stratification:</strong> report TTS_norm distribution stratified by note word count quartile (short / medium / long / very-long); rubber-stamping risk is most visible on long/complex notes signed at short-note speed.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the TTS_norm &lt; 0.5 s/word rubber-stamping flag and the lower-tail focus carry over from the existing Formal Definition and the <a href="../../references/#keyes-stanford-monitoring-2025">Keyes et al. (Stanford, 2025)</a> principles cited in Source. Specific numbers (P5 &lt; 0.3 s/word pause trigger, 4-week baseline window, 10 % below-baseline rate alert) are <strong>proposed in v3.4 as starting points</strong>, not externally validated. TTS is interpretable only as a distribution paired with edit rate; absolute thresholds below are deployment-context-dependent.</p>
+<ul>
+<li><strong>Pre-deployment / Day Zero baseline:</strong> establish per-clinician TTS_norm distribution across the first 4 weeks of live use; record P5, P10, median, P90.</li>
+<li><strong>Continuous monitoring alert:</strong> weekly P5 of TTS_norm &lt; 0.3 s/word for any clinician (the rubber-stamping floor); OR the proportion of notes with TTS_norm &lt; 0.5 s/word rises &gt; 10 percentage points from per-clinician baseline.</li>
+<li><strong>Pause / review trigger:</strong> weekly P10 of TTS_norm &lt; 0.3 s/word AND HL.HF-1 substantive edit rate &lt; 25 % for the same clinician-window (rubber-stamping confirmed in distribution and in editing behaviour). Triggers trust-calibration review and pairing with HL.HF-6 Automation Bias Detection.</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#hl-hf-3b">Threshold Reference: HL.HF-3b</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Code: Time-to-sign analysis</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">analyse_tts</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>  <span class="c1"># list of {seconds, word_count}</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">tts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;seconds&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data</span><span class="p">])</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">wc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">d</span><span class="p">[</span><span class="s2">&quot;word_count&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">data</span><span class="p">])</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">tts_norm</span> <span class="o">=</span> <span class="n">tts</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">wc</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="s2">&quot;median_s&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">tts</span><span class="p">)),</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="s2">&quot;p5_s&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">tts</span><span class="p">,</span> <span class="mi">5</span><span class="p">)),</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>        <span class="s2">&quot;rubber_stamp_pct&quot;</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">tts_norm</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">),</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>        <span class="s2">&quot;alert&quot;</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">tts_norm</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">0.3</span><span class="p">)}</span>
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Context-dependent. Must normalise by length/complexity.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The tail of very-fast approvals is the safety-critical population.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../nhs-compliance-regulatory/#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a> · <a href="../environmental-sustainability/#gv-en-1">GV.EN-1 Energy Consumption per Clinical Note</a></p>
+<hr />
+<h3 id="hl-hf-5">HL.HF-5 🔵 Edit-Pattern Monitoring at Scale<a class="headerlink" href="#hl-hf-5" title="Permanent link">&para;</a></h3>
+<p>Cross-system edit analysis at vendor-reported deployment scale (millions of encounters per month across 150+ health systems per <a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a>). Most scalable quality signal - locked inside one vendor.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-5</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Vendor-Proprietary</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Post-Generation Correction</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor-proprietary (Abridge). Scale advantage creates a data moat. Informs what a national standard should require all vendors to provide.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Aggregate across N systems: system-level distribution, edit type by specialty/template, temporal trends, outlier detection (&gt;2σ from fleet mean). Uses anytime-valid sequential testing.
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Abridge</strong>: <a href="../../references/#abridge-whitepaper-2025">Abridge whitepaper (2025)</a> (Liang, Oberst, Tan, Lipton 2025)</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Proprietary. Scale creates data moat.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 National standard should require standardised edit-pattern reporting from all vendors.</p>
+</blockquote>
+<p><em>See also: Edit Rate, Edit Type Classification, Edit Location Distribution - all members of the Post-Generation Correction family. Pattern monitoring operates at the fleet level to detect shifts invisible to any single deployer; informs what a national standard should require all vendors to provide.</em></p>
+<hr />
+<h3 id="hl-hf-6">HL.HF-6 🟡 Automation Bias Detection (Error Injection)<a class="headerlink" href="#hl-hf-6" title="Permanent link">&para;</a></h3>
+<p>Deliberately seeded errors to test clinician catch rate. The only metric directly measuring human oversight. All others are proxies.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-6</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Regional (ICB)</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Proposed in <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>The only metric that directly tests human oversight. Quarterly error injection audit. Ethically complex but feasible with appropriate safeguards. Should be Tier 1 aspiration for mature deployers.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Inject known errors at rate r (e.g. 1 in 50) with defined severity. Detection Rate DR = |E_caught| / |E_injected| per severity. Oversight Effectiveness OE = Σ(severity_weight × DR) / Σ(weight). Must intercept before EPR write-back.
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Analogy</strong>: Laboratory EQA proficiency testing (NEQAS)</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Ethical complexity. Must ensure errors intercepted before permanent record.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier B - strong concept, ad hoc protocols)</strong></p>
+<blockquote>
+<p>Automation bias is well-defined conceptually (<a href="../../references/#parasuraman-manzey-complacency-2010">Parasuraman-Manzey-Complacency-2010</a>) but measurement protocols in clinical AI remain ad hoc. Most published studies use vignette-based designs comparing diagnostic accuracy with and without AI assistance; there is no standardised measurement protocol for production AVT systems operating under real clinical time pressure. No consensus exists on acceptable automation bias rate thresholds - one computational pathology study reported a 7% rate without specifying whether that was concerning or within expected bounds for the task. An active RCT (NCT07328815) is testing nudge interventions but results are not yet available. Until standardised production protocols emerge, document explicitly: (a) the injection methodology (how errors are generated), (b) the injection rate, (c) the severity distribution of injected errors, (d) the detection criteria (what counts as "caught"), (e) the timing of assessment. Changes to any of these make values incomparable across audits.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Only metric directly measuring oversight function. Quarterly error injection with known difficulty thresholds.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#hl-hf-1">HL.HF-1 Edit Rate (% Notes Edited)</a> · <a href="#hl-hf-8">HL.HF-8 Trust Calibration Survey</a> · <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a></p>
+<hr />
+<h3 id="hl-hf-7">HL.HF-7 🟡 Edit Location Distribution<a class="headerlink" href="#hl-hf-7" title="Permanent link">&para;</a></h3>
+<p>Where in the note do clinicians make edits? Concentration in specific sections (history, examination, plan) reveals which sections the AI handles poorly. A diagnostic that complements edit type classification.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-7</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor, Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Post-Generation Correction</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Extends edit-pattern monitoring with structural awareness</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Diagnostic enhancement to edit rate monitoring. Identifies which sections need more reviewer attention.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>For each note section s: Edit Density(s) = |edits_in_s| / |words_in_s|. Compare across sections. Sections with edit density &gt;&gt; average have systematic AI quality issues. Track over time to assess model improvement.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires consistent note structure for meaningful comparison.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Reveals systematic quality patterns invisible to aggregate edit rate. If clinicians always edit the 'plan' section but rarely edit 'history', the AI is good at extracting facts but poor at synthesising clinical reasoning. This guides where vendor improvement should focus and where clinicians should pay particular attention during review.</p>
+</blockquote>
+<p><em>See also: Edit Rate, Edit Type Classification, Edit-Pattern Monitoring at Scale - all members of the Post-Generation Correction family. Locus analysis complements type classification: what kind of edit combined with where in the note identifies specific failure modes that either dimension alone would miss.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#hl-hf-1">HL.HF-1 Edit Rate (% Notes Edited)</a> · <a href="#hl-hf-17">HL.HF-17 Verification Burden</a> · <a href="#hl-hf-19">HL.HF-19 AI-Off Performance Test</a> · <a href="#hl-hf-2">HL.HF-2 Edit Type Classification</a> · <a href="#hl-hf-6">HL.HF-6 Automation Bias Detection (Error Injection)</a> · <a href="#hl-hf-8">HL.HF-8 Trust Calibration Survey</a></p>
+<hr />
+<h3 id="hl-hf-8">HL.HF-8 🟡 Trust Calibration Survey<a class="headerlink" href="#hl-hf-8" title="Permanent link">&para;</a></h3>
+<p>Clinician confidence vs actual accuracy. Overconfidence = automation bias risk. Gap between stated and behavioural trust is itself a metric.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-8</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Survey</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Day Zero Baseline, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Human factors literature; <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Change history:</strong> v4.3 (HATAS instrument removed from candidate list — Pass B confirmed it is not a real published instrument; Dokkyo Medical University-specific attribution softened to "recent reviews").</p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Survey-based. Useful triangulation with behavioural metrics. Annual measurement tracks trust-behaviour gap evolution.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Trust Calibration Gap TCG(c) = Stated_Trust(c) - Actual_Accuracy(c). TCG &gt; 0 = overconfidence (dangerous). TCG &lt; 0 = underconfidence (adoption barrier).
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Trust in automation</strong>: <a href="../../references/#lee-see-trust-automation-2004">Lee-See-Trust-Automation-2004</a></li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Self-report bias. Must triangulate with behavioural metrics.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier B - concept defined, no AVT-validated instrument)</strong></p>
+<blockquote>
+<p>Multiple candidate instruments exist for trust calibration in clinical AI (TIAS, AITI-H), but <strong>none are validated specifically for ambient scribe contexts</strong>. Recent reviews of trust calibration in clinical AI conclude that there are currently no accurate and objective measures available for evaluating trust calibration in clinical AI deployments. No thresholds exist for defining "appropriately calibrated" trust, and no empirical integration has been established between subjective trust measures and behavioural proxies (edit rate, review time, error detection) that would allow triangulation. Adapt TIAS for AVT context as an interim measure, document the adaptation explicitly, and flag the absence of formal validation when reporting results. Pair with the existing behavioural complacency indicators (Edit Rate, Time-to-Sign, Review-Before-Signing) rather than relying on the survey instrument alone.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 'I always check carefully' + 5-second approval = trust calibration gap requiring architectural intervention.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../training-competency/#gv-tc-2">GV.TC-2 Failure Mode Awareness Score</a> · <a href="../training-competency/#gv-tc-4">GV.TC-4 Trainee Impact Assessment</a> · <a href="#hl-hf-1">HL.HF-1 Edit Rate (% Notes Edited)</a> · <a href="#hl-hf-6">HL.HF-6 Automation Bias Detection (Error Injection)</a> · <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a></p>
+<hr />
+<h3 id="hl-hf-9">HL.HF-9 🟡 Re-record / Abandonment Rate<a class="headerlink" href="#hl-hf-9" title="Permanent link">&para;</a></h3>
+<p>Frequency of clinicians abandoning AVT mid-consultation and starting again, or abandoning the AVT-generated note entirely and writing manually. Strong dissatisfaction signal indicating either technical failure or fundamental quality issues.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-9</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Identified as strong dissatisfaction signal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Strong leading indicator of system problems. Should trigger immediate investigation when rates rise.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Re-record Rate = |consultations_with_restart| / |total_consultations|. Abandonment Rate = |notes_discarded_and_rewritten| / |total_notes|. Both should be near zero in steady state. Sudden increases indicate system regression.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires EPR workflow telemetry to detect restarts and abandonments. Some legitimate restart cases (technical issues) need to be distinguished from quality-driven restarts.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Re-record rate is the canary in the coal mine. When clinicians start restarting consultations or abandoning notes, something has gone fundamentally wrong - either the system has degraded or the workflow is broken. This is a leading indicator that should trigger immediate investigation, not routine review.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#hl-hf-1">HL.HF-1 Edit Rate (% Notes Edited)</a> · <a href="#hl-hf-17">HL.HF-17 Verification Burden</a> · <a href="../downstream-write-back/#tp-wb-5">TP.WB-5 Write-back Rollback Capability</a> · <a href="../meta-evaluation/#es-me-1">ES.ME-1 Proximal vs Distal Outcome Distinction</a> · <a href="../meta-evaluation/#es-me-3">ES.ME-3 Metric Interaction Analysis</a> · <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a></p>
+<hr />
+<h3 id="hl-hf-10">HL.HF-10 🔵 Cognitive Load Assessment<a class="headerlink" href="#hl-hf-10" title="Permanent link">&para;</a></h3>
+<p>Mental effort for review. Target: 'effortful but efficient' - enough to catch errors, not so much that time savings disappear.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-10</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Survey</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nasa-tlx">NASA-TLX</a> adapted for clinical documentation review</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research metric. NASA-TLX adaptation is established but adds burden. Physiological measures are research-only.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Adapted NASA-TLX: Mental Demand, Temporal Demand, Effort, Frustration, Trust Burden. Each 0-100. Target CL: 30-60 (below = disengagement, above = no benefit).
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>NASA-TLX</strong>: <a href="../../references/#nasa-tlx">NASA-TLX</a></li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Self-report. Adds burden.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier B - generic validation, no AVT-specific calibration)</strong></p>
+<blockquote>
+<p>NASA-TLX is validated generically with acceptable individual-setting ICC of 0.71–0.81 (lower for group settings). However, for AVT specifically: no subscale selection protocol exists, no consensus on measurement timing (during encounter / immediately after charting / end of day / end of week), no documentation-specific adaptation of the instrument, and no established thresholds for "acceptable" cognitive load in AVT review tasks. The 60.7% reduction in composite cognitive load reported in a 2024 Abridge study is a point estimate with no reference scale for clinical interpretation - "60% less" of an undefined baseline is not directly actionable. Use NASA-TLX as an interim measure, specify the timing and subscale selection used, and avoid comparing raw scores across studies that use different protocols. The proposed <strong>Verification Burden</strong> metric (Human Factors &amp; Workflow) is intended to capture a more specific construct that may ultimately prove more actionable than global cognitive load.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Optimal load is non-obvious: too low = disengagement, too high = no benefit.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../nhs-compliance-regulatory/#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a> · <a href="../environmental-sustainability/#gv-en-1">GV.EN-1 Energy Consumption per Clinical Note</a></p>
+<hr />
+<h3 id="hl-hf-11">HL.HF-11 🔵 Inter-Clinician Edit Variance<a class="headerlink" href="#hl-hf-11" title="Permanent link">&para;</a></h3>
+<p>Do different clinicians edit the same AI output similarly? High variance suggests either ambiguous AI output (different clinicians read it differently) or inconsistent quality standards across clinicians. Both are governance issues.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-11</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Extends inter-rater reliability concepts to AVT review</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research-grade metric requiring controlled study. Important for understanding review reliability but not routine measurement.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>For sample of identical AI outputs reviewed by multiple clinicians: variance in edit count, edit type distribution, and edit content. Inter-rater reliability metrics on edit decisions.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires controlled study with multiple clinicians reviewing same outputs. Difficult to operationalise in routine practice.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 If Clinician A always edits the AI output extensively and Clinician B never edits it, the issue might be either clinician (one is too critical, the other is too lax) or the AI (the output is ambiguous). Inter-clinician variance reveals whether the review function is consistent - a prerequisite for meaningful aggregate metrics.</p>
+</blockquote>
+<hr />
+<h3 id="hl-hf-12">HL.HF-12 🔵 Clinical Documentation Skill Attenuation<a class="headerlink" href="#hl-hf-12" title="Permanent link">&para;</a></h3>
+<p>Longitudinal ability to document without AI. Sleeper risk - if a generation trains with AVT, baseline capability degrades.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-12</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Aviation skill degradation literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Long-term longitudinal study. Effects take years to manifest. Important for workforce planning but not actionable at individual deployer level.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Annual: clinicians document N simulated encounters without AI, scored via PDSQI-9. SA(t) = PDSQI9_noAI(t) - PDSQI9_noAI(t-1). Negative SA = attenuation. Compare trainees against pre-AVT cohort norms.
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Aviation analogy</strong>: <a href="../../references/#casner-schooler-aviation-skill-2014">Casner-Schooler-Aviation-Skill-2014</a> — pilot skill degradation</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Long-term study. Hard to isolate AVT as cause.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Medical education bodies should be tracking this now.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../nhs-compliance-regulatory/#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a> · <a href="../environmental-sustainability/#gv-en-1">GV.EN-1 Energy Consumption per Clinical Note</a></p>
+<hr />
+<h3 id="hl-hf-13">HL.HF-13 🔵 Cognitive Offloading Rate<a class="headerlink" href="#hl-hf-13" title="Permanent link">&para;</a></h3>
+<p>Proportion of clinicians who report relying on AI for content recall ('I don't need to remember, the AI will catch it'). Different from automation bias - this is active delegation rather than passive trust. Predicts skill attenuation.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-13</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Survey</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Cognitive offloading literature; distinct from automation bias</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research metric. Important for understanding workforce impact but not routine measurement.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Survey-based: &#39;I rely on the AVT system to capture details I might otherwise need to remember during consultations&#39; (5-point Likert). Offloading Rate = proportion answering &#39;agree&#39; or &#39;strongly agree&#39;. Track over time to detect increasing dependence.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Self-report bias. Clinicians may not be aware of their own cognitive offloading.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Offloading is the precursor to skill attenuation. When clinicians actively delegate cognitive functions to the AI, they stop practicing those functions, which then atrophy. This is the mechanism by which AVT could degrade clinical workforce capability over time. Tracking offloading provides an early signal before measurable skill loss occurs.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../nhs-compliance-regulatory/#gv-cr-7">GV.CR-7 DPIA Template Completion Rate</a> · <a href="../environmental-sustainability/#gv-en-1">GV.EN-1 Energy Consumption per Clinical Note</a></p>
+<hr />
+<h3 id="hl-hf-14">HL.HF-14 🔵 Trust Halo Decay Rate<a class="headerlink" href="#hl-hf-14" title="Permanent link">&para;</a></h3>
+<p>Whether initial high trust persists after errors. Absent decay = dangerous over-trust. Trust halo drives off-label scope creep.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-14</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Survey</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Trust halo effect analysis</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research metric requiring longitudinal measurement. Conceptually important for understanding off-label use drivers but not operationally measurable at scale.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Longitudinal T(t). After error at t_e, decay rate λ = -dT/dt for t &gt; t_e. Healthy: λ &gt; 0 (appropriate recalibration). Dangerous: λ ≈ 0 (trust unchanged despite evidence).
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Longitudinal measurement required.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier A - no validated measurement in clinical AI)</strong></p>
+<blockquote>
+<p>The trust halo effect is well-established in cognitive psychology but has <strong>not been operationalised for clinical AI or AVT specifically</strong>. The concept substantially overlaps with automation bias, and the empirical boundary between the two constructs is not established - it is unclear whether they should be measured as distinct phenomena or as facets of a common over-reliance construct. No validation studies exist. No measurement instruments have been adapted from cognitive psychology to the clinical AI context. Two viable paths forward: (a) define a specific experimental paradigm (e.g. testing whether positive experience with transcription accuracy transfers uncritically to trust in clinical summarisation accuracy, which is a different capability) and build validation evidence from there, or (b) fold the construct into the broader automation bias / over-reliance family until the measurement science matures enough to distinguish it meaningfully. Until one of these is done, any reported values should carry explicit acknowledgement of the definitional uncertainty.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Trust halo → off-label use: over-trust drives scope creep. The halo is the mechanism; off-label use is the consequence.</p>
+</blockquote>
+<hr />
+<h3 id="hl-hf-15">HL.HF-15 🔵 Note Review Fatigue Trajectory<a class="headerlink" href="#hl-hf-15" title="Permanent link">&para;</a></h3>
+<p>Review quality degradation over a clinical session. The 9am note review may be different from the 5pm note review, and AVT may amplify end-of-session fatigue effects by adding documentation review burden to existing clinical fatigue.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-15</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Passive Observational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Clinical fatigue research applied to AVT review</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research metric. Important workforce safety question but not routinely measurable.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Track review quality metrics (time-to-sign, edit rate, error detection in injection audits) by time-of-day and session position. Fatigue Slope = degradation rate per hour into session. Significant negative slope indicates fatigue effects.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Confounded with case mix variation (afternoon clinics may have different complexity). Requires careful statistical controls.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier A - underlying concept unoperationalised)</strong></p>
+<blockquote>
+<p>The broader concept of attention drift across a clinician's reviewing session has <strong>no operationalised definition in AVT literature</strong>. The Cognitive Drift Index (Frontiers in Neuroscience 2025) measures information consumers' judgment shifts in unrelated domains, not clinician review vigilance. A 2026 KevinMD essay described "the slow erosion of clinical humility" qualitatively but offered no measurement approach. No published study has established a detection methodology, thresholds, or relationship to patient safety outcomes. Proposed interim operationalisation for this taxonomy - to be treated as a working definition pending empirical validation - is a composite of (a) declining review time per note over a session, (b) reduced edit rate trajectory within sessions, and (c) reduced error detection rate in periodic injection testing stratified by time-of-session. This proposal has not been validated; deployers using it should document the operational definition applied and treat results as exploratory rather than diagnostic.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 If review quality degrades through the session, the safety implications are significant: the last patients of the day get the least rigorous oversight. AVT systems designed assuming consistent reviewer attention are operating outside that assumption for a meaningful fraction of consultations. This argues for fatigue-aware workflow design - perhaps requiring more thorough review for end-of-session notes, or rotating review responsibility.</p>
+</blockquote>
+<hr />
+<hr />
+<h3 id="sociotechnical-resilience-sub-cluster">Sociotechnical &amp; Resilience sub-cluster<a class="headerlink" href="#sociotechnical-resilience-sub-cluster" title="Permanent link">&para;</a></h3>
+<p><em>Systems-level constructs drawn from FRAM, Safety-II, and resilience engineering. These metrics assess the clinician-AVT joint cognitive system rather than AVT alone, and capture dimensions that standard human factors metrics miss - the gap between intended and actual practice, the hidden cost of verification, and the capacity to handle unexpected situations.</em></p>
+<hr />
+<h3 id="hl-hf-16">HL.HF-16 🔵 Work-as-Imagined vs Work-as-Done Gap<a class="headerlink" href="#hl-hf-16" title="Permanent link">&para;</a></h3>
+<p>The gap between how AVT is intended to be used (per procedures, training, and governance documentation) and how it is actually used in clinical practice. A construct from Hollnagel's FRAM methodology and the Safety-II tradition. Subsumes and generalises the existing Off-Label Use Detection metric - not every WAI/WAD gap is off-label, and not every adaptation is a safety problem, but the gap itself is diagnostically valuable.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-16</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#hollnagel-fram">Hollnagel-FRAM</a>; <a href="../../references/#park-seips-transfusion-2026">Park-SEIPS-Transfusion-2026</a> (SEIPS-CQR methodology demonstrated on a transfusion-system context, applicable to AVT — paper itself is not AVT-specific)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research-grade metric requiring ethnographic observation and structured interview methodology. Not routinely measurable at deployer level. Academic or national evaluation programme responsibility.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Three-step methodology: (1) Document WAI from training materials, SOPs, vendor guidance, and governance policies; (2) Observe WAD through shadowing, workflow analysis, and semi-structured clinician interviews; (3) Gap analysis - categorise deviations as {beneficial adaptation, neutral workaround, latent risk, active hazard}. Report gap count per category and exemplar descriptions rather than a single scalar - the qualitative detail is what supports intervention.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Ethnographic methods are resource-intensive and subjective. WAI is itself often poorly documented. Observer effects shape observed behaviour. Generalisation across practices is limited.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Every complex sociotechnical system has a WAI/WAD gap - procedures can never fully specify practice. The Safety-II insight is that adaptations are not automatically failures; they are often what makes the system work at all. The diagnostic question is not "is there a gap?" (there always is) but "which gaps indicate genuine risk vs which indicate necessary adaptation that should be formalised back into WAI?" This metric surfaces the question; human judgment answers it.</p>
+</blockquote>
+<hr />
+<h3 id="hl-hf-17">HL.HF-17 🟡 Verification Burden<a class="headerlink" href="#hl-hf-17" title="Permanent link">&para;</a></h3>
+<p>The additional workload created by the need to verify AI-generated content against clinical reality - reading the note, cross-checking against the conversation, identifying errors, making corrections. Distinct from the existing Cognitive Load Assessment metric, which measures total effort. Verification burden is specifically the checking overhead that exists only because the output needs checking. A well-calibrated AVT system minimises this burden; a poorly-calibrated one shifts documentation time into verification time and may eliminate the apparent efficiency gain.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-17</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Day Zero Baseline, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Contextualised</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#gosh-phase-4-timecat">GOSH-Phase-4-TimeCat</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🔀 <a href="../../crosscuts/by-applicability/avt-contextualised/">AVT-Contextualised</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Conceptually important - distinguishes apparent efficiency gain from actual efficiency gain - but requires time-motion observation methodology (TimeCat or equivalent). Day Zero baseline plus periodic re-measurement supports trajectory analysis.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>VB = t_review + t_correction + t_cross_reference, measured per consultation. Baseline pre-AVT: equivalent activities (proofreading own notes, referencing structured fields). Net Verification Cost = VB_AVT - VB_pre-AVT. Efficiency gain = (t_documentation_pre - t_documentation_AVT) - Net Verification Cost. A genuinely efficient system has positive net gain after accounting for verification burden.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>TimeCat or equivalent time-motion methodology is labour-intensive. Verification activities are often interleaved with other work and hard to isolate. Self-report on verification time is unreliable because the activity is partly automatic.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The marketing claim "AVT saves 3 minutes of documentation time per consultation" is meaningless without verification burden accounting. A system that saves 3 minutes of typing but adds 4 minutes of verification has negative net efficiency - and research suggests this scenario is common early in deployment before clinicians develop efficient review patterns. Verification burden should be reported alongside every documentation time saving claim, or the claim should not be reported at all.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="#hl-hf-1">HL.HF-1 Edit Rate (% Notes Edited)</a> · <a href="#hl-hf-9">HL.HF-9 Re-record / Abandonment Rate</a> · <a href="../downstream-write-back/#tp-wb-5">TP.WB-5 Write-back Rollback Capability</a> · <a href="../nhs-compliance-regulatory/#gv-cr-1">GV.CR-1 Patient Dissent Recording Rate</a> · <a href="../privacy-data-governance/#gv-pd-10">GV.PD-10 Subject Access Request Fulfilment</a> · <a href="../privacy-data-governance/#gv-pd-11">GV.PD-11 Right to Erasure Compliance</a></p>
+<hr />
+<h3 id="hl-hf-18">HL.HF-18 🔵 Resilience Capacities Assessment<a class="headerlink" href="#hl-hf-18" title="Permanent link">&para;</a></h3>
+<p>Structured assessment of the clinician-AVT joint cognitive system against the four Safety-II resilience capacities: <strong>responding</strong> to unexpected events, <strong>monitoring</strong> for signs of degradation, <strong>learning</strong> from experience, and <strong>anticipating</strong> future challenges. From Hollnagel's resilience engineering framework. Applied not to AVT alone but to the combined human-machine system as it operates in context.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-18</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer, National Body, Academic</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#hollnagel-fram">Hollnagel-FRAM</a> (Safety-II framing); resilience engineering literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Research framework applied at system level. Not a routine metric. National or academic responsibility for maturing the methodology into deployable assessment.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>Four capacity dimensions scored via structured scenario-based assessment and qualitative evaluation:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>(1) Responding - when an AVT failure occurs mid-consultation (crash, silent degradation, wrong-patient data), how does the clinician-system respond? Recovery time, recovery completeness, downstream impact.
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>(2) Monitoring - what signals does the system provide that allow the clinician to detect degradation? Are those signals attended to in practice?
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>(3) Learning - when errors are discovered, how is that learning captured and integrated into future work? (Links to Hazard Log Completeness and Training Material Currency)
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>(4) Anticipating - does the deployer identify and prepare for foreseeable challenges (model updates, regulatory changes, novel failure modes)?
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>Score each capacity 1–5 with narrative justification. Composite is a profile, not a single number.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Assessment is qualitative and requires trained evaluators. Framework originally developed for complex sociotechnical systems (healthcare, aviation); application to AVT specifically is novel. Scoring inter-rater reliability has not been established for this application.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Traditional safety metrics are Safety-I: counting failures and aiming for zero. Resilience metrics are Safety-II: assessing the capacity to handle failures that will inevitably occur. An AVT deployment with zero recorded incidents but weak resilience capacities is brittle - the first real test will reveal the gap. This metric family complements rather than replaces the incident-based metrics in Safety &amp; Governance.</p>
+</blockquote>
+<hr />
+<h3 id="hl-hf-19">HL.HF-19 🟡 AI-Off Performance Test<a class="headerlink" href="#hl-hf-19" title="Permanent link">&para;</a></h3>
+<p>Scheduled exercises where clinicians document a clinical encounter without AVT assistance, and the resulting documentation is assessed for quality against baseline standards. Provides an operational implementation of the existing Clinical Documentation Skill Attenuation concept - instead of inferring skill degradation longitudinally, directly measure current unassisted capability. Also doubles as business continuity assurance: can the clinical team function if AVT is unavailable?</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>HL.HF-19</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>Cross-cutting</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Human Factors</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Hybrid</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Day Zero Baseline, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Deployer</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Distal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>General Healthcare AI</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Operationalisation of existing Clinical Documentation Skill Attenuation metric; <a href="../../references/#lancet-gastroenterology-endoscopist-ai-off-2025">Lancet-Gastroenterology-Endoscopist-AI-Off-2025</a> (ADR fell 28.4%→22.4% when AI removed)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🌐 <a href="../../crosscuts/by-applicability/general/">General Healthcare AI</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Operationally feasible for any deployer willing to commit protected time. More actionable than longitudinal skill attenuation measurement because it provides current state data. Should be scheduled at Day Zero baseline and repeated annually.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>Protocol: (1) Schedule defined exercises where clinicians document simulated or real consultations without AVT; (2) Documentation is scored using PDSQI-9 or equivalent validated instrument; (3) Score is compared against the clinician&#39;s pre-AVT baseline (if available) and against peer benchmarks. Trajectory Metric = score_current - score_baseline. Cohort Analysis: compare clinicians trained with AVT from day one against those who learned without it.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Protected time is expensive. Simulated consultations differ from real consultations. Clinicians who know they are being assessed may perform differently. Pre-AVT baseline is often not available for individual clinicians.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The endoscopy AI-off finding (adenoma detection rate falling from 28.4% to 22.4% when AI was removed after a period of AI use) is the first robust real-world evidence of clinical deskilling from AI dependency. For ambient scribes, the equivalent question is whether clinicians lose the ability to write a clinically complete note unassisted after a period of AVT use. This is testable today. The business continuity case - can the practice function during a vendor outage? - is almost sufficient reason to run the test regardless of the deskilling question.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../security-adversarial-robustness/#gv-sc-1">GV.SC-1 Prompt Injection Resistance Rate</a> · <a href="../security-adversarial-robustness/#gv-sc-2">GV.SC-2 Jailbreak Resistance Score</a> · <a href="../security-adversarial-robustness/#gv-sc-3">GV.SC-3 Adversarial Audio Detection Rate</a> · <a href="../safety-governance/#gv-sg-11">GV.SG-11 Adverse Event / Incident Rate (LFPSE)</a> · <a href="../safety-governance/#gv-sg-14">GV.SG-14 Near-Miss Reporting Rate</a></p>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Spotted an error or disagree with a tier?</p>
+<p>This catalogue is a <a href="../../prototype-status/">prototype-for-discussion</a>, and feedback on specific metrics is exactly what shapes the next version. Open an issue and pick the template that fits:</p>
+<ul>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=01-factual-error.yml">Factual error</a> — a claim, citation, threshold, or formula in a metric body looks wrong.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=02-tier-disagreement.yml">Tier disagreement</a> — a metric is at the wrong priority tier for your context.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=03-missing-metric.yml">Missing metric / gap</a> — an assurance question that should be in the catalogue but isn't.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=04-broken-link.yml">Broken link / site bug</a> — internal link, dead citation, rendering issue.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=05-feedback.yml">Framing feedback</a> — higher-level concern about principles, dimensions, or scope.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="/avt-metrics-taxonomy/feed_rss_updated.xml" target="_blank" rel="noopener" title="RSS - CHANGELOG updates" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64m0 352a64 64 0 1 1 128 0 64 64 0 1 1-128 0m32-256c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" target="_blank" rel="noopener" title="Source on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

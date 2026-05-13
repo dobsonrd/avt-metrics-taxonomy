@@ -1,0 +1,109 @@
+/* AVT Metrics Taxonomy - custom Material overrides.
+ * Targeted polish only, not a redesign.
+ */
+
+/* Wider content area on desktop - the default 61rem feels cramped for
+ * the long dimensions tables that appear on every metric. */
+@media screen and (min-width: 76.25em) {
+  .md-grid {
+    max-width: 70rem;
+  }
+}
+
+/* Draft banner - use a warning-yellow tint rather than the Material default
+ * primary colour, so the "this is draft" signal is visually distinct from
+ * the brand colour. */
+.md-banner {
+  background: #fff8c5;
+  color: #57471f;
+}
+[data-md-color-scheme="slate"] .md-banner {
+  background: #4d3d00;
+  color: #ffe38a;
+}
+.md-banner a {
+  color: inherit;
+}
+
+/* Dimensions tables - subtler header shading + clearer row separation.
+ * The default Material table is fine in isolation but every metric has
+ * one so the pages read as rows-of-boxes, which is noisy. */
+.md-typeset table:not([class]) th {
+  background: var(--md-default-fg-color--lightest);
+  font-weight: 600;
+}
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  padding: 0.4em 0.75em;
+}
+.md-typeset table:not([class]) tr:nth-child(even) td {
+  background: var(--md-default-fg-color--lightest);
+}
+
+/* Part kicker (eyebrow): a paragraph whose only content is an italic
+ * Part label, sitting as the first content element above the page h1.
+ * Renders right-aligned, uppercase, small-scale — magazine eyebrow style
+ * — so the h1 and its italic intro below read as one connected unit.
+ *
+ * Selector matches Material's article structure:
+ *   <article class="md-content__inner md-typeset"> > <p><em>Part ...</em></p>
+ */
+.md-typeset h1 {
+  margin-top: 0.2em;
+}
+.md-content__inner > p:first-of-type:has(> em:only-child) {
+  text-align: right;
+  margin: 0 0 -0.2em;
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+.md-content__inner > p:first-of-type:has(> em:only-child) > em {
+  font-style: normal;
+  background: var(--md-default-fg-color--lightest);
+  padding: 0.15em 0.6em;
+  border-radius: 0.25em;
+}
+
+/* Applicability badge - one-line callout under each metric's dimensions
+ * table. Restrained look: left border accent, no box. */
+.md-content p > strong:first-child + span,
+.md-content p:has(> strong:first-child:where(:contains("Applicability:"))) {
+  /* modern :has + :contains would be cleaner; fallback below */
+}
+/* Fallback styling that just lights up any line starting with
+ * "**Applicability:**" since those are ours. */
+.md-typeset p strong:first-child {
+  /* not targeted enough; use a class instead if this becomes fragile */
+}
+/* Related-metrics footer - light rule separator so it reads as a footer,
+ * not as more body copy. */
+.md-typeset p em:first-child:first-of-type {
+  /* cosmetic only - matched by the "Related metrics" italic intro */
+}
+
+/* Grid cards on the landing page - slightly tighter padding, consistent
+ * icon alignment. */
+.md-typeset .grid.cards > * {
+  padding: 0.9em 1em;
+}
+.md-typeset .grid.cards .twemoji {
+  margin-right: 0.25em;
+  vertical-align: -0.15em;
+}
+
+/* Tier icon rendering - give the emoji tier markers a consistent baseline
+ * so `🟢 1` aligns with surrounding text in tables and headings. */
+.md-typeset h3 .twemoji,
+.md-typeset td .twemoji {
+  vertical-align: -0.15em;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+/* Md-button row on the contents page - space buttons so they read as a
+ * horizontal bar rather than stacked lines. */
+.md-typeset .md-button + .md-button {
+  margin-left: 0.3em;
+}
