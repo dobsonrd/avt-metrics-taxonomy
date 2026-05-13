@@ -2,9 +2,9 @@
 site_name: Prototype AVT Metrics Taxonomy
 site_description: Healthcare metrics taxonomy for assuring Ambient Voice
   Technology in NHS and comparable settings
-site_url: https://danjscho.github.io/avt-metrics-taxonomy/
-repo_url: https://github.com/danjscho/avt-metrics-taxonomy
-repo_name: danjscho/avt-metrics-taxonomy
+site_url: https://dobsonrd.github.io/avt-metrics-taxonomy/
+repo_url: https://github.com/dobsonrd/avt-metrics-taxonomy
+repo_name: dobsonrd/avt-metrics-taxonomy
 edit_uri: edit/main/taxonomy/
 
 docs_dir: docs
@@ -88,7 +88,7 @@ extra:
       link: /avt-metrics-taxonomy/feed_rss_updated.xml
       name: RSS - CHANGELOG updates
     - icon: fontawesome/brands/github
-      link: https://github.com/danjscho/avt-metrics-taxonomy
+      link: https://github.com/dobsonrd/avt-metrics-taxonomy
       name: Source on GitHub
 
 markdown_extensions:
