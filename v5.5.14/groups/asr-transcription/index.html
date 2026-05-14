@@ -1,0 +1,6113 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Healthcare metrics taxonomy for assuring Ambient Voice Technology in NHS and comparable settings">
+      
+      
+      
+        <link rel="canonical" href="https://dobsonrd.github.io/avt-metrics-taxonomy/v5.5.14/groups/asr-transcription/">
+      
+      
+        <link rel="prev" href="../audio-capture/">
+      
+      
+        <link rel="next" href="../diarisation/">
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>ASR / Transcription - Prototype AVT Metrics Taxonomy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tp-asr-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <strong>AI-coauthored prototype for discussion — v5.5.14.</strong> Substantial portions of this taxonomy were drafted with AI assistance and human-reviewed; <strong>specific claims, citations, and threshold numbers may still contain confabulations or factual errors</strong> despite review. Keep this front of mind, verify before use, and please flag anything that looks wrong — feedback on errors is genuinely welcome. This is shared to provoke conversation, not as a settled standard or procurement gate. See the
+  <a href="../../prototype-status/" style="color: inherit; text-decoration: underline;">prototype status</a> page for what you're invited to do (and what you shouldn't), the
+  <a href="../../changelog/" style="color: inherit; text-decoration: underline;">changelog</a> for recent changes, and the
+  <a href="../../gaps/" style="color: inherit; text-decoration: underline;">roadmap</a> for what's pending.
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Prototype AVT Metrics Taxonomy" class="md-header__button md-logo" aria-label="Prototype AVT Metrics Taxonomy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Prototype AVT Metrics Taxonomy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ASR / Transcription
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dobsonrd/avt-metrics-taxonomy
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../how-to-use/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  How to use
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dimensions-overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Dimensions overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tier-1-quick-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick start (Tier 1)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../assurance-planner/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Assurance Planner
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../contents/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Browse metrics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../applicability/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Principles & frameworks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../crosscuts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Catalogue views
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gaps/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap (Gaps)
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../prototype-status/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Prototype AVT Metrics Taxonomy" class="md-nav__button md-logo" aria-label="Prototype AVT Metrics Taxonomy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Prototype AVT Metrics Taxonomy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dobsonrd/avt-metrics-taxonomy
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-to-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dimensions-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dimensions overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tier-1-quick-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start (Tier 1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assurance-planner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assurance Planner
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browse metrics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Browse metrics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP - Technical Pipeline
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TP - Technical Pipeline
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../audio-capture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Audio Capture & Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASR / Transcription
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASR / Transcription
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-1 🟡 Word Error Rate (WER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-2 🔵 Medical Word Error Rate (M-WER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-3 🔵 Clinical Keyword Error Rate (CK-ER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-4 🟢 Demographic-Disaggregated WER
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-5 🔵 Speaker-Stratified WER
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-6 🟡 Error Transmission Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-7 🟡 Real-Time Factor (RTF)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-8 🟡 Character Error Rate (CER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-9 🟡 Out-of-Vocabulary (OOV) Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-10 🟡 ASR Confidence Calibration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-11 🟡 ASR Confidence Exposure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-12 🟢 Hallucination-Under-Noise Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-13 🟢 Numeric Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-14 🔵 Punctuation &amp; Capitalisation Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diarisation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diarisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../summarisation-nlp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Summarisation / NLP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clinical-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Coding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../downstream-write-back/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downstream Write-back
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PI - Pipeline Interactions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PI - Pipeline Interactions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../partial-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Partial-Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../end-to-end-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    End-to-End Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HL - The Human Layer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    HL - The Human Layer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human-factors-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Human Factors & Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IO - Impact & Outcomes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IO - Impact & Outcomes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../patient-experience/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Patient Experience
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fairness-equity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fairness & Equity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GV - System Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GV - System Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../safety-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Safety & Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nhs-compliance-regulatory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS Compliance & Regulatory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security-adversarial-robustness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security & Adversarial Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy-data-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy & Data Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operational/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../environmental-sustainability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environmental & Sustainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../training-competency/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Training & Competency
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vendor-transparency-contractual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vendor Transparency & Contractual
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ES - Evaluation Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ES - Evaluation Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta-evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta-Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Principles & frameworks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Principles & frameworks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../applicability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Applicability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../families/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Families
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Standards Mapping
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../outcomes-boundary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Outcomes Boundary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../calibration-and-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calibration & Context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../layers-of-defence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Layers of Defence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../failure-pathways/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Failure Pathways
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Substrate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../responsible-ai-lens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Responsible AI Lens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../crosscuts/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Catalogue views
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Catalogue views
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By applicability
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By applicability
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/avt-specific/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVT-Specific
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/avt-contextualised/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AVT-Contextualised
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-applicability/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Healthcare AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By family
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By family
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/clinical-content-fidelity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Content Fidelity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/reference-based-text-similarity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference-Based Text Similarity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/clinical-transcription-accuracy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clinical Transcription Accuracy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/post-generation-correction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-Generation Correction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/medication-safety-thread/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Medication Safety Thread
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/demographic-equity-disaggregation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Demographic Equity Disaggregation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/nhse-ig-attestation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHSE IG Attestation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-family/prsb-semantic-completeness-write-back-fidelity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PRSB Semantic Completeness & Write-back Fidelity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By layer of defence
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By layer of defence
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/prevention/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prevention
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-layer-of-defence/limitation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Limitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By AI substrate
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By AI substrate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/pre-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pre-AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-substrate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Substrate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/post-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Post-AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-mediated-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Mediated Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-ai-substrate/ai-agnostic-governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-Agnostic Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By Playbook principle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By Playbook principle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P1 - Limitations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P2 - Lawful/ethical
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P3 - Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P4 - Human control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P5 - Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P6 - Right tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P7 - Openness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P8 - Commercial
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P9 - Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-principle/p10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    P10 - Org assurance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_7" id="__nav_8_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By ethical theme
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By ethical theme
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T1 - Safety, Security, Robustness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T2 - Transparency & Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T3 - Fairness
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T4 - Accountability & Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T5 - Contestability & Redress
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-theme/t6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    T6 - Societal Wellbeing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_8" id="__nav_8_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    By standard
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    By standard
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dtac-digital-technology-assessment-criteria-v2-0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DTAC v2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dspt-data-security-and-protection-toolkit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DSPT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/dcb0129-dcb0160/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DCB0129 / DCB0160
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-england-llm-evaluation-and-monitoring-framework-v0-2-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS LLM Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-t-e-s-t-framework-technology-evaluation-safety-test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHS T.E.S.T.
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nhs-england-avt-self-certified-supplier-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NHSE AVT Registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/mhra-software-and-ai-as-a-medical-device-samd-aiamd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MHRA SaMD/AIaMD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/nice-evidence-standards-framework-for-digital-health-technologies-ecd7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NICE ESF (ECD7)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../crosscuts/by-standard/fhir-uk-core-interopen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FHIR UK Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap (Gaps)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prototype-status/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prototype status
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downloads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Downloads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thresholds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Threshold Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metric-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metric history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-1 🟡 Word Error Rate (WER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-2 🔵 Medical Word Error Rate (M-WER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-3 🔵 Clinical Keyword Error Rate (CK-ER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-4 🟢 Demographic-Disaggregated WER
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-5 🔵 Speaker-Stratified WER
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-6 🟡 Error Transmission Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-7 🟡 Real-Time Factor (RTF)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-8 🟡 Character Error Rate (CER)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-9 🟡 Out-of-Vocabulary (OOV) Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-10 🟡 ASR Confidence Calibration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-11 🟡 ASR Confidence Exposure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-12 🟢 Hallucination-Under-Noise Rate
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-13 🟢 Numeric Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tp-asr-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TP.ASR-14 🔵 Punctuation &amp; Capitalisation Accuracy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>ASR / Transcription</h1>
+
+<h3 id="tp-asr-1">TP.ASR-1 🟡 Word Error Rate (WER)<a class="headerlink" href="#tp-asr-1" title="Permanent link">&para;</a></h3>
+<p>Standard ASR accuracy metric. Treats all word errors equally - a misheard 'the' counts the same as a misheard drug name.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-1</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Fidelity &amp; Accuracy</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Clinical Transcription Accuracy</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#wang-ads-eval-2025">Wang et al., SCRIBE (2025)</a>; standard ASR literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor should provide pre-deployment. Deployers should request but cannot independently measure without ground-truth transcripts.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>WER = (S + D + I) / N, where S = substitutions, D = deletions, I = insertions, N = total words in reference transcript. Computed via minimum edit distance (Levenshtein) alignment between hypothesis and reference. Values &gt; 1.0 are possible when insertions exceed reference length.
+</code></pre></div>
+<p><strong>Code: WER via jiwer</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">jiwer</span><span class="w"> </span><span class="kn">import</span> <span class="n">wer</span><span class="p">,</span> <span class="n">process_words</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">reference</span> <span class="o">=</span> <span class="s2">&quot;the patient reports chest pain radiating to left arm&quot;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">hypothesis</span> <span class="o">=</span> <span class="s2">&quot;the patient reports chess pain radiating to left hand&quot;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">error_rate</span> <span class="o">=</span> <span class="n">wer</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span> <span class="n">hypothesis</span><span class="p">)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># error_rate = 0.2 (2 substitutions / 10 words)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="err">???</span> <span class="n">note</span> <span class="s2">&quot;Legend: tier and cadence icons&quot;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="o">**</span><span class="n">Priority</span> <span class="n">tier</span><span class="o">**</span> <span class="p">(</span><span class="n">leading</span> <span class="n">dot</span> <span class="ow">in</span> <span class="n">each</span> <span class="n">metric</span> <span class="n">heading</span><span class="p">):</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="o">-</span> <span class="err">🟢</span> <span class="o">**</span><span class="n">Tier</span> <span class="mi">1</span><span class="o">**</span> <span class="o">-</span> <span class="n">Minimum</span> <span class="n">viable</span> <span class="n">assurance</span> <span class="p">(</span><span class="n">measurable</span> <span class="n">today</span> <span class="k">with</span> <span class="n">existing</span> <span class="n">tools</span><span class="p">)</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="o">-</span> <span class="err">🟡</span> <span class="o">**</span><span class="n">Tier</span> <span class="mi">2</span><span class="o">**</span> <span class="o">-</span> <span class="n">Recommended</span> <span class="k">for</span> <span class="nb">any</span> <span class="n">AVT</span> <span class="n">deployment</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="o">-</span> <span class="err">🔵</span> <span class="o">**</span><span class="n">Tier</span> <span class="mi">3</span><span class="o">**</span> <span class="o">-</span> <span class="n">Advanced</span> <span class="o">/</span> <span class="n">research</span><span class="o">-</span><span class="n">grade</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>    <span class="o">**</span><span class="n">Measurement</span> <span class="n">cadence</span><span class="o">**</span> <span class="p">(</span><span class="n">used</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Tier</span> <span class="mi">1</span> <span class="n">quick</span><span class="o">-</span><span class="n">reference</span> <span class="n">bullets</span><span class="p">):</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    <span class="o">-</span> <span class="err">🚪</span> <span class="o">**</span><span class="n">One</span><span class="o">-</span><span class="n">off</span> <span class="n">gate</span><span class="o">**</span> <span class="o">-</span> <span class="n">measured</span> <span class="n">once</span> <span class="n">pre</span><span class="o">-</span><span class="n">deployment</span> <span class="k">as</span> <span class="n">an</span> <span class="n">acceptance</span> <span class="n">criterion</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="o">-</span> <span class="err">📡</span> <span class="o">**</span><span class="n">Continuous</span><span class="o">**</span> <span class="o">-</span> <span class="n">automated</span><span class="p">,</span> <span class="n">ongoing</span> <span class="n">measurement</span> <span class="n">during</span> <span class="n">operational</span> <span class="n">use</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="o">-</span> <span class="err">🔄</span> <span class="o">**</span><span class="n">Periodic</span> <span class="n">audit</span><span class="o">**</span> <span class="o">-</span> <span class="n">scheduled</span> <span class="n">assessment</span> <span class="p">(</span><span class="n">quarterly</span> <span class="o">/</span> <span class="n">annual</span><span class="p">)</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="o">**</span><span class="n">Other</span> <span class="n">flags</span><span class="p">:</span><span class="o">**</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="o">-</span> <span class="err">⚠️</span> <span class="n">Metric</span> <span class="n">carries</span> <span class="n">an</span> <span class="n">underspecification</span> <span class="n">warning</span> <span class="o">-</span> <span class="n">see</span> <span class="n">the</span> <span class="n">full</span> <span class="n">entry</span> <span class="k">for</span> <span class="n">measurement</span><span class="o">-</span><span class="n">science</span> <span class="n">caveats</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="n">See</span> <span class="p">[</span><span class="n">How</span> <span class="n">to</span> <span class="n">use</span><span class="p">](</span><span class="o">../</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">use</span><span class="o">.</span><span class="n">md</span><span class="p">)</span> <span class="k">for</span> <span class="n">the</span> <span class="n">full</span> <span class="n">definitions</span><span class="o">.</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="c1"># For corpus-level WER across multiple utterances:</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="n">out</span> <span class="o">=</span> <span class="n">process_words</span><span class="p">(</span><span class="n">references_list</span><span class="p">,</span> <span class="n">hypotheses_list</span><span class="p">)</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="n">corpus_wer</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">wer</span>  <span class="c1"># macro-averaged across utterances</span>
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>NIST scoring toolkit</strong>: <a href="../../references/#nist-sctk">NIST-SCTK</a></li>
+<li><strong>Original</strong>: Woodard &amp; Nelson (1982), NBS Report — historical credit; no verifiable URL retained from earlier inline citation</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Clinically uninformative - does not weight by clinical significance. A 5% WER could be safe or dangerous depending on which words are wrong.</p>
+</blockquote>
+<p><em>See also: Medical WER (M-WER), Clinical Keyword Error Rate (CK-ER) - all members of the Clinical Transcription Accuracy family. Raw WER is level 1 of the family; the other two add clinical weighting but require a standardised significance ontology that does not yet exist.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../meta-evaluation/#es-me-1">ES.ME-1 Proximal vs Distal Outcome Distinction</a> · <a href="../training-competency/#gv-tc-2">GV.TC-2 Failure Mode Awareness Score</a> · <a href="../audio-capture/#tp-ac-3">TP.AC-3 Acoustic Environment Profiling</a> · <a href="#tp-asr-10">TP.ASR-10 ASR Confidence Calibration</a> · <a href="#tp-asr-11">TP.ASR-11 ASR Confidence Exposure</a> · <a href="#tp-asr-2">TP.ASR-2 Medical Word Error Rate (M-WER)</a></p>
+<hr />
+<h3 id="tp-asr-2">TP.ASR-2 🔵 Medical Word Error Rate (M-WER)<a class="headerlink" href="#tp-asr-2" title="Permanent link">&para;</a></h3>
+<p>Weighted WER where errors on clinically significant tokens carry higher penalty. Requires a clinical significance ontology to define token weights.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-2</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor, National Body</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Clinical Transcription Accuracy</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#oxonfair-2024">OxonFair (2024)</a> (proposed AVT extension; future work)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>No standardised clinical significance ontology exists. Requires national body to define weighting standard before it becomes actionable.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>M-WER = Σ(wᵢ · eᵢ) / Σ(wᵢ), where wᵢ is the clinical significance weight for token i, and eᵢ ∈ {0,1} indicates whether token i was incorrectly transcribed. Weights assigned from clinical ontology: safety-critical tokens (drug names, dosages, allergies) receive w &gt;&gt; 1; filler words receive w ≈ 0.1.
+</code></pre></div>
+<p><strong>Code: M-WER weighted computation</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Illustrative pseudocode — uses position-based comparison rather than</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># WER&#39;s actual edit-distance alignment, to keep the focus on the</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># weight-matrix dimension that distinguishes M-WER from standard WER.</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># A production M-WER implementation would compose `jiwer.process_words`&#39;s</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># alignment output with the weight lookup below.</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Clinical significance weights by SNOMED concept class</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">WEIGHTS</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="s2">&quot;drug_name&quot;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span> <span class="s2">&quot;dosage&quot;</span><span class="p">:</span> <span class="mf">10.0</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="s2">&quot;allergy&quot;</span><span class="p">:</span> <span class="mf">8.0</span><span class="p">,</span> <span class="s2">&quot;diagnosis&quot;</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">,</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="s2">&quot;red_flag_symptom&quot;</span><span class="p">:</span> <span class="mf">9.0</span><span class="p">,</span> <span class="s2">&quot;anatomy&quot;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    <span class="s2">&quot;filler&quot;</span><span class="p">:</span> <span class="mf">0.1</span><span class="p">,</span> <span class="s2">&quot;default&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">}</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">classify_token</span><span class="p">(</span><span class="n">token</span><span class="p">,</span> <span class="n">clinical_ner_model</span><span class="p">):</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Map token to clinical significance class via NER.&quot;&quot;&quot;</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">entity</span> <span class="o">=</span> <span class="n">clinical_ner_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="k">return</span> <span class="n">WEIGHTS</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">entity</span><span class="p">,</span> <span class="n">WEIGHTS</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">])</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="k">def</span><span class="w"> </span><span class="nf">medical_wer</span><span class="p">(</span><span class="n">ref_tokens</span><span class="p">,</span> <span class="n">hyp_tokens</span><span class="p">,</span> <span class="n">ner_model</span><span class="p">):</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Compute weighted Medical WER.&quot;&quot;&quot;</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    <span class="n">weighted_errors</span> <span class="o">=</span> <span class="mf">0.0</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    <span class="n">weighted_total</span> <span class="o">=</span> <span class="mf">0.0</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ref_token</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ref_tokens</span><span class="p">):</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>        <span class="n">w</span> <span class="o">=</span> <span class="n">classify_token</span><span class="p">(</span><span class="n">ref_token</span><span class="p">,</span> <span class="n">ner_model</span><span class="p">)</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>        <span class="n">weighted_total</span> <span class="o">+=</span> <span class="n">w</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">hyp_tokens</span><span class="p">)</span> <span class="ow">or</span> <span class="n">ref_token</span> <span class="o">!=</span> <span class="n">hyp_tokens</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>            <span class="n">weighted_errors</span> <span class="o">+=</span> <span class="n">w</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>    <span class="k">return</span> <span class="n">weighted_errors</span> <span class="o">/</span> <span class="n">weighted_total</span> <span class="k">if</span> <span class="n">weighted_total</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Concept origin</strong>: Proposed in <a href="../../references/#oxonfair-2024">OxonFair (2024)</a> healthcare voice fairness extension analysis</li>
+<li><strong>Related</strong>: <a href="../../references/#li-semantic-wer-2022">Li-Semantic-WER-2022</a> — Semantic Word Error Rate for clinical ASR</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>No standardised clinical significance ontology exists. Weight assignment is inherently subjective.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier B - no standardised weighting ontology)</strong></p>
+<blockquote>
+<p>M-WER requires a weighting ontology defining the clinical significance of token classes. <strong>No such ontology is standardised for NHS or international use.</strong> Abridge's Medical Term Recall (MTR) and DeepScribe's Medical Word Hit Rate are functionally equivalent implementations that use different proprietary term lists and different weighting schemes - so a vendor claiming "95% MTR" cannot be directly compared with another claiming "95% M-WER". A national body standard mapping SNOMED safety-critical concept classes to weight values would make vendor benchmarks comparable and is a candidate for NHS England or equivalent commissioning. Until then, require vendors to disclose (a) their term list and provenance, (b) the weighting scheme, and (c) the reference dataset used for M-WER computation. Refuse to compare M-WER values across vendors without this disclosure.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 A national body could define a standardised M-WER weighting ontology mapped to SNOMED safety-critical concept classes, making vendor benchmarks comparable.</p>
+</blockquote>
+<p><em>See also: Word Error Rate (WER), Clinical Keyword Error Rate (CK-ER) - all members of the Clinical Transcription Accuracy family. Abridge's Medical Term Recall (MTR) and DeepScribe's Medical Word Hit Rate are functionally equivalent implementations of this metric reported under different names; a vendor reporting any of these is reporting the same construct with different term lists.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../meta-evaluation/#es-me-1">ES.ME-1 Proximal vs Distal Outcome Distinction</a> · <a href="../training-competency/#gv-tc-2">GV.TC-2 Failure Mode Awareness Score</a> · <a href="../audio-capture/#tp-ac-3">TP.AC-3 Acoustic Environment Profiling</a> · <a href="#tp-asr-1">TP.ASR-1 Word Error Rate (WER)</a> · <a href="#tp-asr-10">TP.ASR-10 ASR Confidence Calibration</a> · <a href="#tp-asr-11">TP.ASR-11 ASR Confidence Exposure</a></p>
+<hr />
+<h3 id="tp-asr-3">TP.ASR-3 🔵 Clinical Keyword Error Rate (CK-ER)<a class="headerlink" href="#tp-asr-3" title="Permanent link">&para;</a></h3>
+<p>Focused accuracy for high-stakes clinical terminology. Binary: was the keyword captured correctly or not?</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-3</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Clinical Transcription Accuracy</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#oxonfair-2024">OxonFair (2024)</a> (healthcare voice fairness extension; future work)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Proposed automated guardrail. Technically feasible but requires curated keyword dictionaries and clinical NER infrastructure not yet available.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>CK-ER = 1 - (|K_correct| / |K_reference|), where K_reference = clinical keywords in reference (identified by NER), K_correct = subset correctly captured. Partial matches use Levenshtein similarity threshold δ ≥ 0.85.
+</code></pre></div>
+<p><strong>Code: CK-ER guardrail check</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">medcat.cat</span><span class="w"> </span><span class="kn">import</span> <span class="n">CAT</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">Levenshtein</span><span class="w"> </span><span class="kn">import</span> <span class="n">ratio</span> <span class="k">as</span> <span class="n">lev_ratio</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">cat</span> <span class="o">=</span> <span class="n">CAT</span><span class="o">.</span><span class="n">load_model_pack</span><span class="p">(</span><span class="s2">&quot;path/to/medcat_model.zip&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">SIMILARITY_THRESHOLD</span> <span class="o">=</span> <span class="mf">0.85</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract_clinical_keywords</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="n">doc</span> <span class="o">=</span> <span class="n">cat</span><span class="o">.</span><span class="n">get_entities</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="k">return</span> <span class="p">{</span><span class="n">ent</span><span class="p">[</span><span class="s2">&quot;source_value&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span> <span class="n">ent</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>            <span class="k">for</span> <span class="n">ent</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">[</span><span class="s2">&quot;entities&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>            <span class="k">if</span> <span class="n">ent</span><span class="p">[</span><span class="s2">&quot;types&quot;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;drug&quot;</span><span class="p">,</span><span class="s2">&quot;dosage&quot;</span><span class="p">,</span><span class="s2">&quot;allergy&quot;</span><span class="p">,</span><span class="s2">&quot;diagnosis&quot;</span><span class="p">}}</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="k">def</span><span class="w"> </span><span class="nf">clinical_keyword_error_rate</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span> <span class="n">hypothesis</span><span class="p">):</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    <span class="n">ref_kw</span> <span class="o">=</span> <span class="n">extract_clinical_keywords</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>    <span class="n">hyp_kw</span> <span class="o">=</span> <span class="n">extract_clinical_keywords</span><span class="p">(</span><span class="n">hypothesis</span><span class="p">)</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">ref_kw</span><span class="p">:</span> <span class="k">return</span> <span class="mf">0.0</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    <span class="n">correct</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">kw</span> <span class="ow">in</span> <span class="n">ref_kw</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>                  <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">lev_ratio</span><span class="p">(</span><span class="n">kw</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">SIMILARITY_THRESHOLD</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>                         <span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">hyp_kw</span><span class="p">))</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>    <span class="k">return</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">correct</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">ref_kw</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Clinical NER</strong>: <a href="../../references/#medcat-benchmarks">MedCAT-Benchmarks</a> — Medical Concept Annotation Toolkit (CogStack)</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires ground-truth keyword annotation. Keyword list must be maintained as terminology evolves.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier B - same standardisation gap as M-WER)</strong></p>
+<blockquote>
+<p>CK-ER depends on a clinical significance ontology defining which terms are keywords - no standardised ontology exists. The vendor or deployer implementing CK-ER chooses which terms count, and the resulting metric is only as good as that choice. Different keyword lists produce materially different CK-ER values for the same system, which prevents cross-vendor comparison and makes local benchmarks difficult to interpret. This metric sits in the same standardisation gap as M-WER: it is conceptually sound but requires national body specification of a canonical keyword ontology mapped to SNOMED safety-critical concept classes before it can be reported in a comparable way. In the interim, document the keyword dictionary used and its provenance when reporting CK-ER.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Could run as automated post-transcription guardrail on every encounter without human review.</p>
+</blockquote>
+<p><em>See also: Word Error Rate (WER), Medical WER (M-WER) - all members of the Clinical Transcription Accuracy family. CK-ER is the most actionable variant - binary per keyword, suited to running as an automated guardrail - but is most sensitive to the choice of keyword dictionary.</em></p>
+<hr />
+<p><em>The next ASR metric is the entry point for the </em><em>Demographic Equity Disaggregation</em><em> named family — see <a href="../../families/#demographic-equity-disaggregation">Families § Demographic Equity Disaggregation</a> for the construct definition, full member list across clusters, and discussion of disaggregation axes.</em></p>
+<h3 id="tp-asr-4">TP.ASR-4 🟢 Demographic-Disaggregated WER<a class="headerlink" href="#tp-asr-4" title="Permanent link">&para;</a></h3>
+<p>WER by accent group, first language, age band, and speech characteristics. NAS proposes max 5pp gap across groups.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-4</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Fairness &amp; Equity</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor, National Body</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Demographic Equity Disaggregation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a>; <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Change history:</strong> v5.3.0 (promoted to Tier 1: MHRA GMLP-3 representative-datasets requirement + Performance &amp; Monitoring Response document's "boundaries and bias" content; both transitive from FTS notice).</p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>NAS framework requirement. Should be requested from vendor at procurement and re-tested periodically. Essential for equity assurance but requires demographic test data.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>For each demographic group g ∈ G, compute WER_g independently. Equity gap Δ = max(WER_g) - min(WER_g). NAS threshold: Δ &lt; 0.05 (5 percentage points). Use bootstrap CIs given small group sizes.
+</code></pre></div>
+<p><strong>Code: Disaggregated WER with equity gap</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">jiwer</span><span class="w"> </span><span class="kn">import</span> <span class="n">wer</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">disaggregated_wer</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">ref_col</span><span class="p">,</span> <span class="n">hyp_col</span><span class="p">,</span> <span class="n">demo_col</span><span class="p">):</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">for</span> <span class="n">group</span><span class="p">,</span> <span class="n">gdf</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">demo_col</span><span class="p">):</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="n">refs</span> <span class="o">=</span> <span class="n">gdf</span><span class="p">[</span><span class="n">ref_col</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        <span class="n">hyps</span> <span class="o">=</span> <span class="n">gdf</span><span class="p">[</span><span class="n">hyp_col</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>        <span class="n">results</span><span class="p">[</span><span class="n">group</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;wer&quot;</span><span class="p">:</span> <span class="n">wer</span><span class="p">(</span><span class="n">refs</span><span class="p">,</span> <span class="n">hyps</span><span class="p">),</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">gdf</span><span class="p">)}</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="n">wer_vals</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s2">&quot;wer&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">values</span><span class="p">()]</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>    <span class="n">equity_gap</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">wer_vals</span><span class="p">)</span> <span class="o">-</span> <span class="nb">min</span><span class="p">(</span><span class="n">wer_vals</span><span class="p">)</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>        <span class="s2">&quot;per_group&quot;</span><span class="p">:</span> <span class="n">results</span><span class="p">,</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>        <span class="s2">&quot;equity_gap&quot;</span><span class="p">:</span> <span class="n">equity_gap</span><span class="p">,</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>        <span class="s2">&quot;threshold_met&quot;</span><span class="p">:</span> <span class="n">equity_gap</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">,</span>  <span class="c1"># NAS 5pp</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>        <span class="s2">&quot;worst_group&quot;</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">g</span><span class="p">:</span> <span class="n">results</span><span class="p">[</span><span class="n">g</span><span class="p">][</span><span class="s2">&quot;wer&quot;</span><span class="p">]),</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>    <span class="p">}</span>
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>ASR bias</strong>: <a href="../../references/#koenecke-pnas-racial-asr-2020">Koenecke-PNAS-Racial-ASR-2020</a></li>
+<li><strong>NAS framework</strong>: <a href="../../references/#nas-day-zero-spi-internal">NAS Day-Zero SPI</a>; <a href="../../references/#nhse-ig-guidance-2026-03">NHSE IG guidance (March 2026)</a></li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Vendors control test datasets. No independent UK-representative speech corpus exists at scale.</p>
+</blockquote>
+<p><strong>⚠️ Underspecification Warning (Tier C - well-defined structure, ad hoc categorisation)</strong></p>
+<blockquote>
+<p>Published demographic WER reporting uses ad-hoc accent categorisation that has been systematically critiqued. A FAccT 2024 paper identified race-based, geography-based, and native/non-native categories as poor proxies for the actual acoustic variation that affects ASR performance - they are demographically convenient but phonologically arbitrary. No standardised maximum acceptable disparity threshold exists across the field; the NAS 5 percentage point target is a proposed rather than evidence-based threshold. For NHS context, a defensible taxonomy must include at minimum: British regional accents (with meaningful sub-categorisation), South Asian English varieties (distinct from "Indian English" as a single category), West African English, Caribbean English, and Eastern European English - none of which are consistently present in vendor-reported demographic WER data. The accompanying <strong>Accent Taxonomy Standardisation</strong> metric (Fairness &amp; Equity) assesses whether the categorisation itself is defensible before the disaggregation numbers become meaningful.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 A national independent speech corpus reflecting NHS patient demographics would make vendor-reported demographic WER meaningful rather than self-assessed.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../fairness-equity/#io-fe-1">IO.FE-1 Deployment Equity Index</a> · <a href="../fairness-equity/#io-fe-2">IO.FE-2 Accent Taxonomy Standardisation</a> · <a href="../fairness-equity/#io-fe-3">IO.FE-3 Clinical Domain Performance Variance</a> · <a href="../fairness-equity/#io-fe-4">IO.FE-4 Intersectional Performance</a> · <a href="../fairness-equity/#io-fe-5">IO.FE-5 Intersectional Compound Disadvantage Score</a> · <a href="../fairness-equity/#io-fe-6">IO.FE-6 Rare Presentation Handling</a></p>
+<hr />
+<h3 id="tp-asr-5">TP.ASR-5 🔵 Speaker-Stratified WER<a class="headerlink" href="#tp-asr-5" title="Permanent link">&para;</a></h3>
+<p>Separate WER for clinician vs patient speech. Patient speech is more diagnostically important and typically harder to transcribe.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-5</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Fidelity &amp; Accuracy</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Family</strong></td>
+<td>Demographic Equity Disaggregation</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#oxonfair-2024">OxonFair (2024)</a> (extension analysis; future work)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Novel proposal. Requires accurate diarisation as prerequisite and speaker-labelled ground truth that rarely exists.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Given diarised transcript with speaker labels, compute WER independently per role. Clinical risk asymmetry ratio R = WER_patient / WER_clinician. R &gt; 1.0 means the clinically riskier speech is less accurately captured.
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Concept origin</strong>: Identified in <a href="../../references/#oxonfair-2024">OxonFair (2024)</a> extension analysis</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires accurate diarisation as prerequisite.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Misheard patient speech is more dangerous than misheard clinician speech. Speaker-stratified reporting would expose this asymmetry.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../fairness-equity/#io-fe-1">IO.FE-1 Deployment Equity Index</a> · <a href="../fairness-equity/#io-fe-2">IO.FE-2 Accent Taxonomy Standardisation</a> · <a href="../fairness-equity/#io-fe-3">IO.FE-3 Clinical Domain Performance Variance</a> · <a href="../fairness-equity/#io-fe-4">IO.FE-4 Intersectional Performance</a> · <a href="../fairness-equity/#io-fe-5">IO.FE-5 Intersectional Compound Disadvantage Score</a> · <a href="../fairness-equity/#io-fe-6">IO.FE-6 Rare Presentation Handling</a></p>
+<hr />
+<h3 id="tp-asr-6">TP.ASR-6 🟡 Error Transmission Rate<a class="headerlink" href="#tp-asr-6" title="Permanent link">&para;</a></h3>
+<p>Proportion of ASR transcription errors that survive into the final clinical note. Distinct from end-to-end accuracy because it isolates the ASR→NLP propagation step - a system with high raw WER but strong contextual inference in the summariser can have a low transmission rate, while a system with low WER and literal summarisation can still transmit every error it makes.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-6</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR + Summarisation</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Fidelity &amp; Accuracy</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Anderson et al., Mayo Clinic Proceedings Digital Health, 2025 (OHSU 5-platform study found 19.5% transmission rate)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor metric requiring intermediate output access. Measurable when raw transcript and final note are both available for comparison. Valuable diagnostic because it distinguishes ASR-bottleneck systems from summarisation-bottleneck systems - the intervention is completely different in each case.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ETR = |ASR_errors_present_in_final_note| / |ASR_errors_in_raw_transcript|. ETR = 0 means the summariser corrects every ASR error (unlikely). ETR = 1 means the summariser transmits every error unchanged. ETR &gt; 1 is possible if summariser amplification adds errors beyond the ASR baseline. Compute per error category (numeric, drug name, negation, demographic) - the overall rate obscures category-specific failure modes.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires access to raw transcript and final note with alignment between the two. Not all vendors expose the intermediate transcript. Error categorisation requires NER infrastructure.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The OHSU finding that 19.5% of ASR errors reach the final note suggests the summariser provides meaningful but imperfect error correction. The more interesting question is <em>which</em> errors transmit: if safety-critical errors transmit at higher rates than stylistic errors, the summariser is learning the wrong patterns. Transmission rate disaggregated by error category is more useful than the aggregate.</p>
+</blockquote>
+<h3 id="tp-asr-7">TP.ASR-7 🟡 Real-Time Factor (RTF)<a class="headerlink" href="#tp-asr-7" title="Permanent link">&para;</a></h3>
+<p>Processing speed relative to audio duration. RTF &lt; 1.0 = faster than real-time.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-7</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Continuous</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Operational</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Continuous</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Standard ASR performance metric</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor provides. Useful for operational monitoring but not safety-critical in isolation.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>RTF = T_processing / T_audio. For streaming ASR, report both first-token latency and full-utterance RTF.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Measures speed, not quality.</p>
+</blockquote>
+<hr />
+<h3 id="tp-asr-8">TP.ASR-8 🟡 Character Error Rate (CER)<a class="headerlink" href="#tp-asr-8" title="Permanent link">&para;</a></h3>
+<p>Character-level edit distance between reference and hypothesis. More sensitive than WER for medical terminology where subword errors are common: 'amoxicillin' vs 'amoxycillin' has WER=1 but CER=1/12. Particularly important for drug names, anatomical terms, and proper nouns.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-8</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate; Event-triggered</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Fidelity &amp; Accuracy</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Standard ASR literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor should report alongside WER. Useful for identifying systems that struggle specifically with medical terminology spelling.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>CER = (S_c + D_c + I_c) / N_c, where S_c, D_c, I_c are character-level substitutions, deletions, insertions, and N_c is total characters in reference. Computed via character-level Levenshtein alignment. CER &lt; WER typically because partial matches contribute fewer errors.
+</code></pre></div>
+<p><strong>Code: CER via jiwer</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">jiwer</span><span class="w"> </span><span class="kn">import</span> <span class="n">cer</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">reference</span> <span class="o">=</span> <span class="s1">&#39;patient prescribed amoxicillin 500mg&#39;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">hypothesis</span> <span class="o">=</span> <span class="s1">&#39;patient prescribed amoxycillin 500mg&#39;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1"># WER would be 1/5 = 0.20 (one word wrong)</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="n">char_error_rate</span> <span class="o">=</span> <span class="n">cer</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span> <span class="n">hypothesis</span><span class="p">)</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1"># CER ~ 0.027 (1 char wrong out of 37)</span>
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>CER vs WER</strong>: Standard ASR literature; particularly relevant for morphologically rich domains</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>CER and WER measure different things - neither is universally better. CER can underweight serious errors (a wrong drug name with similar spelling has low CER but high clinical risk).</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 CER and WER should be reported together. A system with low WER but high CER is making many minor errors; a system with high WER but low CER is making fewer but more substantial errors. The clinical implications differ.</p>
+</blockquote>
+<hr />
+<h3 id="tp-asr-9">TP.ASR-9 🟡 Out-of-Vocabulary (OOV) Rate<a class="headerlink" href="#tp-asr-9" title="Permanent link">&para;</a></h3>
+<p>Proportion of tokens the ASR model doesn't recognise as valid vocabulary. New drug names, novel diagnoses, proper nouns, and recently approved medications are systematically OOV in older models. High OOV rate predicts systematic clinical accuracy gaps.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-9</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Detection</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Standard speech recognition literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Should be re-tested when dm+d updates and when model versions change. Vendors should commit to maintenance schedule for vocabulary currency.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>OOV Rate = |tokens_not_in_vocab| / |total_tokens|. Compute against the ASR&#39;s lexicon. For end-to-end neural ASR, OOV manifests as decomposition into subword units which may produce nonsense. Track per encounter and per clinical category (drugs, diagnoses, procedures).
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>End-to-end neural ASR systems don't have explicit vocabularies - OOV is harder to define. Subword tokenisation means any word can be 'represented' but may not be transcribed correctly.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Newly approved drugs (every quarter, MHRA approves new medicines) are by definition OOV until the model is updated. A model trained two years ago will systematically fail on the latest oncology agents, biologics, and recently licensed treatments. OOV rate against the current dm+d should be a procurement question.</p>
+</blockquote>
+<hr />
+<h3 id="tp-asr-10">TP.ASR-10 🟡 ASR Confidence Calibration<a class="headerlink" href="#tp-asr-10" title="Permanent link">&para;</a></h3>
+<p>Whether the ASR's stated confidence scores correlate with actual accuracy. A poorly-calibrated ASR that reports 95% confidence on 70%-accurate output is dangerous because downstream consumers (summariser, clinician) trust the output inappropriately.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-10</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Machine learning calibration literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor should test and report. Confidence calibration is a prerequisite for confidence-based filtering and human review routing.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>For each confidence bin b in [0.5, 0.6, ..., 1.0], compute actual_accuracy(b) = correct_predictions(b) / total_predictions(b). Calibration Error = sum |b - actual_accuracy(b)| weighted by bin frequency. Perfect calibration: ECE = 0. Reliable systems: ECE &lt; 0.05.
+</code></pre></div>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Calibration</strong>: <a href="../../references/#guo-calibration-2017">Guo-Calibration-2017</a></li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Modern neural ASR systems are typically miscalibrated (overconfident). Calibration can be improved post-hoc but most vendors don't expose confidence scores at all.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 If confidence scores are exposed and well-calibrated, downstream systems can route low-confidence segments for human review. If they're miscalibrated or absent, the AVT cannot signal its own uncertainty - which means the clinician must assume everything is equally reliable.</p>
+</blockquote>
+<p><em>See also: ASR Confidence Exposure - paired metric. TP.ASR-10 asks whether confidence scores are accurate; TP.ASR-11 asks whether they are available at all. Both are needed for downstream uncertainty propagation.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../meta-evaluation/#es-me-1">ES.ME-1 Proximal vs Distal Outcome Distinction</a> · <a href="../training-competency/#gv-tc-2">GV.TC-2 Failure Mode Awareness Score</a> · <a href="../audio-capture/#tp-ac-3">TP.AC-3 Acoustic Environment Profiling</a> · <a href="#tp-asr-1">TP.ASR-1 Word Error Rate (WER)</a> · <a href="#tp-asr-11">TP.ASR-11 ASR Confidence Exposure</a> · <a href="#tp-asr-2">TP.ASR-2 Medical Word Error Rate (M-WER)</a></p>
+<hr />
+<h3 id="tp-asr-11">TP.ASR-11 🟡 ASR Confidence Exposure<a class="headerlink" href="#tp-asr-11" title="Permanent link">&para;</a></h3>
+<p>Whether the ASR system exposes per-token or per-segment confidence scores to downstream consumers - both the summariser and the clinician reviewing. Different from the existing ASR Confidence Calibration metric, which asks whether confidence scores are <em>accurate</em>. Exposure asks whether they are <em>available at all</em>. Well-calibrated confidence locked inside the vendor's infrastructure provides no downstream benefit.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-11</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟡 Tier 2 - Recommended</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Human Review</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Derived from Abridge Linked Evidence architecture; confidence-based routing literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Pre-deployment architectural question. Should be a procurement requirement for any AVT system where confidence-based review routing or uncertainty display is intended. Without exposure, the rest of the confidence-based safety architecture cannot be built.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Exposure assessed on three levels: (1) Internal - confidence scores exist but are not exposed; (2) Downstream - confidence scores passed to summariser for internal use; (3) Clinician-visible - low-confidence segments highlighted in the review interface. Target: Level 3 for any safety-critical deployment. Binary per level; report highest level achieved.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>End-to-end neural ASR systems may produce confidence scores that are poorly calibrated (see existing ASR Confidence Calibration metric). Exposure without calibration can be actively misleading - a clinician seeing "95% confidence" on a 70%-accurate segment has worse situational awareness than a clinician seeing no score at all.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Confidence display is the architectural prerequisite for intelligent review. A reviewer who can see which words or segments the system is uncertain about can focus their attention there. A reviewer looking at a flat wall of text must review everything equally - which in practice means reviewing nothing carefully. Clinician-visible confidence should be a standard AVT interface element, not an advanced feature.</p>
+</blockquote>
+<p><em>See also: ASR Confidence Calibration - paired metric. TP.ASR-11 asks whether confidence is available at all; TP.ASR-10 asks whether available confidence is accurate.</em></p>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../summarisation-nlp/#tp-sn-20">TP.SN-20 Uncertainty Marker Preservation</a> · <a href="../meta-evaluation/#es-me-1">ES.ME-1 Proximal vs Distal Outcome Distinction</a> · <a href="../nhs-compliance-regulatory/#gv-cr-2">GV.CR-2 Verbal Notification Compliance</a> · <a href="../nhs-compliance-regulatory/#gv-cr-3">GV.CR-3 AI-Generated Content Labelling Compliance</a> · <a href="../training-competency/#gv-tc-2">GV.TC-2 Failure Mode Awareness Score</a> · <a href="../vendor-transparency-contractual/#gv-vt-1">GV.VT-1 Model Change Notification Compliance</a></p>
+<hr />
+<h3 id="tp-asr-12">TP.ASR-12 🟢 Hallucination-Under-Noise Rate<a class="headerlink" href="#tp-asr-12" title="Permanent link">&para;</a></h3>
+<p>Rate at which the ASR generates plausible-sounding but fabricated text when fed noise, silence, or non-speech audio. Whisper is famously prone to this - it can produce coherent-looking transcriptions of pure silence. A distinct failure mode from substitution errors that creates content from nothing.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-12</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Emerging</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td><a href="../../references/#koenecke-careless-whisper-2024">Koenecke-Careless-Whisper-2024</a>; specific to neural end-to-end ASR architectures</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Change history:</strong> v5.0.3 (Cadence corrected: One-off gate → Periodic audit. The Operational Specification explicitly says "periodic audit re-runs the test corpus on every component change per [GV.SG-1 Model Version Tracking] (any ASR weight or model update triggers re-test)" and the Trigger Conditions describe alert-on-new-critical-class-hallucination signals against a prior baseline — neither of which is one-off).</p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Critical pre-deployment test. Whisper-based systems are documented to hallucinate from silence - this must be tested before clinical use. Tier 1 because the failure mode is well-documented and the test is straightforward.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Test corpus: known non-speech audio (silence, music, environmental noise, foreign language). Hallucination Rate = |outputs_containing_text| / |test_samples|. Severity weighted: spurious clinical content (drug names, symptoms) is more dangerous than spurious filler.
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>Curated test corpus of non-speech audio in five named categories: (1) <strong>silence</strong> — true silence and low-level room tone; (2) <strong>music</strong> — recorded music tracks of varying genre and tempo; (3) <strong>environmental noise</strong> — typical clinical-environment background (HVAC, distant conversation, equipment beeps, paper rustling); (4) <strong>non-clinical speech</strong> — speech in a language the deployment ASR is not configured for, or speech outside the clinical domain; (5) <strong>clinical-adjacent ambient</strong> — ward / waiting-room ambient containing fragments of clinical speech but no consultation. The corpus is the reference; per-sample expected output is empty / silence-marker, not free text. "Hallucinated content" classified by severity:</p>
+<ul>
+<li><strong>Critical</strong> — spurious clinical content (drug names, dosages, symptoms, diagnoses, allergies, plan items). Single-instance occurrence is significant.</li>
+<li><strong>Moderate</strong> — coherent non-clinical text (filler, casual conversation hallucinations).</li>
+<li><strong>Benign</strong> — fragments, repetition artefacts, short utterances under three words.</li>
+</ul>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Test-corpus sample sizes MANDATORY:</strong> ≥ 50 samples per category (≥ 250 total) to make per-category rates statistically meaningful. Below 30 per category, per-category rates are uninformative and may not be reported as compliance evidence.</li>
+<li><strong>Per-category reporting MANDATORY:</strong> rates reported per category (silence / music / environmental / non-clinical-speech / clinical-adjacent), not as a single rolled-up number. Whisper-class systems frequently fail asymmetrically — high silence-hallucination rate, low music-hallucination rate, or vice versa — and the asymmetry is the diagnostic signal.</li>
+<li><strong>Severity classification MANDATORY:</strong> every hallucination event labelled critical / moderate / benign. Critical-rate reported separately as the leading safety indicator.</li>
+<li><strong>Aggregation:</strong> weighted aggregate HUN_w = (0.1 · benign + 0.5 · moderate + 1.0 · critical) / N_total per category, plus the overall headline rate. Unweighted rate may be reported alongside but not in place of HUN_w.</li>
+<li><strong>Pre-deployment vs periodic audit:</strong> pre-deployment is a hard gate before go-live; periodic audit re-runs the test corpus on every component change per <a href="../safety-governance/#gv-sg-1">GV.SG-1 Model Version Tracking</a> (any ASR weight or model update triggers re-test).</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>The silence-hallucination failure mode is well-documented (<a href="../../references/#koenecke-careless-whisper-2024">Koenecke-Careless-Whisper-2024</a>, cited Source) and the clinical-safety logic supports zero-tolerance for critical-class hallucinations.</p>
+<ul>
+<li><strong>Pre-deployment gate</strong> is a zero-tolerance category boundary on critical-class events combined with low (per-category) rates on moderate and benign classes. Any critical-class failure is a hard fail regardless of overall rate.</li>
+<li><strong>Periodic audit</strong> re-runs the corpus on every ASR component change (<a href="../safety-governance/#gv-sg-1">GV.SG-1 Model Version Tracking</a>). The signals are (a) any new critical-class hallucination and (b) sustained drift in per-category HUN_w against the prior baseline.</li>
+<li><strong>Pause / escalation</strong> triggers on any critical-class hallucination in production traffic, or per-category HUN_w exceeding the pre-deployment gate substantially in any audit cycle.</li>
+</ul>
+<p>Specific numerical starting points (test-corpus floors, moderate / benign rates, drift magnitudes) are deployment-context-dependent and live in <a href="../../thresholds/#tp-asr-12">Threshold Reference: TP.ASR-12</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>References</strong></p>
+<ul>
+<li><strong>Whisper hallucinations</strong>: <a href="../../references/#koenecke-careless-whisper-2024">Koenecke-Careless-Whisper-2024</a></li>
+</ul>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Different from general hallucination rate at the summarisation layer. Specifically tests ASR architectural failure on silence/noise inputs. The Operational Specification above makes the asymmetric-failure-mode reporting visible (per-category rates), but the test-corpus construction itself is a research-grade activity — clinical-adjacent ambient samples particularly are hard to source without bringing genuine PHI into the test set.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 This is a specific architectural failure mode of neural ASR systems trained on aligned speech-text pairs. When fed audio that doesn't contain speech, they don't output silence - they output their best guess at what speech might have been there. The clinical implication: pauses in consultations, brief silences, or background noise can produce fabricated clinical content. Should be a hard pre-deployment test.</p>
+</blockquote>
+<p><strong>Related metrics</strong> <em>(shared Playbook principles / ethical themes):</em> <a href="../nhs-compliance-regulatory/#gv-cr-6">GV.CR-6 Clinical Safety Case Completeness</a> · <a href="../security-adversarial-robustness/#gv-sc-1">GV.SC-1 Prompt Injection Resistance Rate</a> · <a href="../security-adversarial-robustness/#gv-sc-2">GV.SC-2 Jailbreak Resistance Score</a> · <a href="../security-adversarial-robustness/#gv-sc-3">GV.SC-3 Adversarial Audio Detection Rate</a> · <a href="../safety-governance/#gv-sg-11">GV.SG-11 Adverse Event / Incident Rate (LFPSE)</a> · <a href="../safety-governance/#gv-sg-14">GV.SG-14 Near-Miss Reporting Rate</a></p>
+<hr />
+<h3 id="tp-asr-13">TP.ASR-13 🟢 Numeric Accuracy<a class="headerlink" href="#tp-asr-13" title="Permanent link">&para;</a></h3>
+<p>Accuracy specifically on numbers: dosages, dates, vital signs, lab values, durations. Numbers fail differently from words and have outsized clinical importance. '15mg' vs '50mg' is a tenfold dosing error invisible to standard WER weighting.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-13</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🟢 Tier 1 - Minimum Viable</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>Periodic audit</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Safety</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment, Periodic Audit</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Proposed / Novel</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Identified as critical gap in clinical ASR evaluation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Change history:</strong> v5.0.3 (Cadence corrected: One-off gate → Periodic audit. The body has always described monthly review of production-traffic numeric accuracy, a sustained-drift alert over two months, and a pause-on-confirmed-dosage-error trigger in production traffic — none of which is one-off. Pre-deployment is preserved via Lifecycle Phases).</p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Safety-critical and underspecified by current vendor reporting. Should be a Day Zero acceptance criterion. Numeric errors are disproportionately dangerous and should be reported separately from general WER.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Numeric Accuracy = |numbers_correctly_transcribed| / |numbers_in_reference|. Compute separately for: integers, decimals, units (mg/g/ml/mcg), dates, ranges. Critical sub-metric: dosage accuracy (numeric value AND unit correct).
+</code></pre></div>
+<p><strong>Reference Standard</strong></p>
+<blockquote>
+<p>Reference transcript with named-entity recognition (NER) identifying numeric tokens, plus clinician annotation of clinical-significance class. Numeric tokens classified by sub-type with sub-type-specific reference standards:</p>
+<ul>
+<li><strong>Integers</strong> — digit-string match (15 ≠ 50; "fifteen" canonicalised to 15 before comparison)</li>
+<li><strong>Decimals</strong> — digit-string match including decimal separator; "point five" canonicalised to ".5" or "0.5" per a documented canonicalisation rule</li>
+<li><strong>Units</strong> — exact match against the <a href="https://digital.nhs.uk/services/dictionary-of-medicines-and-devices">dm+d</a> unit set (mg / mcg / g / ml / IU / units / etc.); unit confusion (mg ↔ mcg) is a critical-class error regardless of numeric correctness</li>
+<li><strong>Dates</strong> — canonicalised to ISO 8601 (YYYY-MM-DD) before comparison; spoken-date ambiguities ("the fifteenth" without month context) are flagged separately, not silently dropped</li>
+<li><strong>Ranges</strong> — both endpoints AND the relation (between / from-to / over-under) must be correct; "between 5 and 10" vs "5 to 10" canonicalised to the same range</li>
+</ul>
+<p><strong>Critical sub-metric — dosage accuracy:</strong> a dosage event requires <em>both</em> the numeric value AND the unit to be correct. A single dosage error (15 mg → 50 mg, or mg → mcg) is a critical-class event independent of overall rate.</p>
+</blockquote>
+<p><strong>Operational Specification</strong></p>
+<blockquote>
+<ul>
+<li><strong>Sub-metric reporting MANDATORY:</strong> five sub-rates (integer / decimal / unit / date / range) plus the dosage-accuracy critical sub-metric. Aggregate-only reporting is not Tier 1 sufficient — dosage errors are the safety signal and must be reported separately.</li>
+<li><strong>Canonicalisation rule MANDATORY:</strong> the deployer's canonicalisation rules for spoken-number variants (fifteen → 15; point five → 0.5; the fifteenth → flagged) MUST be documented before measurement; ad-hoc canonicalisation invalidates cross-deployment comparison.</li>
+<li><strong>Test corpus MANDATORY:</strong> ≥ 200 numeric tokens per sub-type per audit cycle (≥ 1000 total), drawn from real consultations or representative synthetic corpora. Below the floor, per-sub-type rates are uninformative.</li>
+<li><strong>Population:</strong> all numeric tokens in scope; no exclusions. A reference transcript missing dosage events under-represents the safety surface.</li>
+<li><strong>Severity classification MANDATORY:</strong> dosage errors are critical by default. Date errors affecting clinical timing (medication start/stop, last menstrual period, immunisation history) classified critical. Other errors classified moderate or benign per clinical-significance review.</li>
+</ul>
+</blockquote>
+<p><strong>Trigger Conditions</strong></p>
+<blockquote>
+<p>⚠️ <strong>Provenance:</strong> the dosage-error critical-class framing follows from the clinical-safety logic in the Why-this-tier and Novel Thinking sections (and the canonical "15 mg → 50 mg" example). Specific numerical thresholds (100 % dosage gate, 99 % unit gate, 95 % integer / decimal / date / range gate, ≥ 200-tokens-per-sub-type floor) are <strong>proposed in v3.7 as starting points</strong>, not externally validated. Per the <a href="../../calibration-and-context/">Calibration &amp; Context principle</a>, require local calibration before contractual use — paediatric dosing has narrower error tolerance than adult dosing, for example.</p>
+<ul>
+<li><strong>Pre-deployment gate:</strong> dosage accuracy = 100 % on test corpus; unit accuracy ≥ 99 %; integer / decimal / date / range accuracy ≥ 95 % each. Any sub-metric below floor is a hard fail regardless of aggregate.</li>
+<li><strong>Periodic audit:</strong> monthly review of production-traffic numeric accuracy by sub-type; alert on any single dosage error confirmed; alert if any sub-type drifts &gt; 2 % below baseline sustained two months.</li>
+<li><strong>Pause / escalation trigger:</strong> any single dosage error confirmed in production traffic (single instance — dosage errors are zero-tolerance for the metric); OR aggregate sub-type accuracy &lt; 90 % for any sub-type in any audit cycle.</li>
+</ul>
+<p>Specific numerical starting points are deployment-context-dependent and live in <a href="../../thresholds/#tp-asr-13">Threshold Reference: TP.ASR-13</a>. Treat them as starting points to calibrate locally — not as contractual gates.</p>
+</blockquote>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Requires NER to identify numeric tokens in reference and hypothesis. Spoken numbers are particularly error-prone ('fifteen' vs 'fifty', 'point five' vs 'five'). The Operational Specification above mandates explicit canonicalisation rules to make the spoken-number-ambiguity problem visible; it does not solve it. NER quality on the reference transcript itself is a measurement-error source not eliminated by this metric.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 The dosage error case is the canonical clinical AI safety nightmare. A standard WER calculation treats '15mg' and '50mg' as equally wrong as 'the' becoming 'a' - they're not. Numeric accuracy should be reported separately and a single dosage error should trigger immediate review of the entire encounter.</p>
+</blockquote>
+<hr />
+<h3 id="tp-asr-14">TP.ASR-14 🔵 Punctuation &amp; Capitalisation Accuracy<a class="headerlink" href="#tp-asr-14" title="Permanent link">&para;</a></h3>
+<p>Accuracy of sentence boundary detection, punctuation, and capitalisation. Affects readability and downstream NLP. Misplaced sentence boundaries can completely change clinical meaning: 'no chest pain. Shortness of breath' vs 'no chest pain, shortness of breath' have different clinical implications.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reference</strong></td>
+<td>TP.ASR-14</td>
+</tr>
+<tr>
+<td><strong>Priority Tier</strong></td>
+<td>🔵 Tier 3 - Advanced / Research</td>
+</tr>
+<tr>
+<td><strong>Measurement Cadence</strong></td>
+<td>One-off gate</td>
+</tr>
+<tr>
+<td><strong>Pipeline Layer</strong></td>
+<td>ASR / Transcription</td>
+</tr>
+<tr>
+<td><strong>Assurance Question</strong></td>
+<td>Fidelity &amp; Accuracy</td>
+</tr>
+<tr>
+<td><strong>Measurement Method</strong></td>
+<td>Computational</td>
+</tr>
+<tr>
+<td><strong>Lifecycle Phases</strong></td>
+<td>Pre-deployment</td>
+</tr>
+<tr>
+<td><strong>Responsible Actors</strong></td>
+<td>Vendor</td>
+</tr>
+<tr>
+<td><strong>Maturity</strong></td>
+<td>Established</td>
+</tr>
+<tr>
+<td><strong>Outcome Type</strong></td>
+<td>Proximal</td>
+</tr>
+<tr>
+<td><strong>Applicability</strong></td>
+<td>AVT-Specific</td>
+</tr>
+<tr>
+<td><strong>Layer</strong></td>
+<td>Prevention</td>
+</tr>
+<tr>
+<td><strong>Source</strong></td>
+<td>Standard ASR post-processing literature</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Applicability:</strong> 🎯 <a href="../../crosscuts/by-applicability/avt-specific/">AVT-Specific</a></p>
+<p><strong>Why this tier?</strong></p>
+<blockquote>
+<p>Vendor responsibility. Important for downstream NLP quality but harder to attribute clinical impact directly.</p>
+</blockquote>
+<p><strong>Formal Definition</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Sentence boundary F1 = harmonic mean of precision and recall on sentence boundaries. Punctuation accuracy = |correct_punctuation_marks| / |total_punctuation_in_reference|. Capitalisation accuracy = |correct_case_decisions| / |total_words|.
+</code></pre></div>
+<p><strong>Limitations</strong></p>
+<blockquote>
+<p>Punctuation in clinical speech is often ambiguous - clinicians don't speak in clearly punctuated sentences. Reference annotations are themselves variable.</p>
+</blockquote>
+<p><strong>Novel Thinking / Implications</strong></p>
+<blockquote>
+<p>💡 Sentence boundary errors propagate into summarisation as compounded meaning changes. A misplaced full stop can split a single clinical concept across two summarised statements, or merge two distinct concepts into one.</p>
+</blockquote>
+<hr />
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Spotted an error or disagree with a tier?</p>
+<p>This catalogue is a <a href="../../prototype-status/">prototype-for-discussion</a>, and feedback on specific metrics is exactly what shapes the next version. Open an issue and pick the template that fits:</p>
+<ul>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=01-factual-error.yml">Factual error</a> — a claim, citation, threshold, or formula in a metric body looks wrong.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=02-tier-disagreement.yml">Tier disagreement</a> — a metric is at the wrong priority tier for your context.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=03-missing-metric.yml">Missing metric / gap</a> — an assurance question that should be in the catalogue but isn't.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=04-broken-link.yml">Broken link / site bug</a> — internal link, dead citation, rendering issue.</li>
+<li><a href="https://github.com/danjscho/avt-metrics-taxonomy/issues/new?template=05-feedback.yml">Framing feedback</a> — higher-level concern about principles, dimensions, or scope.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="/avt-metrics-taxonomy/feed_rss_updated.xml" target="_blank" rel="noopener" title="RSS - CHANGELOG updates" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64m0 352a64 64 0 1 1 128 0 64 64 0 1 1-128 0m32-256c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/dobsonrd/avt-metrics-taxonomy" target="_blank" rel="noopener" title="Source on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.top", "toc.follow", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/assurance-planner.js"></script>
+      
+    
+  </body>
+</html>
