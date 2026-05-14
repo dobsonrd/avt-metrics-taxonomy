@@ -50,6 +50,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/assurance-planner.js
+
 plugins:
   - search
   - redirects:
@@ -120,6 +123,7 @@ nav:
   - How to use: how-to-use.md
   - Dimensions overview: dimensions-overview.md
   - Quick start (Tier 1): tier-1-quick-reference.md
+  - Assurance Planner: assurance-planner.md
   - Browse metrics:
       - Contents: contents.md
       - TP - Technical Pipeline:

@@ -22,8 +22,8 @@ ROOT = pathlib.Path(__file__).parent
 # Single-source version stamp. Bumped manually at each release; consumed by
 # build.py (JSON metadata), build_site.py (landing + downloads citation), and
 # pyproject.toml. Keep these in sync at release time.
-TAXONOMY_VERSION = "v5.5.13"
-TAXONOMY_DATE = "2026-05-11"  # ISO date of TAXONOMY_VERSION release; bumped together
+TAXONOMY_VERSION = "v5.5.14"
+TAXONOMY_DATE = "2026-05-14"  # ISO date of TAXONOMY_VERSION release; bumped together
 
 
 def ref_id_to_anchor(ref_id: str) -> str:

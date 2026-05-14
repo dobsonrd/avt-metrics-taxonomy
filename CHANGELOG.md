@@ -1,5 +1,15 @@
 # Changelog
 
+## v5.5.14 (2026-05-14)
+
+**Patch release: Assurance Planner interactive site page. No metric content edits.**
+
+- New **Assurance Planner** page (`/assurance-planner/`) — tier toggle buttons (Tier 1 / 2 / 3), responsible actor dropdown filtered to the 5 canonical groups from the How to Use section (Vendor, Deployer, Regional ICB, National Body, Academic), with Clinician and Caldicott Guardian mapped under Deployer. Metrics grouped by cadence sequence: Pre-deployment / Continuous / Periodic audit / Event-triggered. Each card shows ref-ID, tier, actor, and assurance question.
+- New `taxonomy/javascripts/` source directory; `build_site.py` gains `_copy_javascripts()` mirroring the existing `_copy_stylesheets()` pattern.
+- GitHub Actions workflow opts into Node.js 24 (`FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`) and sets `dev` as default alias on main-branch deploys.
+
+**Counts unchanged**: 236 metrics / 58-99-79 tiers.
+
 ## v5.5.13 (2026-05-11)
 
 **Patch release: title renamed to "Prototype AVT Metrics Taxonomy" ahead of public launch. No metric content edits.**

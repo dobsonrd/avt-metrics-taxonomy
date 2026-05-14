@@ -2,7 +2,7 @@
 
 A healthcare metrics taxonomy for assuring Ambient Voice Technology (AVT) systems from an NHS perspective.
 
-**236 metrics across 20 groups**, covering the full AVT pipeline from audio capture to downstream write-back, plus governance, human factors, equity, and meta-evaluation. **AI-coauthored prototype for discussion — v5.5.13, 2026-05-11.** Shared to provoke conversation; not a settled standard.
+**236 metrics across 20 groups**, covering the full AVT pipeline from audio capture to downstream write-back, plus governance, human factors, equity, and meta-evaluation. **AI-coauthored prototype for discussion — v5.5.14, 2026-05-14.** Shared to provoke conversation; not a settled standard.
 
 > ⚠️ This is an **AI-coauthored prototype for discussion**, not a finished taxonomy. Substantial portions were drafted with AI assistance and human-reviewed; **specific claims, citations, and threshold numbers may still contain confabulations or factual errors** despite review. Keep this front of mind, verify before use, and please flag anything that looks wrong — feedback on errors is genuinely welcome. It is shared openly to provoke conversation about what an AVT assurance frame should look like — *not* as an NHS-endorsed standard, regulatory document, or procurement gate. Tier assignments, threshold numbers, and metric framings will change in response to feedback. **You are invited to disagree, propose changes, point at gaps, flag errors, and share with colleagues. You should not paste threshold numbers into contracts, cite metrics as authoritative without flagging the prototype status, or treat any specific metric as policy.** See [docs site → Prototype status](https://danjscho.github.io/avt-metrics-taxonomy/prototype-status/) for the full framing.
 
@@ -102,9 +102,9 @@ Source rows in metric Dimensions tables, Reference Standard / Trigger Conditions
 
 ## Status / version
 
-**Current prototype version:** v5.5.13, released 2026-05-11.
+**Current prototype version:** v5.5.14, released 2026-05-14.
 
-**Headline state at v5.5.13:**
+**Headline state at v5.5.14:**
 
 - **236 metrics** across **20 groups**, organised in six clusters (TP / PI / HL / IO / GV / ES).
 - **Tier counts:** 58 / 99 / 79 (Tier 1 / Tier 2 / Tier 3).
@@ -138,7 +138,8 @@ The v5.x line went from a mid-stage prototype (221 metrics, ~45 Tier 1) to a mor
 - **v5.5.10** — Browse-by-applicability counts on the contents page were hard-coded at 48/77/89 (v3.x baseline); now live-derived from the parsed catalogue (50 / 79 / 107) so they stay in sync with `_applicability.md` automatically.
 - **v5.5.11** — Reader-feedback wiring + Tier 1 quick-reference structural breaks. (1) Five GitHub issue-form templates land at `.github/ISSUE_TEMPLATE/` (factual error / tier disagreement / missing metric / broken link / framing feedback) so readers reporting an error get a structured form rather than a blank issue. (2) Each group page now ends with a "Spotted an error?" footer linking directly to the right template. (3) Prototype-status page lists what each template is for. (4) Tier 1 Quick Reference tables now subdivide by cluster/group at build time (e.g. *TP · ASR / Transcription*, *GV · Privacy & Data Governance*) so each per-actor block scans more cleanly. (5) Home-page "three priority tiers" block converted from soft-wrapped lines (which collapsed to one line in rendered Markdown) into a proper bulleted list.
 - **v5.5.12** — Tier 2 home-page line trimmed from "recommended for any AVT deployment" to "recommended for AVT deployment" and the three-tier block re-rendered as paragraph-separated lines (blank line between each tier) so each line renders independently without the bullet-list shape.
-- **v5.5.13** *(this release)* — Renamed title to "Prototype AVT Metrics Taxonomy" across all reader-facing surfaces (site nav, browser tabs, headings, citations) ahead of making the repository public.
+- **v5.5.14** *(this release)* — Add interactive Assurance Planner site page: tier toggle buttons, responsible actor dropdown (5 canonical groups matching the How to Use actor taxonomy), metrics grouped by measurement cadence sequence (Pre-deployment / Continuous / Periodic audit / Event-triggered).
+- **v5.5.13** — Renamed title to "Prototype AVT Metrics Taxonomy" across all reader-facing surfaces (site nav, browser tabs, headings, citations) ahead of making the repository public.
 
 See [CHANGELOG.md](CHANGELOG.md) for full per-release notes including all earlier v3.x and v4.x releases.
 
@@ -146,9 +147,9 @@ See [CHANGELOG.md](CHANGELOG.md) for full per-release notes including all earlie
 
 Until the prototype reaches a settled state, please cite as:
 
-> Schofield, D. (2026). *Prototype AVT Metrics Taxonomy v5.5.13* [prototype-for-discussion]. Licensed under CC BY 4.0. Retrieved from https://danjscho.github.io/avt-metrics-taxonomy/
+> Schofield, D. (2026). *Prototype AVT Metrics Taxonomy v5.5.14* [prototype-for-discussion]. Licensed under CC BY 4.0. Retrieved from https://dobsonrd.github.io/avt-metrics-taxonomy/
 
-Note: prototype status means content / tier assignments / cross-references may change in response to feedback. Cite the specific version (e.g. v5.5.13) so subsequent readers can reproduce what you read, and please flag the prototype status when citing in academic work — pasting numbers into contracts or treating any specific metric as policy is out of scope until the artefact is settled.
+Note: prototype status means content / tier assignments / cross-references may change in response to feedback. Cite the specific version (e.g. v5.5.14) so subsequent readers can reproduce what you read, and please flag the prototype status when citing in academic work — pasting numbers into contracts or treating any specific metric as policy is out of scope until the artefact is settled.
 
 ## Contributing
 
@@ -174,4 +175,4 @@ If your use case doesn't fit cleanly into these categories, open an issue and we
 
 ---
 
-*Last updated: v5.5.13 / 2026-05-11.*
+*Last updated: v5.5.14 / 2026-05-14.*

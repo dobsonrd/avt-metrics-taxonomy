@@ -47,6 +47,7 @@ MAPPING: dict[str, str] = {
     "_versioning.md": "versioning.md",
     "_thresholds.md": "thresholds.md",
     "_references.md": "references.md",
+    "_assurance-planner.md": "assurance-planner.md",
     "tp/audio-capture.md": "groups/audio-capture.md",
     "tp/asr-transcription.md": "groups/asr-transcription.md",
     "tp/diarisation.md": "groups/diarisation.md",
@@ -1048,6 +1049,7 @@ def main() -> None:
     (DOCS / "metric-history.md").write_text(_build_metric_history_page())
     _mirror_downloads()
     _copy_stylesheets()
+    _copy_javascripts()
 
     # Cross-cut auto-generated pages (applicability / principle / theme).
     crosscut_count = build_crosscuts()
@@ -1067,6 +1069,17 @@ def _copy_stylesheets() -> None:
     dest.mkdir(exist_ok=True)
     for css in src.glob("*.css"):
         shutil.copy2(css, dest / css.name)
+
+
+def _copy_javascripts() -> None:
+    """Copy taxonomy/javascripts/*.js into docs/javascripts/."""
+    src = ROOT / "javascripts"
+    if not src.exists():
+        return
+    dest = DOCS / "javascripts"
+    dest.mkdir(exist_ok=True)
+    for js in src.glob("*.js"):
+        shutil.copy2(js, dest / js.name)
 
 
 def _mirror_downloads() -> None:
